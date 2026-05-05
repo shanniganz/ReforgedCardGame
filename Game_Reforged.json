@@ -8,7 +8,7 @@
   "customHelp": "Good luck!",
   "cardRotation": 45,
   "cards": {
-    "dataUrl": "",
+    "dataUrl": "https://shanniganz.github.io/ReforgedCardGame/CardList.json",
     "cardBack": "https://shanniganz.github.io/ReforgedCardGame/img/Reforged_CardBack.jpg"
   },
   "deckBuilding": {
@@ -17,7 +17,17 @@
       "Cost",
       "Name"
     ],
-    "formats": []
+    "formats": [
+      {
+        "title": "Classic",
+        "customCategories": [
+          "Playtest"
+        ],
+        "legalityCode": "RCG",
+        "gameplay": "RCG",
+        "deckRuleset": "RCG"
+      }
+    ]
   },
   "gameplay": {
     "Classic": {
@@ -29,7 +39,7 @@
         "drawNewSelectedCards": false
       },
       "newTurn": {
-        "drawOnStart": true,
+        "drawOnStart": false,
         "sharedTurn": false,
         "firstPlayerTokenName": "",
         "drawPerTurn": 1
