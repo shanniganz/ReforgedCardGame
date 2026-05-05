@@ -1,0 +1,41 @@
+{
+  "01": {
+    "id": "01",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Grim Graglix",
+        "type": false,
+        "cost": "-3",
+        "image": "https://shanniganz.github.io/ReforgedCardGame/img/01.jpg",
+        "isHorizontal": false
+      },
+      "back": {
+        "name": "CardBack",
+        "type": "",
+        "cost": 0,
+        "image": "https://shanniganz.github.io/ReforgedCardGame/img/Reforged_CardBack.jpg",
+        "isHorizontal": false
+      }
+    },
+    "name": "Graglix Punk",
+    "type": false,
+    "cost": 0
+  },
+  "04": {
+    "id": "02",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Grim Graglix",
+        "type": false,
+        "cost": "1",
+        "image": "https://shanniganz.github.io/ReforgedCardGame/img/04.jpg",
+        "isHorizontal": false
+      }
+    },
+    "name": "Grim Graglix",
+    "type": false,
+    "cost": "1"
+  }
+}
