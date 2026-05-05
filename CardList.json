@@ -5,8 +5,8 @@
     "face": {
       "front": {
         "name": "Grim Graglix",
-        "type": false,
-        "cost": "-3",
+        "type": "Ashen",
+        "cost": "1",
         "image": "https://shanniganz.github.io/ReforgedCardGame/img/01.jpg",
         "isHorizontal": false
       },
@@ -14,13 +14,14 @@
         "name": "CardBack",
         "type": "",
         "cost": 0,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/Reforged_CardBack.jpg",
+        "image": "https://shanniganz.github.io/ReforgedCardGame/Reforged_CardBack.jpg",
         "isHorizontal": false
       }
     },
     "name": "Graglix Punk",
-    "type": false,
-    "cost": 0
+    "type": "Ashen",
+    "cost": "1",
+    "Set": "Set1"
   },
   "02": {
     "id": "02",
@@ -28,14 +29,46 @@
     "face": {
       "front": {
         "name": "Grim Graglix",
-        "type": false,
+        "type": "Ashen",
         "cost": "1",
         "image": "https://shanniganz.github.io/ReforgedCardGame/img/04.jpg",
+        "isHorizontal": false
+      },
+      "back": {
+        "name": "CardBack",
+        "type": "",
+        "cost": 0,
+        "image": "https://shanniganz.github.io/ReforgedCardGame/Reforged_CardBack.jpg",
         "isHorizontal": false
       }
     },
     "name": "Grim Graglix",
-    "type": false,
-    "cost": "1"
+    "type": "Ashen",
+    "cost": "1",
+    "Set": "Set1"
+  },
+  "03": {
+    "id": "03",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Magic Fluf",
+        "type": "Ashen",
+        "cost": "1",
+        "image": "https://shanniganz.github.io/ReforgedCardGame/img/07.jpg",
+        "isHorizontal": false
+      },
+      "back": {
+        "name": "CardBack",
+        "type": "",
+        "cost": 0,
+        "image": "https://shanniganz.github.io/ReforgedCardGame/Reforged_CardBack.jpg",
+        "isHorizontal": false
+      }
+    },
+    "name": "Magic Fluf",
+    "type": "Ashen",
+    "cost": "1",
+    "Set": "Set1"
   }
 }
