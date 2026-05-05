@@ -9,7 +9,7 @@
   "cardRotation": 45,
   "cards": {
     "dataUrl": "https://shanniganz.github.io/ReforgedCardGame/CardList.json",
-    "cardBack": "https://shanniganz.github.io/ReforgedCardGame/img/Reforged_CardBack.jpg"
+    "cardBack": "https://shanniganz.github.io/ReforgedCardGame/Reforged_CardBack.jpg"
   },
   "deckBuilding": {
     "mainFilters": [
@@ -52,21 +52,34 @@
       "hideFacedDownCards": false,
       "sections": {
         "customSections": [
-          "Anvil"
+          "Anvil",
+          "Battlefield"
         ],
         "layout": {
           "direction": "row",
           "isSymetricalForOpponents": true,
           "content": [
             {
-              "section": "In_Play",
+              "section": "Anvil",
+              "style": false
+            },
+            {
+              "section": "Battlefield",
               "style": false
             }
           ]
         },
-        "categoriesAlreadyOnBoard": [],
-        "autoPlayFromHand": {},
-        "autoPlayFromStack": {},
+        "categoriesAlreadyOnBoard": [
+          "Hero",
+          "Anvil",
+          "Artifact"
+        ],
+        "autoPlayFromHand": {
+          "952c1c2c-90bf-432f-aeba-5a238e062311": "Battlefield"
+        },
+        "autoPlayFromStack": {
+          "25ceef4a-dd4d-42b9-815b-48cba238bc9a": "Anvil"
+        },
         "sectionsDict": {
           "Mana": {
             "title": "Mana",
