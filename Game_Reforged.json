@@ -60,8 +60,19 @@
           "isSymetricalForOpponents": true,
           "content": [
             {
-              "section": "Anvil",
-              "style": false
+              "direction": "column",
+              "style": false,
+              "content": [
+                {
+                  "section": "Anvil",
+                  "style": false
+                },
+                {
+                  "section": "Home",
+                  "style": false
+                }
+              ],
+              "isSymetricalForOpponents": false
             },
             {
               "section": "Battlefield",
@@ -75,27 +86,60 @@
           "Artifact"
         ],
         "autoPlayFromHand": {
-          "952c1c2c-90bf-432f-aeba-5a238e062311": "Battlefield"
+          "Hero": "Home",
+          "Anvil": "Anvil",
+          "Ashen": "Battlefield",
+          "Relic Weapon": "Home"
         },
-        "autoPlayFromStack": {
-          "25ceef4a-dd4d-42b9-815b-48cba238bc9a": "Anvil"
-        },
+        "autoPlayFromStack": {},
         "sectionsDict": {
-          "Mana": {
-            "title": "Mana",
-            "isHidden": "yes",
-            "height": "SMALL",
-            "alignment": "START",
+          "Battlefield": {
+            "title": "Battlefield",
+            "isHidden": "no",
+            "height": "BIG",
+            "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": "true",
             "isHorizontalAllowed": false,
-            "displayedTitle": "Ressources",
+            "displayedTitle": "Battlefield",
             "enterTapped": false,
             "enterSpun": false,
             "isGroupForbidden": false,
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false,
             "noQuickActions": false
+          },
+          "Home": {
+            "title": "Home",
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Home",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Anvil": {
+            "title": "Anvil",
+            "isHidden": "yes",
+            "height": "MEDIUM",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Anvil",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
           }
         }
       }
