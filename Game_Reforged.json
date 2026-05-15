@@ -85,6 +85,7 @@
         "autoPlayFromStack": {},
         "sectionsDict": {
           "Battlefield": {
+            "title": "Battlefield",
             "isHidden": "no",
             "height": "BIG",
             "alignment": "CENTER",
@@ -100,6 +101,7 @@
             "noQuickActions": false
           },
           "Home": {
+            "title": "Home",
             "isHidden": "no",
             "height": "MEDIUM",
             "alignment": "START",
@@ -115,6 +117,7 @@
             "showHiddenCardInHistory": false
           },
           "Anvil": {
+            "title": "Anvil",
             "isHidden": "yes",
             "height": "MEDIUM",
             "alignment": "START",
