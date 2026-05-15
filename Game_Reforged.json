@@ -1,6 +1,6 @@
 {
   "name": "Reforged",
-  "menuBackgroundImage": "https://shanniganz.github.io/ReforgedCardGame/img/Reforged_CardBack.jpg",
+  "menuBackgroundImage": "https://shanniganz.github.io/ReforgedCardGame/Reforged_CardBack.jpg",
   "defaultRessources": {
     "backgrounds": [],
     "decksUrl": ""
@@ -23,9 +23,7 @@
         "customCategories": [
           "Playtest"
         ],
-        "legalityCode": "RCG",
-        "gameplay": "RCG",
-        "deckRuleset": "RCG"
+        "gameplay": "RCG"
       }
     ]
   },
@@ -51,10 +49,6 @@
       ],
       "hideFacedDownCards": false,
       "sections": {
-        "customSections": [
-          "Anvil",
-          "Battlefield"
-        ],
         "layout": {
           "direction": "row",
           "isSymetricalForOpponents": true,
@@ -88,13 +82,11 @@
         "autoPlayFromHand": {
           "Hero": "Home",
           "Anvil": "Anvil",
-          "Ashen": "Battlefield",
-          "Relic Weapon": "Home"
+          "Ashen": "Battlefield"
         },
         "autoPlayFromStack": {},
         "sectionsDict": {
           "Battlefield": {
-            "title": "Battlefield",
             "isHidden": "no",
             "height": "BIG",
             "alignment": "CENTER",
@@ -110,7 +102,6 @@
             "noQuickActions": false
           },
           "Home": {
-            "title": "Home",
             "isHidden": "no",
             "height": "MEDIUM",
             "alignment": "START",
@@ -126,7 +117,6 @@
             "showHiddenCardInHistory": false
           },
           "Anvil": {
-            "title": "Anvil",
             "isHidden": "yes",
             "height": "MEDIUM",
             "alignment": "START",

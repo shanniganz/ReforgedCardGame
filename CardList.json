@@ -9,14 +9,6 @@
         "cost": "1",
         "image": "https://shanniganz.github.io/ReforgedCardGame/img/01.jpg",
         "isHorizontal": false
-      },
-      "back": {
-        "name": "CardBack",
-        "type": "",
-        "cost": 0,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/Reforged_CardBack.jpg",
-        "isHorizontal": false
-      }
     },
     "name": "Graglix Punk",
     "type": "Ashen",
@@ -33,14 +25,6 @@
         "cost": "1",
         "image": "https://shanniganz.github.io/ReforgedCardGame/img/04.jpg",
         "isHorizontal": false
-      },
-      "back": {
-        "name": "CardBack",
-        "type": "",
-        "cost": 0,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/Reforged_CardBack.jpg",
-        "isHorizontal": false
-      }
     },
     "name": "Grim Graglix",
     "type": "Ashen",
@@ -57,14 +41,6 @@
         "cost": "1",
         "image": "https://shanniganz.github.io/ReforgedCardGame/img/07.jpg",
         "isHorizontal": false
-      },
-      "back": {
-        "name": "CardBack",
-        "type": "",
-        "cost": 0,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/Reforged_CardBack.jpg",
-        "isHorizontal": false
-      }
     },
     "name": "Magic Fluf",
     "type": "Ashen",
