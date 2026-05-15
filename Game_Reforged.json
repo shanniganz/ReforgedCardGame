@@ -20,10 +20,8 @@
     "formats": [
       {
         "title": "Classic",
-        "customCategories": [
-          "Playtest"
-        ],
-        "gameplay": "RCG"
+        "gameplay": "Classic",
+        "customCategories": [],
       }
     ]
   },
