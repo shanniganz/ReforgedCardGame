@@ -14,6 +14,7 @@
     "type": "Ashen",
     "cost": "1",
     "Set": "Set1"
+    }
   },
   "02": {
     "id": "02",
@@ -30,6 +31,7 @@
     "type": "Ashen",
     "cost": "1",
     "Set": "Set1"
+    }
   },
   "03": {
     "id": "03",
@@ -46,5 +48,6 @@
     "type": "Ashen",
     "cost": "1",
     "Set": "Set1"
+    }
   }
 }
