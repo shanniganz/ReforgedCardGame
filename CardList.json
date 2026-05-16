@@ -3552,23 +3552,6 @@
     "cost": 3,
     "power": 3
   },
-  "Set1-211": {
-    "id": "Set1-211",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Ashen",
-        "cost": 3,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Ashen",
-    "faction": "Jungoom",
-    "cost": 3,
-    "power": 3
-  },
   "Set1-212": {
     "id": "Set1-212",
     "face": {
@@ -9417,159 +9400,6 @@
     "cost": 12,
     "power": 0
   },
-  "Set1-556": {
-    "id": "Set1-556",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Ashen",
-        "cost": 1,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Ashen",
-    "faction": "Z - unknown",
-    "cost": 1,
-    "power": 1
-  },
-  "Set1-557": {
-    "id": "Set1-557",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Ashen",
-        "cost": 2,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Ashen",
-    "faction": "Z - unknown",
-    "cost": 2,
-    "power": 2
-  },
-  "Set1-558": {
-    "id": "Set1-558",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Ashen",
-        "cost": 3,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Ashen",
-    "faction": "Z - unknown",
-    "cost": 3,
-    "power": 3
-  },
-  "Set1-559": {
-    "id": "Set1-559",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Ashen",
-        "cost": 4,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Ashen",
-    "faction": "Z - unknown",
-    "cost": 4,
-    "power": 6
-  },
-  "Set1-560": {
-    "id": "Set1-560",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Ashen",
-        "cost": 15,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Ashen",
-    "faction": "Z - unknown",
-    "cost": 15,
-    "power": 10
-  },
-  "Set1-561": {
-    "id": "Set1-561",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Relic",
-        "cost": 3,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Relic",
-    "faction": "Z - unknown",
-    "cost": 3,
-    "power": 0
-  },
-  "Set1-562": {
-    "id": "Set1-562",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Relic",
-        "cost": 4,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Relic",
-    "faction": "Z - unknown",
-    "cost": 4,
-    "power": 0
-  },
-  "Set1-563": {
-    "id": "Set1-563",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Relic",
-        "cost": 4,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Relic",
-    "faction": "Z - unknown",
-    "cost": 4,
-    "power": 0
-  },
-  "Set1-564": {
-    "id": "Set1-564",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Relic",
-        "cost": 4,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Relic",
-    "faction": "Z - unknown",
-    "cost": 4,
-    "power": 0
-  },
   "Set1-565": {
     "id": "Set1-565",
     "face": {
@@ -9587,40 +9417,6 @@
     "cost": 6,
     "power": 0
   },
-  "Set1-566": {
-    "id": "Set1-566",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Relic Weapon",
-        "cost": 3,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Relic Weapon",
-    "faction": "Z - unknown",
-    "cost": 3,
-    "power": 4
-  },
-  "Set1-567": {
-    "id": "Set1-567",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Relic Weapon",
-        "cost": 3,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Relic Weapon",
-    "faction": "Z - unknown",
-    "cost": 3,
-    "power": 4
-  },
   "Set1-568": {
     "id": "Set1-568",
     "face": {
@@ -9636,23 +9432,6 @@
     "type": "Spell",
     "faction": "Z - unknown",
     "cost": 2,
-    "power": 0
-  },
-  "Set1-569": {
-    "id": "Set1-569",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Spell",
-        "cost": 5,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Spell",
-    "faction": "Z - unknown",
-    "cost": 5,
     "power": 0
   },
   "Set1-570": {
@@ -9672,40 +9451,6 @@
     "cost": 3,
     "power": 6
   },
-  "Set1-571": {
-    "id": "Set1-571",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Ashen",
-        "cost": 2,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Ashen",
-    "faction": "Z - unknown",
-    "cost": 2,
-    "power": 2
-  },
-  "Set1-572": {
-    "id": "Set1-572",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Ashen",
-        "cost": 1,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Ashen",
-    "faction": "Z - unknown",
-    "cost": 1,
-    "power": 1
-  },
   "Set1-573": {
     "id": "Set1-573",
     "face": {
@@ -9722,23 +9467,6 @@
     "faction": "Ashkara",
     "cost": 1,
     "power": 1
-  },
-  "Set1-574": {
-    "id": "Set1-574",
-    "face": {
-      "front": {
-        "name": "???",
-        "type": "Hero",
-        "cost": 30,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/???.jpg",
-        "isHorizontal": false
-      }
-    },
-    "name": "???",
-    "type": "Hero",
-    "faction": "Naleri",
-    "cost": 30,
-    "power": 0
   },
   "Set1-575": {
     "id": "Set1-575",
