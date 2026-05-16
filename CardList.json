@@ -1,7 +1,6 @@
 {
-  "01": {
-    "id": "01",
-    "isToken": false,
+  "01-efvg": {
+    "id": "01-efvg",
     "face": {
       "front": {
         "name": "Grim Graglix",
@@ -16,9 +15,8 @@
     "Set": "Set1"
     }
   },
-  "02": {
-    "id": "02",
-    "isToken": false,
+  "02-thnb": {
+    "id": "02-thnb",
     "face": {
       "front": {
         "name": "Grim Graglix",
@@ -33,9 +31,8 @@
     "Set": "Set1"
     }
   },
-  "03": {
-    "id": "03",
-    "isToken": false,
+  "03-ikmn": {
+    "id": "03-ikmn",
     "face": {
       "front": {
         "name": "Magic Fluf",
