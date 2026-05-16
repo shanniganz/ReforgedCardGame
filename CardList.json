@@ -17,58 +17,58 @@
     "Retreat cost": 3,
     "hp": 80
   },
-  "set1-1": {
-    "id": "set1-1",
+  "base1-2": {
+    "id": "base1-2",
     "face": {
       "front": {
-        "name": "Graglix Punk",
-        "type": "Ashen",
-        "cost": 1,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/01.jpg",
+        "name": "Blastoise BS 2",
+        "type": "Pokemon",
+        "cost": 0,
+        "image": "https://images.pokemontcg.io/base1/2_hires.png",
         "isHorizontal": false
       }
     },
-    "name": "Graglix Punk",
-    "type": "Ashen",
-    "cost": 1,
-    "power": 1,
-    "subtype_a": "Graglix"
-    "subtype_b": "Physical"
+    "name": "Blastoise BS 2",
+    "type": "Pokemon",
+    "cost": 0,
+    "rarity": "Rare Holo",
+    "Retreat cost": 3,
+    "hp": 100
   },
-"set1-2": {
-    "id": "set1-2",
+  "base1-3": {
+    "id": "base1-3",
     "face": {
       "front": {
-        "name": "Grim Graglix",
-        "type": "Ashen",
-        "cost": 1,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/04.jpg",
+        "name": "Chansey BS 3",
+        "type": "Pokemon",
+        "cost": 0,
+        "image": "https://images.pokemontcg.io/base1/3_hires.png",
         "isHorizontal": false
       }
     },
-    "name": "Grim Graglix",
-    "type": "Ashen",
-    "cost": 1,
-    "power": 1,
-    "subtype_a": "Graglix"
-    "subtype_b": "Physical"
+    "name": "Chansey BS 3",
+    "type": "Pokemon",
+    "cost": 0,
+    "rarity": "Rare Holo",
+    "Retreat cost": 1,
+    "hp": 120
   },
-"set1-3": {
-    "id": "set1-3",
+  "base1-4": {
+    "id": "base1-4",
     "face": {
       "front": {
-        "name": "Magic Fluf",
-        "type": "Ashen",
-        "cost": 1,
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/07.jpg",
+        "name": "Charizard BS 4",
+        "type": "Pokemon",
+        "cost": 0,
+        "image": "https://images.pokemontcg.io/base1/4_hires.png",
         "isHorizontal": false
       }
     },
-    "name": "Magic Fluf",
-    "type": "Ashen",
-    "cost": 1,
-    "power": 1,
-    "subtype_a": "Fluf"
-    "subtype_b": "Arcane"
+    "name": "Charizard BS 4",
+    "type": "Pokemon",
+    "cost": 0,
+    "rarity": "Rare Holo",
+    "Retreat cost": 3,
+    "hp": 120
   }
 }
