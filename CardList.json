@@ -3,19 +3,18 @@
     "id": "base1-1",
     "face": {
       "front": {
-        "name": "Alakazam BS 1",
-        "type": "Pokemon",
-        "cost": 0,
-        "image": "https://images.pokemontcg.io/base1/1_hires.png",
+        "name": "Grim Graglix",
+        "type": "Ashen",
+        "cost": 1,
+        "image": "https://shanniganz.github.io/ReforgedCardGame/img/04.jpg",
         "isHorizontal": false
       }
     },
-    "name": "Alakazam BS 1",
-    "type": "Pokemon",
-    "cost": 0,
-    "rarity": "Rare Holo",
-    "Retreat cost": 3,
-    "hp": 80
+    "name": "Grim Graglix",
+    "type": "Ashen",
+    "faction": "Orilune",
+    "cost": 1,
+    "power": 1
   },
   "base1-2": {
     "id": "base1-2",
