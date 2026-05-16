@@ -17,55 +17,58 @@
     "Retreat cost": 3,
     "hp": 80
   },
-  "01": {
-    "id": "01",
+  "set1-1": {
+    "id": "set1-1",
+    "face": {
+      "front": {
+        "name": "Graglix Punk",
+        "type": "Ashen",
+        "cost": 1,
+        "image": "https://shanniganz.github.io/ReforgedCardGame/img/01.jpg",
+        "isHorizontal": false
+      }
+    },
+    "name": "Graglix Punk",
+    "type": "Ashen",
+    "cost": 1,
+    "power": 1,
+    "subtype_a": "Graglix"
+    "subtype_b": "Physical"
+  },
+"set1-2": {
+    "id": "set1-2",
     "face": {
       "front": {
         "name": "Grim Graglix",
         "type": "Ashen",
-        "cost": "1",
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/01.jpg",
-        "isHorizontal": false
-    },
-    "name": "Graglix Punk",
-    "type": "Ashen",
-    "cost": "1",
-    "power": "1",
-    "Set": "Set1"
-    }
-  },
-  "02": {
-    "id": "02",
-    "face": {
-      "front": {
-        "name": "Grim Graglix",
-        "type": "Hero",
-        "cost": "1",
+        "cost": 1,
         "image": "https://shanniganz.github.io/ReforgedCardGame/img/04.jpg",
         "isHorizontal": false
+      }
     },
     "name": "Grim Graglix",
-    "type": "Hero",
-    "cost": "1",
-    "power": "1",
-    "Set": "Set1"
-    }
+    "type": "Ashen",
+    "cost": 1,
+    "power": 1,
+    "subtype_a": "Graglix"
+    "subtype_b": "Physical"
   },
-  "03": {
-    "id": "03",
+"set1-3": {
+    "id": "set1-3",
     "face": {
       "front": {
         "name": "Magic Fluf",
-        "type": "Relic",
-        "cost": "1",
-        "image": "https://shanniganz.github.io/ReforgedCardGame/img/07.jpg",
+        "type": "Ashen",
+        "cost": 1,
+        "image": "https://shanniganz.github.io/ReforgedCardGame/img/05.jpg",
         "isHorizontal": false
+      }
     },
-    "name": "Magic Fluf",
-    "type": "Relic",
-    "cost": "1",
-    "power": "1",
-    "Set": "Set1"
-    }
+    "name": "Grim Graglix",
+    "type": "Ashen",
+    "cost": 1,
+    "power": 1,
+    "subtype_a": "Fluf"
+    "subtype_b": "Arcane"
   }
 }
