@@ -1,4 +1,22 @@
 {
+  "base1-1": {
+    "id": "base1-1",
+    "face": {
+      "front": {
+        "name": "Alakazam BS 1",
+        "type": "Pokemon",
+        "cost": 0,
+        "image": "https://images.pokemontcg.io/base1/1_hires.png",
+        "isHorizontal": false
+      }
+    },
+    "name": "Alakazam BS 1",
+    "type": "Pokemon",
+    "cost": 0,
+    "rarity": "Rare Holo",
+    "Retreat cost": 3,
+    "hp": 80
+  },
   "01": {
     "id": "01",
     "face": {
