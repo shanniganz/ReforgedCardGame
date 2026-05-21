@@ -39,7 +39,7 @@
     "Classic": {
       "mulligan": {
         "info": "There are no mulligans",
-        "startingHandSize": "8",
+        "startingHandSize": 8,
         "drawNewHand": false,
         "putSelectionAtBottom": false,
         "drawNewSelectedCards": false
@@ -136,7 +136,7 @@
             "height": "BIG",
             "alignment": "CENTER",
             "opponentAlignment": false,
-            "noAutoPayTo": "true",
+            "noAutoPayTo": true,
             "isHorizontalAllowed": false,
             "displayedTitle": "Battlefield",
             "enterTapped": false,
@@ -176,7 +176,7 @@
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
-            "Artifacts": {
+            "Relics": {
             "isHidden": "no",
             "height": "MEDIUM",
             "alignment": "START",
