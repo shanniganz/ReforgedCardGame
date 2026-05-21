@@ -46,6 +46,28 @@
         30,
         0
       ],
+      "draggableTokens": [
+        {
+          "id": "Orange",
+          "name": "Orange token",
+          "image": "https://shanniganz.github.io/ReforgedCardGame/tokens/orange_token.png"
+        },
+        {
+          "id": "Red",
+          "name": "Red token",
+          "image": "https://shanniganz.github.io/ReforgedCardGame/tokens/red_token.png"
+        },
+        {
+          "id": "Blue",
+          "name": "Blue token",
+          "image": "https://shanniganz.github.io/ReforgedCardGame/tokens/blue_token.png"
+        },
+        {
+          "id": "Yellow",
+          "name": "Yellow token",
+          "image": "https://shanniganz.github.io/ReforgedCardGame/tokens/yellow_token.png"
+        }
+      ],
       "hideFacedDownCards": false,
       "sections": {
         "layout": {
