@@ -43,7 +43,8 @@
       "defaultNotes": "",
       "tokens": [],
       "countersStartingValues": [
-        "30"
+        30,
+        0
       ],
       "hideFacedDownCards": false,
       "sections": {
