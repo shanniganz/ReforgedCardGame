@@ -2,7 +2,17 @@
   "name": "Reforged",
   "menuBackgroundImage": "https://shanniganz.github.io/ReforgedCardGame/Reforged_CardBack.jpg",
   "defaultRessources": {
-    "backgrounds": [],
+    "backgrounds": [
+      "https://shanniganz.github.io/ReforgedCardGame/grunge-style-background-with-old-stone-texture.jpg",
+      "https://cdn.imgchest.com/files/a8d13f7db74f.jpeg",
+      "https://cdn.imgchest.com/files/7a25910deab5.jpeg",
+      "https://cdn.imgchest.com/files/e1877d36db68.jpeg",
+      "https://cdn.imgchest.com/files/41d419bedd0b.jpeg",
+      "https://cdn.imgchest.com/files/0959bcceaf01.jpeg",
+      "https://cdn.imgchest.com/files/6aff77db6dbd.jpeg",
+      "https://cdn.imgchest.com/files/197d2805c940.jpeg",
+      "https://cdn.imgchest.com/files/911b1558c5ea.jpeg"
+    ],
     "decksUrl": ""
   },
   "customHelp": "Good luck!",
