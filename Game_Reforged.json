@@ -100,15 +100,15 @@
               "style": false,
               "content": [
                 {
-                  "section": "Home",
-                  "style": false
-                },
-                {
                   "section": "Anvil",
                   "style": false
                 },
                 {
-                  "section": "Artifacts",
+                  "section": "Home",
+                  "style": false
+                },
+                {
+                  "section": "Relics",
                   "style": false
                 }
               ],
