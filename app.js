@@ -53,51 +53,94 @@ function populateFilters() {
 }
 
 function renderCards() {
-  const searchText = searchBox.value.toLowerCase();
-  const selectedFaction = factionFilter.value;
-  const selectedType = typeFilter.value;
 
-  const filteredCards = allCards.filter(card => {
-    const name = card.name || "";
-    const faction = card.faction || "";
-    const type = card.type || "";
+    const searchText = searchBox.value.toLowerCase();
+    const selectedFaction = factionFilter.value;
+    const selectedType = typeFilter.value;
 
-    const nameMatch = name.toLowerCase().includes(searchText);
-    const factionMatch = !selectedFaction || faction === selectedFaction;
-    const typeMatch = !selectedType || type === selectedType;
+    const filteredCards = allCards.filter(card => {
 
-    return nameMatch && factionMatch && typeMatch;
-  });
+        const name = card.name || "";
+        const faction = card.faction || "";
+        const type = card.type || "";
 
-  cardGrid.innerHTML = "";
+        const nameMatch = name.toLowerCase().includes(searchText);
+        const factionMatch = !selectedFaction || faction === selectedFaction;
+        const typeMatch = !selectedType || type === selectedType;
 
-  filteredCards.forEach(card => {
-    const cardDiv = document.createElement("div");
-    cardDiv.className = "card";
+        return nameMatch && factionMatch && typeMatch;
 
-    const img = document.createElement("img");
-    img.src = card.face.front.image;
-    img.alt = card.name;
-    img.loading = "lazy";
-
-    const name = document.createElement("div");
-    name.className = "card-name";
-    name.textContent = card.name;
-
-    cardDiv.appendChild(img);
-    cardDiv.appendChild(name);
-
-    cardDiv.addEventListener("click", () => addCardToDeck(card));
-
-    cardDiv.addEventListener("mouseenter", () => {
-      cardPreview.src = card.face.front.image;
-      cardPreview.alt = card.name;
-      cardPreview.style.display = "block";
-      previewName.textContent = card.name;
     });
 
-    cardGrid.appendChild(cardDiv);
-  });
+    cardGrid.innerHTML = "";
+
+    // Group cards by type
+    const groups = {};
+
+    filteredCards.forEach(card => {
+
+        const type = card.type || "Other";
+
+        if (!groups[type]) {
+            groups[type] = [];
+        }
+
+        groups[type].push(card);
+
+    });
+
+    // Display groups alphabetically
+    Object.keys(groups).sort().forEach(type => {
+
+        const section = document.createElement("div");
+        section.className = "type-section";
+
+        const header = document.createElement("div");
+        header.className = "type-header";
+        header.textContent = `${type} (${groups[type].length})`;
+
+        const grid = document.createElement("div");
+        grid.className = "card-grid";
+
+        groups[type]
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .forEach(card => {
+
+                const cardDiv = document.createElement("div");
+                cardDiv.className = "card";
+
+                const img = document.createElement("img");
+                img.src = card.face.front.image;
+                img.alt = card.name;
+                img.loading = "lazy";
+
+                const name = document.createElement("div");
+                name.className = "card-name";
+                name.textContent = card.name;
+
+                cardDiv.appendChild(img);
+                cardDiv.appendChild(name);
+
+                cardDiv.addEventListener("click", () => addCardToDeck(card));
+
+                cardDiv.addEventListener("mouseenter", () => {
+                    cardPreview.src = card.face.front.image;
+                    cardPreview.alt = card.name;
+                    cardPreview.style.display = "block";
+                    previewName.textContent = card.name;
+                });
+
+                grid.appendChild(cardDiv);
+
+            });
+
+        section.appendChild(header);
+        section.appendChild(grid);
+
+        cardGrid.appendChild(section);
+
+    });
+
 }
 
 function addCardToDeck(card) {
