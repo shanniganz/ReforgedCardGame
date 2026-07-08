@@ -1,5 +1,6 @@
 let allCards = [];
 let deck = {};
+let selectedTypeTab = "All";
 
 const cardGrid = document.getElementById("cardGrid");
 const deckList = document.getElementById("deckList");
@@ -22,10 +23,10 @@ async function loadCards() {
     }
 
     const cardDatabase = await response.json();
-
     allCards = Object.values(cardDatabase);
 
     populateFilters();
+    createTypeTabs();
     renderCards();
   } catch (error) {
     console.error(error);
@@ -35,7 +36,6 @@ async function loadCards() {
 
 function populateFilters() {
   const factions = [...new Set(allCards.map(card => card.faction).filter(Boolean))].sort();
-  const types = [...new Set(allCards.map(card => card.type).filter(Boolean))].sort();
 
   factions.forEach(faction => {
     const option = document.createElement("option");
@@ -44,103 +44,113 @@ function populateFilters() {
     factionFilter.appendChild(option);
   });
 
-  types.forEach(type => {
-    const option = document.createElement("option");
-    option.value = type;
-    option.textContent = type;
-    typeFilter.appendChild(option);
+  // Hide the old type dropdown if it exists,
+  // because tabs now handle card type selection.
+  if (typeFilter) {
+    typeFilter.style.display = "none";
+  }
+}
+
+function createTypeTabs() {
+  const controls = document.querySelector(".controls");
+
+  const existingTabs = document.getElementById("typeTabs");
+  if (existingTabs) {
+    existingTabs.remove();
+  }
+
+  const typeTabs = document.createElement("div");
+  typeTabs.id = "typeTabs";
+  typeTabs.className = "type-tabs";
+
+  const types = [...new Set(allCards.map(card => card.type).filter(Boolean))].sort();
+  const tabNames = ["All", ...types];
+
+  tabNames.forEach(type => {
+    const button = document.createElement("button");
+    button.className = "type-tab";
+    button.textContent = type;
+    button.dataset.type = type;
+
+    if (type === selectedTypeTab) {
+      button.classList.add("active");
+    }
+
+    button.addEventListener("click", () => {
+      selectedTypeTab = type;
+      updateActiveTab();
+      renderCards();
+    });
+
+    typeTabs.appendChild(button);
+  });
+
+  controls.appendChild(typeTabs);
+}
+
+function updateActiveTab() {
+  document.querySelectorAll(".type-tab").forEach(button => {
+    button.classList.toggle("active", button.dataset.type === selectedTypeTab);
   });
 }
 
 function renderCards() {
+  const searchText = searchBox.value.toLowerCase();
+  const selectedFaction = factionFilter.value;
 
-    const searchText = searchBox.value.toLowerCase();
-    const selectedFaction = factionFilter.value;
-    const selectedType = typeFilter.value;
+  const filteredCards = allCards.filter(card => {
+    const name = card.name || "";
+    const faction = card.faction || "";
+    const type = card.type || "";
 
-    const filteredCards = allCards.filter(card => {
+    const nameMatch = name.toLowerCase().includes(searchText);
+    const factionMatch = !selectedFaction || faction === selectedFaction;
+    const typeMatch = selectedTypeTab === "All" || type === selectedTypeTab;
 
-        const name = card.name || "";
-        const faction = card.faction || "";
-        const type = card.type || "";
+    return nameMatch && factionMatch && typeMatch;
+  });
 
-        const nameMatch = name.toLowerCase().includes(searchText);
-        const factionMatch = !selectedFaction || faction === selectedFaction;
-        const typeMatch = !selectedType || type === selectedType;
+  filteredCards.sort((a, b) => {
+    if ((a.cost || 0) !== (b.cost || 0)) {
+      return (a.cost || 0) - (b.cost || 0);
+    }
 
-        return nameMatch && factionMatch && typeMatch;
+    return (a.name || "").localeCompare(b.name || "");
+  });
 
+  cardGrid.innerHTML = "";
+
+  filteredCards.forEach(card => {
+    const cardDiv = document.createElement("div");
+    cardDiv.className = "card";
+
+    const img = document.createElement("img");
+    img.src = card.face.front.image;
+    img.alt = card.name;
+    img.loading = "lazy";
+
+    const name = document.createElement("div");
+    name.className = "card-name";
+    name.textContent = card.name;
+
+    cardDiv.appendChild(img);
+    cardDiv.appendChild(name);
+
+    cardDiv.addEventListener("click", () => addCardToDeck(card));
+
+    cardDiv.addEventListener("mouseenter", () => {
+      cardPreview.src = card.face.front.image;
+      cardPreview.alt = card.name;
+      cardPreview.style.display = "block";
+      previewName.textContent = card.name;
     });
 
-    cardGrid.innerHTML = "";
+    cardGrid.appendChild(cardDiv);
+  });
 
-    // Group cards by type
-    const groups = {};
-
-    filteredCards.forEach(card => {
-
-        const type = card.type || "Other";
-
-        if (!groups[type]) {
-            groups[type] = [];
-        }
-
-        groups[type].push(card);
-
-    });
-
-    // Display groups alphabetically
-    Object.keys(groups).sort().forEach(type => {
-
-        const section = document.createElement("div");
-        section.className = "type-section";
-
-        const header = document.createElement("div");
-        header.className = "type-header";
-        header.textContent = `${type} (${groups[type].length})`;
-
-        const grid = document.createElement("div");
-        grid.className = "card-grid";
-
-        groups[type]
-            .sort((a, b) => a.name.localeCompare(b.name))
-            .forEach(card => {
-
-                const cardDiv = document.createElement("div");
-                cardDiv.className = "card";
-
-                const img = document.createElement("img");
-                img.src = card.face.front.image;
-                img.alt = card.name;
-                img.loading = "lazy";
-
-                const name = document.createElement("div");
-                name.className = "card-name";
-                name.textContent = card.name;
-
-                cardDiv.appendChild(img);
-                cardDiv.appendChild(name);
-
-                cardDiv.addEventListener("click", () => addCardToDeck(card));
-
-                cardDiv.addEventListener("mouseenter", () => {
-                    cardPreview.src = card.face.front.image;
-                    cardPreview.alt = card.name;
-                    cardPreview.style.display = "block";
-                    previewName.textContent = card.name;
-                });
-
-                grid.appendChild(cardDiv);
-
-            });
-
-        section.appendChild(header);
-        section.appendChild(grid);
-
-        cardGrid.appendChild(section);
-
-    });
-
+  if (filteredCards.length === 0) {
+    cardGrid.innerHTML = "<p>No cards match your filters.</p>";
+  }
 }
 
 function addCardToDeck(card) {
@@ -214,6 +224,9 @@ function renderDeck() {
 
 searchBox.addEventListener("input", renderCards);
 factionFilter.addEventListener("change", renderCards);
-typeFilter.addEventListener("change", renderCards);
+
+if (typeFilter) {
+  typeFilter.addEventListener("change", renderCards);
+}
 
 loadCards();
