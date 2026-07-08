@@ -5,18 +5,32 @@ const cardGrid = document.getElementById("cardGrid");
 const deckList = document.getElementById("deckList");
 const deckCount = document.getElementById("deckCount");
 const deckExport = document.getElementById("deckExport");
+
 const searchBox = document.getElementById("searchBox");
 const factionFilter = document.getElementById("factionFilter");
 const typeFilter = document.getElementById("typeFilter");
 
+const cardPreview = document.getElementById("cardPreview");
+const previewName = document.getElementById("previewName");
+
 async function loadCards() {
-  const response = await fetch("CardList.json");
-  const cardDatabase = await response.json();
+  try {
+    const response = await fetch("CardList.json");
 
-  allCards = Object.values(cardDatabase);
+    if (!response.ok) {
+      throw new Error("Could not load CardList.json");
+    }
 
-  populateFilters();
-  renderCards();
+    const cardDatabase = await response.json();
+
+    allCards = Object.values(cardDatabase);
+
+    populateFilters();
+    renderCards();
+  } catch (error) {
+    console.error(error);
+    cardGrid.innerHTML = "<p>Could not load cards. Check CardList.json.</p>";
+  }
 }
 
 function populateFilters() {
@@ -44,9 +58,13 @@ function renderCards() {
   const selectedType = typeFilter.value;
 
   const filteredCards = allCards.filter(card => {
-    const nameMatch = card.name.toLowerCase().includes(searchText);
-    const factionMatch = !selectedFaction || card.faction === selectedFaction;
-    const typeMatch = !selectedType || card.type === selectedType;
+    const name = card.name || "";
+    const faction = card.faction || "";
+    const type = card.type || "";
+
+    const nameMatch = name.toLowerCase().includes(searchText);
+    const factionMatch = !selectedFaction || faction === selectedFaction;
+    const typeMatch = !selectedType || type === selectedType;
 
     return nameMatch && factionMatch && typeMatch;
   });
@@ -70,6 +88,13 @@ function renderCards() {
     cardDiv.appendChild(name);
 
     cardDiv.addEventListener("click", () => addCardToDeck(card));
+
+    cardDiv.addEventListener("mouseenter", () => {
+      cardPreview.src = card.face.front.image;
+      cardPreview.alt = card.name;
+      cardPreview.style.display = "block";
+      previewName.textContent = card.name;
+    });
 
     cardGrid.appendChild(cardDiv);
   });
