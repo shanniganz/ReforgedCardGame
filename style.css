@@ -19,9 +19,22 @@ body {
 ========================================== */
 
 header {
-    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 20px;
     background: #222;
     color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    white-space: nowrap;
 }
 
 
@@ -42,15 +55,29 @@ main {
 ========================================== */
 
 .controls {
-    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1;
 }
 
 .controls input,
-.controls select {
-    padding: 8px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    font-size: 14px;
+.controls select,
+.controls button {
+    padding: 7px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+    border: 1px solid #555;
+}
+
+.controls input {
+    min-width: 220px;
+}
+
+#clearFiltersButton {
+    background: white;
+    color: #222;
 }
 
 
@@ -72,28 +99,28 @@ main {
 .type-tabs {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
-    margin-bottom: 16px;
+    gap: 6px;
+    width: 100%;
+    margin-top: 4px;
 }
 
 .type-tab {
-    border: 1px solid #333;
-    background: white;
-    color: #222;
+    border: 1px solid #777;
+    background: #333;
+    color: white;
     border-radius: 999px;
-    padding: 8px 14px;
-    font-size: 14px;
+    padding: 6px 12px;
+    font-size: 13px;
     cursor: pointer;
 }
 
 .type-tab:hover {
-    background: #eee;
+    background: #444;
 }
 
 .type-tab.active {
-    background: #222;
-    color: white;
+    background: white;
+    color: #222;
 }
 
 
