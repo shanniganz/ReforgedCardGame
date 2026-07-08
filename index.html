@@ -15,12 +15,27 @@
 <main>
   <section>
     <div class="controls">
-      <input type="text" id="searchBox" placeholder="Search cards...">
-
+      <input type="text" id="searchBox" placeholder="Search name or card text...">
+    
+      <select id="setFilter">
+        <option value="">All Sets</option>
+      </select>
+    
       <select id="factionFilter">
         <option value="">All Factions</option>
       </select>
-
+    
+      <select id="subtypeFilter">
+        <option value="">All Subtypes</option>
+      </select>
+    
+      <select id="damageTypeFilter">
+        <option value="">All Damage Types</option>
+      </select>
+    
+      <select id="costFilter">
+        <option value="">All Costs</option>
+      </select>
     </div>
 
     <div id="cardGrid" class="card-grid"></div>
