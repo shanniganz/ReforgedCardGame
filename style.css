@@ -145,6 +145,13 @@ main {
     text-align: center;
 }
 
+.card-details {
+    margin-top: 4px;
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+}
+
 
 /* ==========================================
    Deck Panel
