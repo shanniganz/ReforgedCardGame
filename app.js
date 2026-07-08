@@ -16,6 +16,8 @@ const costFilter = document.getElementById("costFilter");
 
 const cardPreview = document.getElementById("cardPreview");
 const previewName = document.getElementById("previewName");
+const previewDetails = document.getElementById("previewDetails");
+const previewText = document.getElementById("previewText");
 
 async function loadCards() {
   try {
@@ -232,13 +234,19 @@ function renderCards() {
     cardDiv.addEventListener("mouseenter", () => {
       cardPreview.onerror = function () {
         this.onerror = null;
-        this.src = "img/CardPlaceholder.jpg";
-    };
+        this.src = "img/Reforged_CardBack.jpg";
+      };
     
-      cardPreview.src = card.image;
+      cardPreview.src = card.image || "img/Reforged_CardBack.jpg";
       cardPreview.alt = card.name;
       cardPreview.style.display = "block";
+    
       previewName.textContent = card.name;
+    
+      previewDetails.textContent =
+        `${card.faction || ""} • ${card.type || ""} • Cost ${card.cost ?? ""} • Power ${card.power ?? ""}`;
+    
+      previewText.textContent = card.cardtext || "";
     });
 
     cardGrid.appendChild(cardDiv);
