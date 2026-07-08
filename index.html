@@ -1,74 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reforged Deck Builder</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reforged Deck Builder</title>
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
-
 <body>
 
-    <header>
-        <h1>Reforged Deck Builder</h1>
-    </header>
+<header>
+  <h1>Reforged Deck Builder</h1>
+</header>
 
-    <main>
+<main>
+  <section>
+    <div class="controls">
+      <input type="text" id="searchBox" placeholder="Search cards...">
 
-        <section>
+      <select id="factionFilter">
+        <option value="">All Factions</option>
+      </select>
 
-            <div class="controls">
+      <select id="typeFilter">
+        <option value="">All Types</option>
+      </select>
+    </div>
 
-                <input
-                    type="text"
-                    id="searchBox"
-                    placeholder="Search cards...">
+    <div id="cardGrid" class="card-grid"></div>
+  </section>
 
-                <select id="factionFilter">
-                    <option value="">All Factions</option>
-                </select>
+  <aside class="deck-panel">
+    <h2>Deck</h2>
 
-                <select id="typeFilter">
-                    <option value="">All Types</option>
-                </select>
+    <div class="preview-panel">
+      <img id="cardPreview" src="" alt="Card Preview">
+      <div id="previewName">Hover over a card</div>
+    </div>
 
-            </div>
+    <hr>
 
-            <div
-                id="cardGrid"
-                class="card-grid">
-            </div>
+    <div id="deckList"></div>
 
-        </section>
+    <p>
+      <strong>Total Cards:</strong>
+      <span id="deckCount">0</span>
+    </p>
 
-        <aside class="deck-panel">
+    <textarea id="deckExport" readonly></textarea>
+  </aside>
+</main>
 
-            <h2>Deck</h2>
-            
-            <div class="preview-panel">
-              <img id="cardPreview" src="" alt="Card Preview">
-              <div id="previewName">Hover over a card</div>
-            </div>
-            
-            <div id="deckList"></div>
-
-            <hr>
-
-            <strong>Total Cards:</strong>
-            <span id="deckCount">0</span>
-
-            <textarea
-                id="deckExport"
-                readonly></textarea>
-
-        </aside>
-
-    </main>
-
-    <script src="app.js"></script>
-
+<script src="app.js?v=2"></script>
 </body>
-
 </html>
