@@ -8,8 +8,11 @@ const deckCount = document.getElementById("deckCount");
 const deckExport = document.getElementById("deckExport");
 
 const searchBox = document.getElementById("searchBox");
+const setFilter = document.getElementById("setFilter");
 const factionFilter = document.getElementById("factionFilter");
-const typeFilter = document.getElementById("typeFilter");
+const subtypeFilter = document.getElementById("subtypeFilter");
+const damageTypeFilter = document.getElementById("damageTypeFilter");
+const costFilter = document.getElementById("costFilter");
 
 const cardPreview = document.getElementById("cardPreview");
 const previewName = document.getElementById("previewName");
@@ -34,21 +37,25 @@ async function loadCards() {
   }
 }
 
-function populateFilters() {
-  const factions = [...new Set(allCards.map(card => card.faction).filter(Boolean))].sort();
-
-  factions.forEach(faction => {
+function populateSelect(selectElement, values) {
+  values.forEach(value => {
     const option = document.createElement("option");
-    option.value = faction;
-    option.textContent = faction;
-    factionFilter.appendChild(option);
+    option.value = value;
+    option.textContent = value;
+    selectElement.appendChild(option);
   });
+}
 
-  // Hide the old type dropdown if it exists,
-  // because tabs now handle card type selection.
-  if (typeFilter) {
-    typeFilter.style.display = "none";
-  }
+function populateFilters() {
+  populateSelect(setFilter, [...new Set(allCards.map(card => card.setname).filter(Boolean))].sort());
+  populateSelect(factionFilter, [...new Set(allCards.map(card => card.faction).filter(Boolean))].sort());
+  populateSelect(subtypeFilter, [...new Set(allCards.map(card => card.subtype).filter(Boolean))].sort());
+  populateSelect(damageTypeFilter, [...new Set(allCards.map(card => card.damagetype).filter(Boolean))].sort());
+
+  const costs = [...new Set(allCards.map(card => card.cost).filter(cost => cost !== "" && cost !== null && cost !== undefined))]
+    .sort((a, b) => Number(a) - Number(b));
+
+  populateSelect(costFilter, costs);
 }
 
 function createTypeTabs() {
@@ -69,7 +76,7 @@ function createTypeTabs() {
   tabNames.forEach(type => {
     const button = document.createElement("button");
     button.className = "type-tab";
-    button.textContent = type;
+    button.textContent = `${type} (${getTypeCount(type)})`;
     button.dataset.type = type;
 
     if (type === selectedTypeTab) {
@@ -88,6 +95,14 @@ function createTypeTabs() {
   controls.appendChild(typeTabs);
 }
 
+function getTypeCount(type) {
+  if (type === "All") {
+    return allCards.length;
+  }
+
+  return allCards.filter(card => card.type === type).length;
+}
+
 function updateActiveTab() {
   document.querySelectorAll(".type-tab").forEach(button => {
     button.classList.toggle("active", button.dataset.type === selectedTypeTab);
@@ -96,18 +111,40 @@ function updateActiveTab() {
 
 function renderCards() {
   const searchText = searchBox.value.toLowerCase();
+  const selectedSet = setFilter.value;
   const selectedFaction = factionFilter.value;
+  const selectedSubtype = subtypeFilter.value;
+  const selectedDamageType = damageTypeFilter.value;
+  const selectedCost = costFilter.value;
 
   const filteredCards = allCards.filter(card => {
-    const name = card.name || "";
-    const faction = card.faction || "";
-    const type = card.type || "";
+    const searchableText = [
+      card.name,
+      card.type,
+      card.faction,
+      card.subtype,
+      card.damagetype,
+      card.cardtext,
+      card.flavortext
+    ]
+      .join(" ")
+      .toLowerCase();
 
-    const nameMatch = name.toLowerCase().includes(searchText);
-    const factionMatch = !selectedFaction || faction === selectedFaction;
-    const typeMatch = selectedTypeTab === "All" || type === selectedTypeTab;
+    const searchMatch = searchableText.includes(searchText);
+    const typeMatch = selectedTypeTab === "All" || card.type === selectedTypeTab;
+    const setMatch = !selectedSet || card.setname === selectedSet;
+    const factionMatch = !selectedFaction || card.faction === selectedFaction;
+    const subtypeMatch = !selectedSubtype || card.subtype === selectedSubtype;
+    const damageTypeMatch = !selectedDamageType || card.damagetype === selectedDamageType;
+    const costMatch = !selectedCost || String(card.cost) === selectedCost;
 
-    return nameMatch && factionMatch && typeMatch;
+    return searchMatch &&
+      typeMatch &&
+      setMatch &&
+      factionMatch &&
+      subtypeMatch &&
+      damageTypeMatch &&
+      costMatch;
   });
 
   filteredCards.sort((a, b) => {
@@ -125,7 +162,7 @@ function renderCards() {
     cardDiv.className = "card";
 
     const img = document.createElement("img");
-    img.src = card.face.front.image;
+    img.src = card.image;
     img.alt = card.name;
     img.loading = "lazy";
 
@@ -133,13 +170,18 @@ function renderCards() {
     name.className = "card-name";
     name.textContent = card.name;
 
+    const details = document.createElement("div");
+    details.className = "card-details";
+    details.textContent = `${card.faction || ""} • Cost ${card.cost ?? ""} • Power ${card.power ?? ""}`;
+
     cardDiv.appendChild(img);
     cardDiv.appendChild(name);
+    cardDiv.appendChild(details);
 
     cardDiv.addEventListener("click", () => addCardToDeck(card));
 
     cardDiv.addEventListener("mouseenter", () => {
-      cardPreview.src = card.face.front.image;
+      cardPreview.src = card.image;
       cardPreview.alt = card.name;
       cardPreview.style.display = "block";
       previewName.textContent = card.name;
@@ -223,10 +265,10 @@ function renderDeck() {
 }
 
 searchBox.addEventListener("input", renderCards);
+setFilter.addEventListener("change", renderCards);
 factionFilter.addEventListener("change", renderCards);
-
-if (typeFilter) {
-  typeFilter.addEventListener("change", renderCards);
-}
+subtypeFilter.addEventListener("change", renderCards);
+damageTypeFilter.addEventListener("change", renderCards);
+costFilter.addEventListener("change", renderCards);
 
 loadCards();
