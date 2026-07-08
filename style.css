@@ -221,6 +221,10 @@ button {
     padding: 4px 8px;
 }
 
+#clearFiltersButton {
+    padding: 8px 14px;
+    font-size: 14px;
+}
 
 /* ==========================================
    Export Text Area

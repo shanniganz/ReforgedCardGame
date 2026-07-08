@@ -108,6 +108,50 @@ function updateActiveTab() {
     button.classList.toggle("active", button.dataset.type === selectedTypeTab);
   });
 }
+function updateTypeTabCounts() {
+  const searchText = searchBox.value.toLowerCase();
+  const selectedSet = setFilter.value;
+  const selectedFaction = factionFilter.value;
+  const selectedSubtype = subtypeFilter.value;
+  const selectedDamageType = damageTypeFilter.value;
+  const selectedCost = costFilter.value;
+
+  document.querySelectorAll(".type-tab").forEach(button => {
+    const type = button.dataset.type;
+
+    const count = allCards.filter(card => {
+      const searchableText = [
+        card.name,
+        card.type,
+        card.faction,
+        card.subtype,
+        card.damagetype,
+        card.cardtext,
+        card.flavortext
+      ]
+        .join(" ")
+        .toLowerCase();
+
+      const searchMatch = searchableText.includes(searchText);
+      const typeMatch = type === "All" || card.type === type;
+      const setMatch = !selectedSet || card.setname === selectedSet;
+      const factionMatch = !selectedFaction || card.faction === selectedFaction;
+      const subtypeMatch = !selectedSubtype || card.subtype === selectedSubtype;
+      const damageTypeMatch = !selectedDamageType || card.damagetype === selectedDamageType;
+      const costMatch = !selectedCost || String(card.cost) === selectedCost;
+
+      return searchMatch &&
+        typeMatch &&
+        setMatch &&
+        factionMatch &&
+        subtypeMatch &&
+        damageTypeMatch &&
+        costMatch;
+    }).length;
+
+    button.textContent = `${type} (${count})`;
+  });
+}
 
 function renderCards() {
   const searchText = searchBox.value.toLowerCase();
@@ -166,6 +210,11 @@ function renderCards() {
     img.alt = card.name;
     img.loading = "lazy";
 
+    img.onerror = function () {
+        this.onerror = null;           // Prevent infinite retry loop
+        this.src = "img/Reforged_CardBack.jpg";
+};
+
     const name = document.createElement("div");
     name.className = "card-name";
     name.textContent = card.name;
@@ -181,6 +230,11 @@ function renderCards() {
     cardDiv.addEventListener("click", () => addCardToDeck(card));
 
     cardDiv.addEventListener("mouseenter", () => {
+      cardPreview.onerror = function () {
+        this.onerror = null;
+        this.src = "img/CardPlaceholder.jpg";
+    };
+    
       cardPreview.src = card.image;
       cardPreview.alt = card.name;
       cardPreview.style.display = "block";
@@ -193,6 +247,8 @@ function renderCards() {
   if (filteredCards.length === 0) {
     cardGrid.innerHTML = "<p>No cards match your filters.</p>";
   }
+updateTypeTabCounts();
+
 }
 
 function addCardToDeck(card) {
@@ -264,11 +320,25 @@ function renderDeck() {
     .join("\n");
 }
 
+function clearFilters() {
+  searchBox.value = "";
+  setFilter.value = "";
+  factionFilter.value = "";
+  subtypeFilter.value = "";
+  damageTypeFilter.value = "";
+  costFilter.value = "";
+
+  selectedTypeTab = "All";
+  updateActiveTab();
+  renderCards();
+}
+
 searchBox.addEventListener("input", renderCards);
 setFilter.addEventListener("change", renderCards);
 factionFilter.addEventListener("change", renderCards);
 subtypeFilter.addEventListener("change", renderCards);
 damageTypeFilter.addEventListener("change", renderCards);
 costFilter.addEventListener("change", renderCards);
+clearFiltersButton.addEventListener("click", clearFilters);
 
 loadCards();
