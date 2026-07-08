@@ -18,6 +18,8 @@ const cardPreview = document.getElementById("cardPreview");
 const previewName = document.getElementById("previewName");
 const previewDetails = document.getElementById("previewDetails");
 const previewText = document.getElementById("previewText");
+const clearFiltersButton = document.getElementById("clearFiltersButton");
+
 
 async function loadCards() {
   try {
