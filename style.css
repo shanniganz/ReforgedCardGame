@@ -66,6 +66,38 @@ main {
 
 
 /* ==========================================
+   Type Tabs
+========================================== */
+
+.type-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.type-tab {
+    border: 1px solid #333;
+    background: white;
+    color: #222;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.type-tab:hover {
+    background: #eee;
+}
+
+.type-tab.active {
+    background: #222;
+    color: white;
+}
+
+
+/* ==========================================
    Card Type Sections
 ========================================== */
 
