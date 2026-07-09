@@ -1,5 +1,13 @@
 const ALIGNMENT_FACTIONS = ["order", "chaos"];
 const REALM_FACTIONS = ["ashkara", "orilune", "jungoom", "naleri", "thaloryn", "eldrik"];
+const DECK_TYPE_SECTIONS = [
+  { label: "Hero", heading: "---HERO---", type: "hero" },
+  { label: "Quest", heading: "---QUEST---", type: "quest" },
+  { label: "Ashen", heading: "---ASHEN---", type: "ashen" },
+  { label: "Spells", heading: "---SPELLS---", type: "spell" },
+  { label: "Relics", heading: "---RELICS---", type: "relic" },
+  { label: "Relic Weapons", heading: "---RELIC WEAPONS---", type: "relic weapon" }
+];
 
 function addCardToDeck(card) {
     const limitMessage = getDeckLimitMessage(card);
@@ -130,33 +138,19 @@ function addCardToDeck(card) {
   
     let totalCards = 0;
   
-    deckEntries.forEach(entry => {
-      totalCards += entry.count;
-  
-      const row = document.createElement("div");
-      row.className = "deck-row";
-  
-      const cardText = document.createElement("span");
-      cardText.textContent = `${entry.count}x ${entry.card.name}`;
-  
-      const buttons = document.createElement("span");
-      buttons.className = "deck-buttons";
-  
-      const plusButton = document.createElement("button");
-      plusButton.textContent = "+";
-      plusButton.addEventListener("click", () => addCardToDeck(entry.card));
-  
-      const minusButton = document.createElement("button");
-      minusButton.textContent = "-";
-      minusButton.addEventListener("click", () => removeCardFromDeck(entry.card.id));
-  
-      buttons.appendChild(plusButton);
-      buttons.appendChild(minusButton);
-  
-      row.appendChild(cardText);
-      row.appendChild(buttons);
-  
-      deckList.appendChild(row);
+    DECK_TYPE_SECTIONS.forEach(section => {
+      const sectionEntries = deckEntries.filter(entry => getCardType(entry.card) === section.type);
+
+      if (sectionEntries.length === 0) {
+        return;
+      }
+
+      deckList.appendChild(createDeckListHeader(section.label));
+
+      sectionEntries.forEach(entry => {
+        totalCards += entry.count;
+        deckList.appendChild(createDeckRow(entry));
+      });
     });
   
     deckCount.textContent = totalCards;
@@ -200,17 +194,43 @@ function addCardToDeck(card) {
     return badge;
   }
 
-  function formatDeckExport(deckEntries) {
-    const exportSections = [
-      { heading: "---HERO---", type: "hero" },
-      { heading: "---QUEST---", type: "quest" },
-      { heading: "---ASHEN---", type: "ashen" },
-      { heading: "---SPELLS---", type: "spell" },
-      { heading: "---RELICS---", type: "relic" },
-      { heading: "---RELIC WEAPONS---", type: "relic weapon" }
-    ];
+  function createDeckListHeader(label) {
+    const header = document.createElement("div");
+    header.className = "deck-list-header";
+    header.textContent = label;
 
-    return exportSections
+    return header;
+  }
+
+  function createDeckRow(entry) {
+    const row = document.createElement("div");
+    row.className = "deck-row";
+
+    const cardText = document.createElement("span");
+    cardText.textContent = `${entry.count}x ${entry.card.name}`;
+
+    const buttons = document.createElement("span");
+    buttons.className = "deck-buttons";
+
+    const plusButton = document.createElement("button");
+    plusButton.textContent = "+";
+    plusButton.addEventListener("click", () => addCardToDeck(entry.card));
+
+    const minusButton = document.createElement("button");
+    minusButton.textContent = "-";
+    minusButton.addEventListener("click", () => removeCardFromDeck(entry.card.id));
+
+    buttons.appendChild(plusButton);
+    buttons.appendChild(minusButton);
+
+    row.appendChild(cardText);
+    row.appendChild(buttons);
+
+    return row;
+  }
+
+  function formatDeckExport(deckEntries) {
+    return DECK_TYPE_SECTIONS
       .map(section => {
         const sectionEntries = deckEntries.filter(entry => getCardType(entry.card) === section.type);
 

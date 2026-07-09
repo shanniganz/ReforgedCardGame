@@ -402,6 +402,22 @@ main {
     font-size: 14px;
 }
 
+.deck-list-header {
+    margin-top: 12px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    background: #2f3a44;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.deck-list-header:first-child {
+    margin-top: 0;
+}
+
 .deck-buttons button {
     margin-left: 4px;
 }
