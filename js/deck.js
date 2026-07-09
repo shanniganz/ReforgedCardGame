@@ -1,3 +1,6 @@
+const ALIGNMENT_FACTIONS = ["order", "chaos"];
+const REALM_FACTIONS = ["ashkara", "orilune", "jungoom", "naleri", "thaloryn", "eldrik"];
+
 function addCardToDeck(card) {
     const limitMessage = getDeckLimitMessage(card);
     if (limitMessage) {
@@ -29,6 +32,11 @@ function addCardToDeck(card) {
       return "A deck can only include 1 Quest.";
     }
 
+    const factionMessage = getDeckFactionLimitMessage(card);
+    if (factionMessage) {
+      return factionMessage;
+    }
+
     if (card.legendary === "Y" && currentCount >= 1) {
       return "A deck can only include 1 copy of a legendary card.";
     }
@@ -48,6 +56,43 @@ function addCardToDeck(card) {
     return Object.values(deck).reduce((total, entry) => {
       return getCardType(entry.card) === type ? total + entry.count : total;
     }, 0);
+  }
+
+  function getDeckFactionLimitMessage(card) {
+    const cardFaction = getCardFaction(card);
+    const selectedAlignmentFaction = getSelectedDeckFaction(ALIGNMENT_FACTIONS);
+    const selectedRealmFaction = getSelectedDeckFaction(REALM_FACTIONS);
+
+    if (
+      ALIGNMENT_FACTIONS.includes(cardFaction) &&
+      selectedAlignmentFaction &&
+      selectedAlignmentFaction !== cardFaction
+    ) {
+      return `A deck can include either ${formatFactionName(selectedAlignmentFaction)} or ${formatFactionName(cardFaction)}, not both.`;
+    }
+
+    if (
+      REALM_FACTIONS.includes(cardFaction) &&
+      selectedRealmFaction &&
+      selectedRealmFaction !== cardFaction
+    ) {
+      return `A deck can only include one realm faction. This deck is already using ${formatFactionName(selectedRealmFaction)}.`;
+    }
+
+    return "";
+  }
+
+  function getCardFaction(card) {
+    return String(card.faction || "").trim().toLowerCase();
+  }
+
+  function getSelectedDeckFaction(factions) {
+    const deckEntry = Object.values(deck).find(entry => factions.includes(getCardFaction(entry.card)));
+    return deckEntry ? getCardFaction(deckEntry.card) : "";
+  }
+
+  function formatFactionName(faction) {
+    return faction.charAt(0).toUpperCase() + faction.slice(1);
   }
 
   function showDeckMessage(message) {
@@ -116,8 +161,69 @@ function addCardToDeck(card) {
   
     deckCount.textContent = totalCards;
   
-    deckExport.value = deckEntries
-      .map(entry => `${entry.count} ${entry.card.name}`)
-      .join("\n");
+    deckExport.value = formatDeckExport(deckEntries);
+
+    renderDeckIdentity();
+    renderDeckSummary(deckEntries);
+  }
+
+  function renderDeckIdentity() {
+    if (!deckIdentity) return;
+
+    const alignmentFaction = getSelectedDeckFaction(ALIGNMENT_FACTIONS);
+    const realmFaction = getSelectedDeckFaction(REALM_FACTIONS);
+    const badges = [];
+
+    if (realmFaction) {
+      badges.push(createDeckIdentityBadge("Faction", formatFactionName(realmFaction)));
+    }
+
+    if (alignmentFaction) {
+      badges.push(createDeckIdentityBadge("Alignment", formatFactionName(alignmentFaction)));
+    }
+
+    deckIdentity.innerHTML = "";
+    badges.forEach(badge => deckIdentity.appendChild(badge));
+    deckIdentity.classList.toggle("show", badges.length > 0);
+  }
+
+  function createDeckIdentityBadge(label, value) {
+    const badge = document.createElement("div");
+    badge.className = "deck-identity-badge";
+
+    const labelElement = document.createElement("span");
+    labelElement.textContent = `${label}:`;
+
+    badge.appendChild(labelElement);
+    badge.append(value);
+
+    return badge;
+  }
+
+  function formatDeckExport(deckEntries) {
+    const exportSections = [
+      { heading: "---HERO---", type: "hero" },
+      { heading: "---QUEST---", type: "quest" },
+      { heading: "---ASHEN---", type: "ashen" },
+      { heading: "---SPELLS---", type: "spell" },
+      { heading: "---RELICS---", type: "relic" },
+      { heading: "---RELIC WEAPONS---", type: "relic weapon" }
+    ];
+
+    return exportSections
+      .map(section => {
+        const sectionEntries = deckEntries.filter(entry => getCardType(entry.card) === section.type);
+
+        if (sectionEntries.length === 0) {
+          return "";
+        }
+
+        return [
+          section.heading,
+          ...sectionEntries.map(entry => `${entry.count} ${entry.card.name}`)
+        ].join("\n");
+      })
+      .filter(Boolean)
+      .join("\n\n");
   }
   

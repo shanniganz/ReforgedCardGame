@@ -8,7 +8,13 @@ const cardGrid = document.getElementById("cardGrid");
 const deckList = document.getElementById("deckList");
 const deckCount = document.getElementById("deckCount");
 const deckExport = document.getElementById("deckExport");
+const deckIdentity = document.getElementById("deckIdentity");
 const deckMessage = document.getElementById("deckMessage");
+const deckListTab = document.getElementById("deckListTab");
+const deckSummaryTab = document.getElementById("deckSummaryTab");
+const deckListPanel = document.getElementById("deckListPanel");
+const deckSummaryPanel = document.getElementById("deckSummaryPanel");
+const deckSummary = document.getElementById("deckSummary");
 
 const searchBox = document.getElementById("searchBox");
 const setFilter = document.getElementById("setFilter");

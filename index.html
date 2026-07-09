@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reforged Deck Builder</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -62,25 +62,39 @@
   <aside class="deck-panel">
     <h2>Deck</h2>
 
+    <div id="deckIdentity" class="deck-identity" aria-live="polite"></div>
+
     <div id="deckMessage" class="deck-message" aria-live="polite"></div>
+
+    <div class="deck-tabs" role="tablist" aria-label="Deck views">
+      <button id="deckListTab" class="deck-tab active" type="button" role="tab" aria-selected="true" aria-controls="deckListPanel">List</button>
+      <button id="deckSummaryTab" class="deck-tab" type="button" role="tab" aria-selected="false" aria-controls="deckSummaryPanel">Export</button>
+    </div>
   
-    <div id="deckList"></div>
-  
-    <p>
-      <strong>Total Cards:</strong>
-      <span id="deckCount">0</span>
-    </p>
-  
-    <textarea id="deckExport" readonly></textarea>
+    <div id="deckListPanel" class="deck-tab-panel active" role="tabpanel" aria-labelledby="deckListTab">
+      <div id="deckList"></div>
+    
+      <p>
+        <strong>Total Cards:</strong>
+        <span id="deckCount">0</span>
+      </p>
+    </div>
+
+    <div id="deckSummaryPanel" class="deck-tab-panel" role="tabpanel" aria-labelledby="deckSummaryTab">
+      <div id="deckSummary" class="deck-summary"></div>
+
+      <textarea id="deckExport" readonly></textarea>
+    </div>
   </aside>
 </main>
 
-<script src="js/state.js?v=2"></script>
+<script src="js/state.js?v=4"></script>
 <script src="js/preview.js?v=2"></script>
-<script src="js/deck.js?v=2"></script>
+<script src="js/deckSummary.js?v=3"></script>
+<script src="js/deck.js?v=6"></script>
 <script src="js/filters.js?v=2"></script>
 <script src="js/cards.js?v=2"></script>
-<script src="js/app.js?v=2"></script>
+<script src="js/app.js?v=3"></script>
 
 </body>
 </html>

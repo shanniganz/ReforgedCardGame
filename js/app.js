@@ -26,5 +26,10 @@ async function loadCards() {
   legendaryFilter.addEventListener("change", renderCards);
   costFilter.addEventListener("change", renderCards);
   clearFiltersButton.addEventListener("click", clearFilters);
+
+  deckListTab.addEventListener("click", () => showDeckTab("list"));
+  deckSummaryTab.addEventListener("click", () => showDeckTab("summary"));
+
+  renderDeck();
   
   loadCards();

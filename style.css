@@ -195,6 +195,35 @@ main {
     box-shadow: 0 2px 6px rgba(0,0,0,.15);
 }
 
+.deck-identity {
+    display: none;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: -4px 0 12px 0;
+}
+
+.deck-identity.show {
+    display: flex;
+}
+
+.deck-identity-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 8px;
+    border-radius: 999px;
+    background: #edf2f7;
+    border: 1px solid #ccd6e0;
+    color: #25384d;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.deck-identity-badge span {
+    color: #5b6b7a;
+    font-weight: normal;
+}
+
 .deck-message {
     display: none;
     margin-bottom: 10px;
@@ -209,6 +238,107 @@ main {
 
 .deck-message.show {
     display: block;
+}
+
+.deck-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin-bottom: 12px;
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #f4f4f4;
+}
+
+.deck-tab {
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: #333;
+    font-weight: bold;
+    padding: 7px 8px;
+}
+
+.deck-tab.active {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.18);
+}
+
+.deck-tab-panel {
+    display: none;
+}
+
+.deck-tab-panel.active {
+    display: block;
+}
+
+.deck-summary-section {
+    margin-bottom: 16px;
+}
+
+.deck-summary-section h3 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+}
+
+.deck-type-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.deck-type-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fafafa;
+    font-size: 13px;
+}
+
+.deck-type-count strong {
+    font-size: 16px;
+}
+
+.cost-curve {
+    display: grid;
+    gap: 7px;
+}
+
+.cost-row {
+    display: grid;
+    grid-template-columns: 34px 1fr 28px;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.cost-label,
+.cost-value {
+    font-weight: bold;
+}
+
+.cost-track {
+    height: 16px;
+    border-radius: 4px;
+    background: #e9e9e9;
+    overflow: hidden;
+}
+
+.cost-bar {
+    height: 100%;
+    border-radius: 4px;
+    background: #3b6ea8;
+}
+
+.deck-empty {
+    margin: 0 0 12px 0;
+    color: #666;
+    font-size: 14px;
 }
 
 
