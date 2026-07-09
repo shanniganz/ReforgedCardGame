@@ -247,7 +247,9 @@ function addCardToDeck(card) {
     row.className = "deck-row";
 
     const cardText = document.createElement("span");
+    cardText.className = "deck-card-name";
     cardText.textContent = `${entry.count}x ${entry.card.name}`;
+    cardText.addEventListener("mouseenter", () => showCardPreview(entry.card));
 
     const buttons = document.createElement("span");
     buttons.className = "deck-buttons";

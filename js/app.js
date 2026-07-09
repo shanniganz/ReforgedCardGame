@@ -19,12 +19,6 @@ async function loadCards() {
   }
   
   searchBox.addEventListener("input", renderCards);
-  setFilter.addEventListener("change", renderCards);
-  factionFilter.addEventListener("change", renderCards);
-  subtypeFilter.addEventListener("change", renderCards);
-  damageTypeFilter.addEventListener("change", renderCards);
-  legendaryFilter.addEventListener("change", renderCards);
-  costFilter.addEventListener("change", renderCards);
   clearFiltersButton.addEventListener("click", clearFilters);
 
   deckListTab.addEventListener("click", () => showDeckTab("list"));

@@ -4,41 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reforged Deck Builder</title>
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
   <header>
     <h1>Reforged Deck Builder</h1>
+    <a class="rules-link" href="Reforged%20Rules%20Doc.pdf" target="_blank" rel="noopener">Rules PDF</a>
   
     <div class="controls">
       <input type="text" id="searchBox" placeholder="Search name or card text...">
   
-      <select id="setFilter">
-        <option value="">All Sets</option>
-      </select>
+      <div id="setFilter" class="multi-select-filter">
+        <button id="setFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+          All Sets
+        </button>
+        <div id="setFilterOptions" class="multi-select-options"></div>
+      </div>
   
-      <select id="factionFilter">
-        <option value="">All Factions</option>
-      </select>
+      <div id="factionFilter" class="multi-select-filter">
+        <button id="factionFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+          All Factions
+        </button>
+        <div id="factionFilterOptions" class="multi-select-options"></div>
+      </div>
   
-      <select id="subtypeFilter">
-        <option value="">All Subtypes</option>
-      </select>
+      <div id="subtypeFilter" class="multi-select-filter">
+        <button id="subtypeFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+          All Subtypes
+        </button>
+        <div id="subtypeFilterOptions" class="multi-select-options"></div>
+      </div>
   
-      <select id="damageTypeFilter">
-        <option value="">All Damage Types</option>
-      </select>
+      <div id="damageTypeFilter" class="multi-select-filter">
+        <button id="damageTypeFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+          All Damage Types
+        </button>
+        <div id="damageTypeFilterOptions" class="multi-select-options"></div>
+      </div>
 
-      <select id="legendaryFilter">
-        <option value="">All Legendary</option>
-        <option value="Y">Legendary</option>
-        <option value="N">Non-Legendary</option>
-      </select>
+      <div id="legendaryFilter" class="multi-select-filter">
+        <button id="legendaryFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+          All Legendary
+        </button>
+        <div id="legendaryFilterOptions" class="multi-select-options"></div>
+      </div>
   
-      <select id="costFilter">
-        <option value="">All Costs</option>
-      </select>
+      <div id="costFilter" class="multi-select-filter">
+        <button id="costFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+          All Costs
+        </button>
+        <div id="costFilterOptions" class="multi-select-options"></div>
+      </div>
   
       <button id="clearFiltersButton" type="button">Clear Filters</button>
     </div>
@@ -91,13 +108,13 @@
   </aside>
 </main>
 
-<script src="js/state.js?v=5"></script>
+<script src="js/state.js?v=7"></script>
 <script src="js/preview.js?v=2"></script>
 <script src="js/deckSummary.js?v=3"></script>
-<script src="js/deck.js?v=8"></script>
-<script src="js/filters.js?v=2"></script>
-<script src="js/cards.js?v=2"></script>
-<script src="js/app.js?v=4"></script>
+<script src="js/deck.js?v=9"></script>
+<script src="js/filters.js?v=6"></script>
+<script src="js/cards.js?v=5"></script>
+<script src="js/app.js?v=6"></script>
 
 </body>
 </html>

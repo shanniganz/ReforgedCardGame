@@ -1,11 +1,11 @@
 function renderCards() {
     const searchText = searchBox.value.toLowerCase();
-    const selectedSet = setFilter.value;
-    const selectedFaction = factionFilter.value;
-    const selectedSubtype = subtypeFilter.value;
-    const selectedDamageType = damageTypeFilter.value;
-    const selectedLegendary = legendaryFilter.value;
-    const selectedCost = costFilter.value;
+    const selectedSets = getSelectedFilterValues("set");
+    const selectedFactions = getSelectedFilterValues("faction");
+    const selectedSubtypes = getSelectedFilterValues("subtype");
+    const selectedDamageTypes = getSelectedFilterValues("damageType");
+    const selectedLegendaryValues = getSelectedFilterValues("legendary");
+    const selectedCosts = getSelectedFilterValues("cost");
   
     const filteredCards = allCards.filter(card => {
       const searchableText = [
@@ -22,12 +22,14 @@ function renderCards() {
   
       const searchMatch = searchableText.includes(searchText);
       const typeMatch = selectedTypeTab === "All" || card.type === selectedTypeTab;
-      const setMatch = !selectedSet || card.setname === selectedSet;
-      const factionMatch = !selectedFaction || card.faction === selectedFaction;
-      const subtypeMatch = !selectedSubtype || card.subtype === selectedSubtype;
-      const damageTypeMatch = !selectedDamageType || card.damagetype === selectedDamageType;
-      const legendaryMatch = !selectedLegendary || card.legendary === selectedLegendary;
-      const costMatch = !selectedCost || String(card.cost) === selectedCost;
+      const setMatch = selectedSets.length === 0 || selectedSets.includes(card.setname);
+      const factionMatch = selectedTypeTab === "Quest" ||
+        selectedFactions.length === 0 ||
+        selectedFactions.includes(card.faction);
+      const subtypeMatch = selectedSubtypes.length === 0 || selectedSubtypes.includes(card.subtype);
+      const damageTypeMatch = selectedDamageTypes.length === 0 || selectedDamageTypes.includes(card.damagetype);
+      const legendaryMatch = selectedLegendaryValues.length === 0 || selectedLegendaryValues.includes(card.legendary);
+      const costMatch = selectedCosts.length === 0 || selectedCosts.includes(String(card.cost));
   
       return searchMatch &&
         typeMatch &&

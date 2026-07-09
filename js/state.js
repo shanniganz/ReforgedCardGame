@@ -20,11 +20,23 @@ const copyDeckButton = document.getElementById("copyDeckButton");
 
 const searchBox = document.getElementById("searchBox");
 const setFilter = document.getElementById("setFilter");
+const setFilterButton = document.getElementById("setFilterButton");
+const setFilterOptions = document.getElementById("setFilterOptions");
 const factionFilter = document.getElementById("factionFilter");
+const factionFilterButton = document.getElementById("factionFilterButton");
+const factionFilterOptions = document.getElementById("factionFilterOptions");
 const subtypeFilter = document.getElementById("subtypeFilter");
+const subtypeFilterButton = document.getElementById("subtypeFilterButton");
+const subtypeFilterOptions = document.getElementById("subtypeFilterOptions");
 const damageTypeFilter = document.getElementById("damageTypeFilter");
+const damageTypeFilterButton = document.getElementById("damageTypeFilterButton");
+const damageTypeFilterOptions = document.getElementById("damageTypeFilterOptions");
 const legendaryFilter = document.getElementById("legendaryFilter");
+const legendaryFilterButton = document.getElementById("legendaryFilterButton");
+const legendaryFilterOptions = document.getElementById("legendaryFilterOptions");
 const costFilter = document.getElementById("costFilter");
+const costFilterButton = document.getElementById("costFilterButton");
+const costFilterOptions = document.getElementById("costFilterOptions");
 const clearFiltersButton = document.getElementById("clearFiltersButton");
 
 const cardPreview = document.getElementById("cardPreview");
