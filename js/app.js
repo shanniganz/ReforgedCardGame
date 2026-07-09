@@ -25,6 +25,9 @@ async function loadCards() {
   deckSummaryTab.addEventListener("click", () => showDeckTab("summary"));
   clearDeckButton.addEventListener("click", clearDeck);
   copyDeckButton.addEventListener("click", copyDeckExport);
+  cardPdfButton.addEventListener("click", openCardPdfExport);
+  copyDeckCodeButton.addEventListener("click", copyDeckCode);
+  importDeckCodeButton.addEventListener("click", importDeckCode);
 
   renderDeck();
   

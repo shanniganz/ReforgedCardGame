@@ -156,6 +156,395 @@ function addCardToDeck(card) {
       throw new Error("Clipboard copy failed");
     }
   }
+
+  async function copyDeckCode() {
+    const deckCodeText = createDeckCode();
+
+    if (!deckCodeText) {
+      showDeckMessage("There is no deck to export.");
+      return;
+    }
+
+    deckCode.value = deckCodeText;
+
+    try {
+      await copyTextToClipboard(deckCodeText, deckCode);
+      showDeckMessage("Deck code copied to clipboard.");
+    } catch (error) {
+      console.error(error);
+      showDeckMessage("Deck code created, but could not copy it.");
+    }
+  }
+
+  function createDeckCode() {
+    const deckEntries = Object.values(deck).sort((a, b) =>
+      a.card.name.localeCompare(b.card.name)
+    );
+
+    if (deckEntries.length === 0) {
+      return "";
+    }
+
+    return encodeDeckCode({
+      v: 1,
+      cards: deckEntries.map(entry => [entry.card.name, entry.count])
+    });
+  }
+
+  function importDeckCode() {
+    const code = deckCode.value.trim();
+
+    if (!code) {
+      showDeckMessage("Paste a deck code before importing.");
+      return;
+    }
+
+    let payload;
+    try {
+      payload = decodeDeckCode(code);
+    } catch (error) {
+      console.error(error);
+      showDeckMessage("Deck code could not be decoded.");
+      return;
+    }
+
+    if (!payload || payload.v !== 1 || !Array.isArray(payload.cards)) {
+      showDeckMessage("Deck code format is not recognized.");
+      return;
+    }
+
+    const cardsByName = getCardsByName();
+    const importedDeck = {};
+    const missingNames = [];
+    const duplicateNames = [];
+
+    payload.cards.forEach(([name, count]) => {
+      const matches = cardsByName.get(name);
+      const parsedCount = Number(count);
+
+      if (!matches || matches.length === 0) {
+        missingNames.push(name);
+        return;
+      }
+
+      if (!Number.isInteger(parsedCount) || parsedCount <= 0) {
+        return;
+      }
+
+      if (matches.length > 1) {
+        duplicateNames.push(name);
+      }
+
+      const card = matches[0];
+      importedDeck[card.id] = {
+        card,
+        count: parsedCount
+      };
+    });
+
+    deck = importedDeck;
+    renderDeck();
+
+    const messages = ["Deck code imported."];
+    if (missingNames.length > 0) {
+      messages.push(`Missing: ${missingNames.join(", ")}`);
+    }
+    if (duplicateNames.length > 0) {
+      messages.push(`Duplicate names used first match: ${duplicateNames.join(", ")}`);
+    }
+
+    showDeckMessage(messages.join(" "));
+  }
+
+  function getCardsByName() {
+    return allCards.reduce((cardsByName, card) => {
+      if (!cardsByName.has(card.name)) {
+        cardsByName.set(card.name, []);
+      }
+
+      cardsByName.get(card.name).push(card);
+      return cardsByName;
+    }, new Map());
+  }
+
+  function encodeDeckCode(payload) {
+    const json = JSON.stringify(payload);
+    return btoa(unescape(encodeURIComponent(json)));
+  }
+
+  function decodeDeckCode(code) {
+    const json = decodeURIComponent(escape(atob(code)));
+    return JSON.parse(json);
+  }
+
+  async function copyTextToClipboard(text, fallbackElement) {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+      return;
+    }
+
+    fallbackElement.focus();
+    fallbackElement.select();
+
+    const copied = document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+
+    if (!copied) {
+      throw new Error("Clipboard copy failed");
+    }
+  }
+
+  function openCardPdfExport() {
+    const cardCopies = getDeckCardCopies();
+
+    if (cardCopies.length === 0) {
+      showDeckMessage("Add cards to the deck before exporting card images.");
+      return;
+    }
+
+    const exportWindow = window.open("", "_blank");
+    if (!exportWindow) {
+      showDeckMessage("Allow popups to export card images.");
+      return;
+    }
+
+    exportWindow.document.open();
+    exportWindow.document.write(createCardPdfExportHtml(cardCopies));
+    exportWindow.document.close();
+  }
+
+  function getDeckCardCopies() {
+    return Object.values(deck)
+      .sort((a, b) => a.card.name.localeCompare(b.card.name))
+      .flatMap(entry => Array.from({ length: entry.count }, () => entry.card));
+  }
+
+  function createCardPdfExportHtml(cards) {
+    const pages = [];
+
+    for (let index = 0; index < cards.length; index += 9) {
+      pages.push(cards.slice(index, index + 9));
+    }
+
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reforged Deck Card PDF</title>
+  <base href="${escapeHtml(getBaseUrl())}">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #eee;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px;
+      background: #222;
+    }
+
+    .toolbar button {
+      padding: 8px 12px;
+      border: 1px solid #777;
+      border-radius: 6px;
+      background: white;
+      color: #222;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .page {
+      --card-width: 230px;
+      --card-height: 325px;
+      --card-gap: 2px;
+      --grid-width: calc((var(--card-width) * 3) + (var(--card-gap) * 2));
+      --grid-height: calc((var(--card-height) * 3) + (var(--card-gap) * 2));
+      --grid-left: calc((100% - var(--grid-width)) / 2);
+      --grid-top: calc((100% - var(--grid-height)) / 2);
+      --gutter-one-x: calc(var(--grid-left) + var(--card-width));
+      --gutter-two-x: calc(var(--grid-left) + (var(--card-width) * 2) + var(--card-gap));
+      --gutter-one-y: calc(var(--grid-top) + var(--card-height));
+      --gutter-two-y: calc(var(--grid-top) + (var(--card-height) * 2) + var(--card-gap));
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, var(--card-width));
+      grid-template-rows: repeat(3, var(--card-height));
+      gap: var(--card-gap);
+      justify-content: center;
+      align-content: center;
+      width: 816px;
+      min-height: 1056px;
+      margin: 16px auto;
+      background: white;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      page-break-after: always;
+      break-after: page;
+    }
+
+    .page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    .card-slot {
+      width: 230px;
+      height: 325px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: white;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .card-image {
+      width: 230px;
+      height: 325px;
+      object-fit: fill;
+      display: block;
+    }
+
+    .card-slot.rotated .card-image {
+      width: 325px;
+      height: 230px;
+      transform: rotate(90deg);
+      transform-origin: center;
+    }
+
+    .registration-mark {
+      position: absolute;
+      z-index: 2;
+      background: black;
+      pointer-events: none;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .registration-mark.vertical {
+      width: 2px;
+      height: 10px;
+    }
+
+    .registration-mark.horizontal {
+      width: 10px;
+      height: 2px;
+    }
+
+    .registration-mark.top {
+      top: calc(var(--grid-top) - 10px);
+    }
+
+    .registration-mark.bottom {
+      top: calc(var(--grid-top) + var(--grid-height));
+    }
+
+    .registration-mark.v-one {
+      left: var(--gutter-one-x);
+    }
+
+    .registration-mark.v-two {
+      left: var(--gutter-two-x);
+    }
+
+    .registration-mark.left {
+      left: calc(var(--grid-left) - 10px);
+    }
+
+    .registration-mark.right {
+      left: calc(var(--grid-left) + var(--grid-width));
+    }
+
+    .registration-mark.h-one {
+      top: var(--gutter-one-y);
+    }
+
+    .registration-mark.h-two {
+      top: var(--gutter-two-y);
+    }
+
+    @page {
+      size: letter portrait;
+      margin: 0;
+    }
+
+    @media print {
+      html,
+      body {
+        width: 8.5in;
+        min-height: 11in;
+        background: white;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      .page {
+        width: 8.5in;
+        height: 11in;
+        min-height: 11in;
+        margin: 0;
+        box-shadow: none;
+        overflow: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button type="button" onclick="window.print()">Print / Save PDF</button>
+  </div>
+  ${pages.map(createCardPdfPageHtml).join("")}
+</body>
+</html>`;
+  }
+
+  function createCardPdfPageHtml(cards) {
+    return `<section class="page">${cards.map(card => `
+    <div class="card-slot${getCardType(card) === "quest" ? " rotated" : ""}">
+      <img class="card-image" src="${escapeHtml(card.image || FALLBACK_IMAGE)}" alt="${escapeHtml(card.name || "Card")}">
+    </div>`).join("")}
+    ${createRegistrationMarksHtml()}
+  </section>`;
+  }
+
+  function createRegistrationMarksHtml() {
+    return `
+    <span class="registration-mark vertical top v-one"></span>
+    <span class="registration-mark vertical top v-two"></span>
+    <span class="registration-mark vertical bottom v-one"></span>
+    <span class="registration-mark vertical bottom v-two"></span>
+    <span class="registration-mark horizontal left h-one"></span>
+    <span class="registration-mark horizontal left h-two"></span>
+    <span class="registration-mark horizontal right h-one"></span>
+    <span class="registration-mark horizontal right h-two"></span>`;
+  }
+
+  function getBaseUrl() {
+    return new URL(".", window.location.href).href;
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
   
   function removeCardFromDeck(cardId) {
     if (!deck[cardId]) return;

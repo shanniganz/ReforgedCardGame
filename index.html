@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reforged Deck Builder</title>
-  <link rel="stylesheet" href="style.css?v=15">
+  <link rel="stylesheet" href="style.css?v=16">
 </head>
 <body>
 
@@ -102,19 +102,26 @@
     <div id="deckSummaryPanel" class="deck-tab-panel" role="tabpanel" aria-labelledby="deckSummaryTab">
       <div id="deckSummary" class="deck-summary"></div>
 
-      <button id="copyDeckButton" class="deck-action-button" type="button">Copy Export</button>
+      <button id="copyDeckButton" class="deck-action-button" type="button">Copy Deck Text</button>
+      <button id="cardPdfButton" class="deck-action-button" type="button">Card PDF</button>
       <textarea id="deckExport" readonly></textarea>
+
+      <div class="deck-code-tools">
+        <button id="copyDeckCodeButton" class="deck-action-button" type="button">Copy Deck Code</button>
+        <button id="importDeckCodeButton" class="deck-action-button" type="button">Import Deck Code</button>
+        <textarea id="deckCode" placeholder="Paste deck code here"></textarea>
+      </div>
     </div>
   </aside>
 </main>
 
-<script src="js/state.js?v=7"></script>
+<script src="js/state.js?v=9"></script>
 <script src="js/preview.js?v=2"></script>
 <script src="js/deckSummary.js?v=3"></script>
-<script src="js/deck.js?v=9"></script>
+<script src="js/deck.js?v=14"></script>
 <script src="js/filters.js?v=6"></script>
 <script src="js/cards.js?v=5"></script>
-<script src="js/app.js?v=6"></script>
+<script src="js/app.js?v=8"></script>
 
 </body>
 </html>

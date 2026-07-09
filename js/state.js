@@ -17,6 +17,10 @@ const deckSummaryPanel = document.getElementById("deckSummaryPanel");
 const deckSummary = document.getElementById("deckSummary");
 const clearDeckButton = document.getElementById("clearDeckButton");
 const copyDeckButton = document.getElementById("copyDeckButton");
+const cardPdfButton = document.getElementById("cardPdfButton");
+const copyDeckCodeButton = document.getElementById("copyDeckCodeButton");
+const importDeckCodeButton = document.getElementById("importDeckCodeButton");
+const deckCode = document.getElementById("deckCode");
 
 const searchBox = document.getElementById("searchBox");
 const setFilter = document.getElementById("setFilter");
