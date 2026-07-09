@@ -76,6 +76,7 @@
     const selectedFaction = factionFilter.value;
     const selectedSubtype = subtypeFilter.value;
     const selectedDamageType = damageTypeFilter.value;
+    const selectedLegendary = legendaryFilter.value;
     const selectedCost = costFilter.value;
   
     document.querySelectorAll(".type-tab").forEach(button => {
@@ -100,6 +101,7 @@
         const factionMatch = !selectedFaction || card.faction === selectedFaction;
         const subtypeMatch = !selectedSubtype || card.subtype === selectedSubtype;
         const damageTypeMatch = !selectedDamageType || card.damagetype === selectedDamageType;
+        const legendaryMatch = !selectedLegendary || card.legendary === selectedLegendary;
         const costMatch = !selectedCost || String(card.cost) === selectedCost;
   
         return searchMatch &&
@@ -108,6 +110,7 @@
           factionMatch &&
           subtypeMatch &&
           damageTypeMatch &&
+          legendaryMatch &&
           costMatch;
       }).length;
   
@@ -121,6 +124,7 @@
     factionFilter.value = "";
     subtypeFilter.value = "";
     damageTypeFilter.value = "";
+    legendaryFilter.value = "";
     costFilter.value = "";
   
     selectedTypeTab = "All";

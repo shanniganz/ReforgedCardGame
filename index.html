@@ -29,6 +29,12 @@
       <select id="damageTypeFilter">
         <option value="">All Damage Types</option>
       </select>
+
+      <select id="legendaryFilter">
+        <option value="">All Legendary</option>
+        <option value="Y">Legendary</option>
+        <option value="N">Non-Legendary</option>
+      </select>
   
       <select id="costFilter">
         <option value="">All Costs</option>
@@ -55,6 +61,8 @@
   
   <aside class="deck-panel">
     <h2>Deck</h2>
+
+    <div id="deckMessage" class="deck-message" aria-live="polite"></div>
   
     <div id="deckList"></div>
   

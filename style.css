@@ -195,6 +195,22 @@ main {
     box-shadow: 0 2px 6px rgba(0,0,0,.15);
 }
 
+.deck-message {
+    display: none;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: #fff0d6;
+    border: 1px solid #d7982b;
+    color: #5d3a00;
+    font-size: 13px;
+    line-height: 1.35;
+}
+
+.deck-message.show {
+    display: block;
+}
+
 
 /* ==========================================
    Card Preview

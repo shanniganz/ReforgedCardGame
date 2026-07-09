@@ -6,12 +6,14 @@ const cardGrid = document.getElementById("cardGrid");
 const deckList = document.getElementById("deckList");
 const deckCount = document.getElementById("deckCount");
 const deckExport = document.getElementById("deckExport");
+const deckMessage = document.getElementById("deckMessage");
 
 const searchBox = document.getElementById("searchBox");
 const setFilter = document.getElementById("setFilter");
 const factionFilter = document.getElementById("factionFilter");
 const subtypeFilter = document.getElementById("subtypeFilter");
 const damageTypeFilter = document.getElementById("damageTypeFilter");
+const legendaryFilter = document.getElementById("legendaryFilter");
 const costFilter = document.getElementById("costFilter");
 
 const cardPreview = document.getElementById("cardPreview");
@@ -118,6 +120,7 @@ function updateTypeTabCounts() {
   const selectedFaction = factionFilter.value;
   const selectedSubtype = subtypeFilter.value;
   const selectedDamageType = damageTypeFilter.value;
+  const selectedLegendary = legendaryFilter.value;
   const selectedCost = costFilter.value;
 
   document.querySelectorAll(".type-tab").forEach(button => {
@@ -142,6 +145,7 @@ function updateTypeTabCounts() {
       const factionMatch = !selectedFaction || card.faction === selectedFaction;
       const subtypeMatch = !selectedSubtype || card.subtype === selectedSubtype;
       const damageTypeMatch = !selectedDamageType || card.damagetype === selectedDamageType;
+      const legendaryMatch = !selectedLegendary || card.legendary === selectedLegendary;
       const costMatch = !selectedCost || String(card.cost) === selectedCost;
 
       return searchMatch &&
@@ -150,6 +154,7 @@ function updateTypeTabCounts() {
         factionMatch &&
         subtypeMatch &&
         damageTypeMatch &&
+        legendaryMatch &&
         costMatch;
     }).length;
 
@@ -163,6 +168,7 @@ function renderCards() {
   const selectedFaction = factionFilter.value;
   const selectedSubtype = subtypeFilter.value;
   const selectedDamageType = damageTypeFilter.value;
+  const selectedLegendary = legendaryFilter.value;
   const selectedCost = costFilter.value;
 
   const filteredCards = allCards.filter(card => {
@@ -184,6 +190,7 @@ function renderCards() {
     const factionMatch = !selectedFaction || card.faction === selectedFaction;
     const subtypeMatch = !selectedSubtype || card.subtype === selectedSubtype;
     const damageTypeMatch = !selectedDamageType || card.damagetype === selectedDamageType;
+    const legendaryMatch = !selectedLegendary || card.legendary === selectedLegendary;
     const costMatch = !selectedCost || String(card.cost) === selectedCost;
 
     return searchMatch &&
@@ -192,6 +199,7 @@ function renderCards() {
       factionMatch &&
       subtypeMatch &&
       damageTypeMatch &&
+      legendaryMatch &&
       costMatch;
   });
 
@@ -262,6 +270,12 @@ updateTypeTabCounts();
 }
 
 function addCardToDeck(card) {
+  const limitMessage = getDeckLimitMessage(card);
+  if (limitMessage) {
+    showDeckMessage(limitMessage);
+    return;
+  }
+
   if (!deck[card.id]) {
     deck[card.id] = {
       card: card,
@@ -270,7 +284,55 @@ function addCardToDeck(card) {
   }
 
   deck[card.id].count++;
+  clearDeckMessage();
   renderDeck();
+}
+
+function getDeckLimitMessage(card) {
+  const cardType = getCardType(card);
+  const currentCount = deck[card.id]?.count || 0;
+
+  if (cardType === "hero" && getDeckTypeCount("hero") >= 1) {
+    return "A deck can only include 1 Hero.";
+  }
+
+  if (cardType === "quest" && getDeckTypeCount("quest") >= 1) {
+    return "A deck can only include 1 Quest.";
+  }
+
+  if (card.legendary === "Y" && currentCount >= 1) {
+    return "A deck can only include 1 copy of a legendary card.";
+  }
+
+  if (card.legendary !== "Y" && currentCount >= 3) {
+    return "A deck can only include 3 copies of a non-legendary card.";
+  }
+
+  return "";
+}
+
+function getCardType(card) {
+  return String(card.type || "").trim().toLowerCase();
+}
+
+function getDeckTypeCount(type) {
+  return Object.values(deck).reduce((total, entry) => {
+    return getCardType(entry.card) === type ? total + entry.count : total;
+  }, 0);
+}
+
+function showDeckMessage(message) {
+  if (!deckMessage) return;
+
+  deckMessage.textContent = message;
+  deckMessage.classList.add("show");
+}
+
+function clearDeckMessage() {
+  if (!deckMessage) return;
+
+  deckMessage.textContent = "";
+  deckMessage.classList.remove("show");
 }
 
 function removeCardFromDeck(cardId) {
@@ -336,6 +398,7 @@ function clearFilters() {
   factionFilter.value = "";
   subtypeFilter.value = "";
   damageTypeFilter.value = "";
+  legendaryFilter.value = "";
   costFilter.value = "";
 
   selectedTypeTab = "All";
@@ -348,6 +411,7 @@ setFilter.addEventListener("change", renderCards);
 factionFilter.addEventListener("change", renderCards);
 subtypeFilter.addEventListener("change", renderCards);
 damageTypeFilter.addEventListener("change", renderCards);
+legendaryFilter.addEventListener("change", renderCards);
 costFilter.addEventListener("change", renderCards);
 clearFiltersButton.addEventListener("click", clearFilters);
 

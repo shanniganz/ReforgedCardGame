@@ -1,4 +1,10 @@
 function addCardToDeck(card) {
+    const limitMessage = getDeckLimitMessage(card);
+    if (limitMessage) {
+      showDeckMessage(limitMessage);
+      return;
+    }
+
     if (!deck[card.id]) {
       deck[card.id] = {
         card: card,
@@ -7,7 +13,55 @@ function addCardToDeck(card) {
     }
   
     deck[card.id].count++;
+    clearDeckMessage();
     renderDeck();
+  }
+
+  function getDeckLimitMessage(card) {
+    const cardType = getCardType(card);
+    const currentCount = deck[card.id]?.count || 0;
+
+    if (cardType === "hero" && getDeckTypeCount("hero") >= 1) {
+      return "A deck can only include 1 Hero.";
+    }
+
+    if (cardType === "quest" && getDeckTypeCount("quest") >= 1) {
+      return "A deck can only include 1 Quest.";
+    }
+
+    if (card.legendary === "Y" && currentCount >= 1) {
+      return "A deck can only include 1 copy of a legendary card.";
+    }
+
+    if (card.legendary !== "Y" && currentCount >= 3) {
+      return "A deck can only include 3 copies of a non-legendary card.";
+    }
+
+    return "";
+  }
+
+  function getCardType(card) {
+    return String(card.type || "").trim().toLowerCase();
+  }
+
+  function getDeckTypeCount(type) {
+    return Object.values(deck).reduce((total, entry) => {
+      return getCardType(entry.card) === type ? total + entry.count : total;
+    }, 0);
+  }
+
+  function showDeckMessage(message) {
+    if (!deckMessage) return;
+
+    deckMessage.textContent = message;
+    deckMessage.classList.add("show");
+  }
+
+  function clearDeckMessage() {
+    if (!deckMessage) return;
+
+    deckMessage.textContent = "";
+    deckMessage.classList.remove("show");
   }
   
   function removeCardFromDeck(cardId) {

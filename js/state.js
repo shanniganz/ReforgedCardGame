@@ -8,12 +8,14 @@ const cardGrid = document.getElementById("cardGrid");
 const deckList = document.getElementById("deckList");
 const deckCount = document.getElementById("deckCount");
 const deckExport = document.getElementById("deckExport");
+const deckMessage = document.getElementById("deckMessage");
 
 const searchBox = document.getElementById("searchBox");
 const setFilter = document.getElementById("setFilter");
 const factionFilter = document.getElementById("factionFilter");
 const subtypeFilter = document.getElementById("subtypeFilter");
 const damageTypeFilter = document.getElementById("damageTypeFilter");
+const legendaryFilter = document.getElementById("legendaryFilter");
 const costFilter = document.getElementById("costFilter");
 const clearFiltersButton = document.getElementById("clearFiltersButton");
 
