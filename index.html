@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reforged Deck Builder</title>
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -78,23 +78,26 @@
         <strong>Total Cards:</strong>
         <span id="deckCount">0</span>
       </p>
+
+      <button id="clearDeckButton" class="deck-action-button" type="button">Clear Deck</button>
     </div>
 
     <div id="deckSummaryPanel" class="deck-tab-panel" role="tabpanel" aria-labelledby="deckSummaryTab">
       <div id="deckSummary" class="deck-summary"></div>
 
+      <button id="copyDeckButton" class="deck-action-button" type="button">Copy Export</button>
       <textarea id="deckExport" readonly></textarea>
     </div>
   </aside>
 </main>
 
-<script src="js/state.js?v=4"></script>
+<script src="js/state.js?v=5"></script>
 <script src="js/preview.js?v=2"></script>
 <script src="js/deckSummary.js?v=3"></script>
-<script src="js/deck.js?v=7"></script>
+<script src="js/deck.js?v=8"></script>
 <script src="js/filters.js?v=2"></script>
 <script src="js/cards.js?v=2"></script>
-<script src="js/app.js?v=3"></script>
+<script src="js/app.js?v=4"></script>
 
 </body>
 </html>

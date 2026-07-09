@@ -116,6 +116,46 @@ function addCardToDeck(card) {
     deckMessage.textContent = "";
     deckMessage.classList.remove("show");
   }
+
+  function clearDeck() {
+    deck = {};
+    renderDeck();
+    showDeckMessage("Deck cleared.");
+  }
+
+  async function copyDeckExport() {
+    const exportText = deckExport.value;
+
+    if (!exportText) {
+      showDeckMessage("There is no deck text to copy.");
+      return;
+    }
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(exportText);
+      } else {
+        copyTextWithFallback(exportText);
+      }
+
+      showDeckMessage("Deck export copied to clipboard.");
+    } catch (error) {
+      console.error(error);
+      showDeckMessage("Could not copy deck export.");
+    }
+  }
+
+  function copyTextWithFallback(text) {
+    deckExport.focus();
+    deckExport.select();
+
+    const copied = document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+
+    if (!copied) {
+      throw new Error("Clipboard copy failed");
+    }
+  }
   
   function removeCardFromDeck(cardId) {
     if (!deck[cardId]) return;

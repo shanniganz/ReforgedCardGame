@@ -15,6 +15,8 @@ const deckSummaryTab = document.getElementById("deckSummaryTab");
 const deckListPanel = document.getElementById("deckListPanel");
 const deckSummaryPanel = document.getElementById("deckSummaryPanel");
 const deckSummary = document.getElementById("deckSummary");
+const clearDeckButton = document.getElementById("clearDeckButton");
+const copyDeckButton = document.getElementById("copyDeckButton");
 
 const searchBox = document.getElementById("searchBox");
 const setFilter = document.getElementById("setFilter");
