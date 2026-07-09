@@ -11,6 +11,7 @@
     "power": 1,
     "subtype": "Insect",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Afterglow - Poison Cloud: Deal 2 damage to target enemy Hero.",
     "flavortext": ""
   },
@@ -26,6 +27,7 @@
     "power": 1,
     "subtype": "Insect",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Afterglow - Parting Shot: Deal 1 damage to target enemy.",
     "flavortext": ""
   },
@@ -41,6 +43,7 @@
     "power": 2,
     "subtype": "Insect",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Afterglow - Metamorphisis: Create an Emberkin Ashen token with 3 Power.",
     "flavortext": ""
   },
@@ -56,6 +59,7 @@
     "power": 2,
     "subtype": "Insect",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Afterglow - Martyr: Gain 4 life",
     "flavortext": ""
   },
@@ -71,6 +75,7 @@
     "power": 2,
     "subtype": "Goblin",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Afterglow - Needy: Draw a card.",
     "flavortext": ""
   },
@@ -86,6 +91,7 @@
     "power": 2,
     "subtype": "Insect",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Afterglow - Spite: Deal 2 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -101,6 +107,7 @@
     "power": 2,
     "subtype": "Insect",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Effect - Extra Focus: Whenever you play an Ashen from your hand, you may discard a card from your hand to add two additional Embers to that Ashen.",
     "flavortext": ""
   },
@@ -116,6 +123,7 @@
     "power": 2,
     "subtype": "Insect",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Afterglow - Reverberate: Create two Insect Ashen tokens, each with 1 Power.",
     "flavortext": ""
   },
@@ -131,6 +139,7 @@
     "power": 2,
     "subtype": "Fox",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Afterglow - Dig for Secrets: Draw a Spell from your Void.",
     "flavortext": ""
   },
@@ -146,6 +155,7 @@
     "power": 2,
     "subtype": "Snapper",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "FIERCE.1\nAfterglow - Cycle of Life: Shuffle this Ashen into your deck.",
     "flavortext": ""
   },
@@ -161,6 +171,7 @@
     "power": 2,
     "subtype": "Insect",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "SPITE.2\nIgnite - Brilliance: Gain FIERCE.2 until your next turn.",
     "flavortext": ""
   },
@@ -176,6 +187,7 @@
     "power": 2,
     "subtype": "Fox",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Afterglow - Dig for Lost Treasure: Draw a Relic from your Void.",
     "flavortext": ""
   },
@@ -191,6 +203,7 @@
     "power": 3,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Surge - ???: If you have 5 or more cards in your discard, create a Emberkin Ashen Token with 2 Power. Otherwise, Put 2 cards from the top of your deck into your discard.",
     "flavortext": ""
   },
@@ -206,6 +219,7 @@
     "power": 3,
     "subtype": "Snapper",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Afterglow - Lost Knowledge: Discard the top 5 cards of your deck.",
     "flavortext": ""
   },
@@ -221,6 +235,7 @@
     "power": 5,
     "subtype": "Golem",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Surge - Reckless:  Discard 1 card from your hand.",
     "flavortext": ""
   },
@@ -236,6 +251,7 @@
     "power": 3,
     "subtype": "Insect",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Afterglow - Spite: Deal 4 damage to target enemy Hero.",
     "flavortext": ""
   },
@@ -251,6 +267,7 @@
     "power": 3,
     "subtype": "Insect",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Ability - Consume - (0): Exile the top card of your Void. Yumyum gains FIERCE.3 and ARMOR.3 and OVERWHELM until your next turn.",
     "flavortext": "My dissertation! Now I have to start over... Again."
   },
@@ -266,6 +283,7 @@
     "power": 3,
     "subtype": "Insect",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Reckless Mining: Draw 2 Cards and discard 2 Cards.",
     "flavortext": ""
   },
@@ -281,6 +299,7 @@
     "power": 2,
     "subtype": "Insect",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Surge - BuzzBuzz: Create an Insect Ashen token with 1 Power.\nEffect - Sting: Your Insect Ashen gain \"Afterglow : Deal 1 damage to target enemy Hero.  Gain 1 Life.\"",
     "flavortext": ""
   },
@@ -296,6 +315,7 @@
     "power": 2,
     "subtype": "Insect",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Gather Friends: After you play an Insect Ashen from your hand, create an Insect Ashen token with 1 Power.",
     "flavortext": ""
   },
@@ -311,6 +331,7 @@
     "power": 2,
     "subtype": "Skeleton",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "BLITZ\nFIERCE.2\nIgnite - Endless Assault: If [Card Name] is in your Void, you may exile a card from your Forge and play [Card Name].\nEffect - Exhaust: Destroy [Card Name] at the end of the turn.",
     "flavortext": ""
   },
@@ -326,6 +347,7 @@
     "power": 3,
     "subtype": "Djinn",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Effect - Beneath the Sands: At the beginning of your turn, if [Card Name] is in your discard, you may exile an Ashen card in your Void to play [Card Name] with one Ember, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -341,6 +363,7 @@
     "power": 6,
     "subtype": "Spirit",
     "damagetype": "Light",
+    "legendary": "Y",
     "cardtext": "Surge - Blinding to Behold: If played from your hand, destroy [Card Name]\nEffect - Reflection of Darkness: You may play this from your Void by paying its cost and exiling two other cards in your Void.\nAfterglow - Reminder of Hope: Deal 3 damage to any target. You gain 3 life.",
     "flavortext": ""
   },
@@ -356,6 +379,7 @@
     "power": 7,
     "subtype": "Golem",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Surge - Pay the Price:  Discard 2 cards from your hand.",
     "flavortext": "I forgot why we were fighting but here comes some hurt!"
   },
@@ -371,6 +395,7 @@
     "power": 2,
     "subtype": "Djinn",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Afterglow - Lead to the Light: Destroy target enemy Ashen.",
     "flavortext": ""
   },
@@ -386,6 +411,7 @@
     "power": 4,
     "subtype": "Djinn",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Effect - Rumble: When this attacks, deal 1 damage to all enemy Ashen before damage is dealt.\nAfterglow - Shadow Storm: Deal 1 damage to all enemy Ashen.",
     "flavortext": ""
   },
@@ -401,6 +427,7 @@
     "power": 4,
     "subtype": "Insect",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Surge - Earth Dart: Exile 2 cards from your Void. Deal 3 damage to target enemy Hero.",
     "flavortext": ""
   },
@@ -416,6 +443,7 @@
     "power": 4,
     "subtype": "Djinn",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Ability - Spark Joy - (0): Discard a card from your hand. Add 4 Embers to [Card Name].",
     "flavortext": "The magic of tidying up can change your life."
   },
@@ -431,6 +459,7 @@
     "power": 4,
     "subtype": "Insect",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Ability - Collect: Add 1 Ember to this Ashen for each different card type in your Void",
     "flavortext": ""
   },
@@ -446,6 +475,7 @@
     "power": 4,
     "subtype": "Djinn",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ability - Wither (1): Deal 1 damage to all enemy Ashen.",
     "flavortext": ""
   },
@@ -461,6 +491,7 @@
     "power": 5,
     "subtype": "Insect",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "OVERWHELM\nEffect - Forgotten Technique: If you have at least 5 cards in your Void, gain FIERCE.3.",
     "flavortext": ""
   },
@@ -476,6 +507,7 @@
     "power": 2,
     "subtype": "Spirit",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Surge - Deep Breath: Exile any number of cards from the top of your Void. Put that many embers on [Card Name]\nEffect - Chorus: [Card Name] Has FIERCE.1 for each Ember it has",
     "flavortext": ""
   },
@@ -491,6 +523,7 @@
     "power": 6,
     "subtype": "Hydra",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ability - Two Brain Cells - (0) Discard a card from your hand. Add 3 Embers to [Card Name] and gain OVERWHELM until your next turn.",
     "flavortext": ""
   },
@@ -506,6 +539,7 @@
     "power": 5,
     "subtype": "Scion",
     "damagetype": "Shadow",
+    "legendary": "Y",
     "cardtext": "STEALTH\nSurge - Black as Night: Choose two friendly Ashen who gain STEALTH until end of turn.",
     "flavortext": ""
   },
@@ -521,6 +555,7 @@
     "power": 5,
     "subtype": "Insect",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Sand Spike: Exile 3 cards from your Void. Deal 5 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -536,6 +571,7 @@
     "power": 7,
     "subtype": "Djinn",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Effect - Discarded Shell: If you have two or more relics in your Void, gain ARMOR.3.\nEffect - One with the Void: If you have two or more spells in your Void, gain OVERWHELM.",
     "flavortext": ""
   },
@@ -551,6 +587,7 @@
     "power": 5,
     "subtype": "Insect",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Surge - Earthquake: Exile 3 cards from your Void. Deal 2 damage to all enemy Ashen..",
     "flavortext": ""
   },
@@ -566,6 +603,7 @@
     "power": 7,
     "subtype": "Construct",
     "damagetype": "Earth",
+    "legendary": "Y",
     "cardtext": "Afterglow - Reanimate: You may exile 5 cards from your Void to place [Card Name] into play, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -581,6 +619,7 @@
     "power": 7,
     "subtype": "Hydra",
     "damagetype": "Shadow",
+    "legendary": "Y",
     "cardtext": "Afterglow - Mutual Destruction: Destroy all enemy Ashen.",
     "flavortext": "An eye for an eye will leave THEM blind."
   },
@@ -596,6 +635,7 @@
     "power": 10,
     "subtype": "Construct",
     "damagetype": "Earth",
+    "legendary": "Y",
     "cardtext": "Effect - Animate: You may Exile 5 cards from your Void to play [Card Name] from your hand, ignoring all Ember costs.\nAfterglow - Oath Fulfilled: Exile [Card Name]",
     "flavortext": ""
   },
@@ -611,6 +651,7 @@
     "power": 0,
     "subtype": "Gear",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Effect - Cycle: Once per turn, after you play a friendly Ashen, you may discard the top two cards from your deck.",
     "flavortext": ""
   },
@@ -626,6 +667,7 @@
     "power": 0,
     "subtype": "History",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Effect - Compost: After you exile a card, gain 1 life.",
     "flavortext": ""
   },
@@ -641,6 +683,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Ability - Letting go is Hard - (2): Draw a card with Afterglow from your Void.",
     "flavortext": ""
   },
@@ -656,6 +699,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ability - Summon Skeleton - (1): Exile two cards from an enemy Void.  Create a Skeleton Ashen token with 2 power.",
     "flavortext": ""
   },
@@ -671,6 +715,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Effect - Stoke the Ashes: Your deck may include any Ashen of cost 7 or greater but you may not pay their costs to play them from hand.",
     "flavortext": ""
   },
@@ -686,6 +731,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Ability - Big Rock - (4): Discard an ally from your hand to deal damage to any Enemy equal to that Ally's cost.",
     "flavortext": ""
   },
@@ -701,6 +747,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - I'm not Left-Handed: You strike with Relic Weapons for free.",
     "flavortext": ""
   },
@@ -716,6 +763,7 @@
     "power": 0,
     "subtype": "Spear",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Ability - Spellbreak (1): Exile the top card of your Void.  Destroy target relic.",
     "flavortext": ""
   },
@@ -731,6 +779,7 @@
     "power": 0,
     "subtype": "Timepiece",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Shifting Sands - (0): Discard a card. If you do, draw a card",
     "flavortext": ""
   },
@@ -746,6 +795,7 @@
     "power": 0,
     "subtype": "History",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Ability - Vow of Service - (0): Exile the top card of your Void. Target Ashen gains ARMOR.2 until your next turn.",
     "flavortext": ""
   },
@@ -761,6 +811,7 @@
     "power": 0,
     "subtype": "Headgear",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Foresight: Look at the top two cards of your deck. You may discard either or both of these cards, or put them back on top of your deck in any order.",
     "flavortext": ""
   },
@@ -776,6 +827,7 @@
     "power": 0,
     "subtype": "Shovel",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Ability - Excavate - (0): Exile the top card of your Void. Draw a card.",
     "flavortext": "Now will you call a spade a spade?"
   },
@@ -791,6 +843,7 @@
     "power": 0,
     "subtype": "History",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Ability - Call to Arms - (0): Exile the top card of your Void. Target Ashen gains FIERCE.2 until your next turn.",
     "flavortext": ""
   },
@@ -806,6 +859,7 @@
     "power": 0,
     "subtype": "Gear",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Effect - Refresh: If you have no cards in your hand, destroy [Card Name]. Draw three cards",
     "flavortext": "Those most parched are the thirstiest for knowledge."
   },
@@ -821,6 +875,7 @@
     "power": 0,
     "subtype": "Legendary",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Ability - Honor the Sun - (0) If you played two or more cards from hand this turn, draw a card.",
     "flavortext": ""
   },
@@ -836,6 +891,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Ability - Wish me Luck - (0): Discard 3 cards from the top of your deck.  Deal 1 damage to target enemy Hero for each Ashen discarded.  Destroy this relic if any relics were discarded.",
     "flavortext": ""
   },
@@ -851,6 +907,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Recycle: Exile the top card of your Void.  If it was a spell, draw a card.  If it was an Ashen, add 2 Embers to your Forge.  If it was a relic, deal 2 damage to target enemy Hero.",
     "flavortext": ""
   },
@@ -866,6 +923,7 @@
     "power": 0,
     "subtype": "Gear",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Effect - Fresh Soil: At the start of your turn, discard the top two cards of your deck.",
     "flavortext": ""
   },
@@ -881,6 +939,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Blood",
+    "legendary": "Y",
     "cardtext": "Ability - Harvest Essence - (0) Destroy a friendly Ashen you control.  Add 2 Embers to your Forge.",
     "flavortext": ""
   },
@@ -896,6 +955,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Surge - Bring to Life: Put an Ashen from your Void into play, ignoring all Ember costs.\nAfterglow - Taketh Away: Destroy the Ashen brought to life by this card if it is still in play.",
     "flavortext": ""
   },
@@ -911,6 +971,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Exile up to 5 cards in your Void.  Deal X damage to target enemy Hero where X is the number of cards exiled.",
     "flavortext": ""
   },
@@ -926,6 +987,7 @@
     "power": 0,
     "subtype": "Tradition",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Discard a card from your hand. Choose a card in your Void and add it to your hand.",
     "flavortext": ""
   },
@@ -941,6 +1003,7 @@
     "power": 0,
     "subtype": "Skeleton",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Exile two Ashen cards in an enemy Void.  Create two Skeleton Ashen tokens, each with 2 Power.",
     "flavortext": ""
   },
@@ -956,6 +1019,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Reveal the top 5 cards of your deck, put a revealed Light card into your hand.  Bury the rest.",
     "flavortext": ""
   },
@@ -971,6 +1035,7 @@
     "power": 0,
     "subtype": "Chant",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Deal 3 damage to target enemy Ashen.  If it dies, discard the top 2 cards of your deck.",
     "flavortext": ""
   },
@@ -986,6 +1051,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Deal 3 damage to target enemy Ashen or enemy Hero.  If your hand is empty, draw a card.",
     "flavortext": ""
   },
@@ -1001,6 +1067,7 @@
     "power": 0,
     "subtype": "History",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Exile 3 cards from your Void. Draw 3 cards.",
     "flavortext": ""
   },
@@ -1016,6 +1083,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Restore all friendly Ashen to full Embers.",
     "flavortext": ""
   },
@@ -1031,6 +1099,7 @@
     "power": 0,
     "subtype": "Chant",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Destroy target enemy with less than 5 cost.",
     "flavortext": ""
   },
@@ -1046,6 +1115,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Choose an Ashen with Afterglow in your Void. You may play it with 2 Embers, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -1061,6 +1131,7 @@
     "power": 0,
     "subtype": "Plant",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Deal 4 damage to target enemy Ashen. If it dies, deal 1 damage to each enemy Ashen.",
     "flavortext": ""
   },
@@ -1076,6 +1147,7 @@
     "power": 0,
     "subtype": "Skeleton",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Destroy target enemy Ashen.\nCreate a Skeleton Ashen token with 2 Power.",
     "flavortext": ""
   },
@@ -1091,6 +1163,7 @@
     "power": 0,
     "subtype": "Skeleton",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Exile up to 5 Ashen cards in your Void.  Create a number of Skeleton Ashen tokens equal to the number of Ashen cards exlied, each with 2 Power.",
     "flavortext": ""
   },
@@ -1106,6 +1179,7 @@
     "power": 0,
     "subtype": "Djinn",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Exile an Ashen card in your Void.  Deal 4 damage to all enemy Ashen and enemy Hero.",
     "flavortext": ""
   },
@@ -1121,6 +1195,7 @@
     "power": 0,
     "subtype": "Spiritual",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Deal damage to each enemy equal to it's cost.",
     "flavortext": ""
   },
@@ -1136,6 +1211,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Choose X cards. Trigger all of the Afterglow effects on those cards.",
     "flavortext": ""
   },
@@ -1151,6 +1227,7 @@
     "power": 1,
     "subtype": "Pixie",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Surge - Quick Shot: Deal 1 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -1166,6 +1243,7 @@
     "power": 1,
     "subtype": "Pixie",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Surge - Crystalize: Target enemy Ashen can't attack next turn.",
     "flavortext": ""
   },
@@ -1181,6 +1259,7 @@
     "power": 1,
     "subtype": "Pixie",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Surge - Quick Heal: Gain 3 Life.",
     "flavortext": ""
   },
@@ -1196,6 +1275,7 @@
     "power": 1,
     "subtype": "Pixie",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Surge - Fool You Twice: You may put a Shadow Card in your Discard into your Hand.",
     "flavortext": ""
   },
@@ -1211,6 +1291,7 @@
     "power": 1,
     "subtype": "Pixie",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Bless: Add 2 Embers to another Ashen you control.",
     "flavortext": ""
   },
@@ -1226,6 +1307,7 @@
     "power": 1,
     "subtype": "Pixie",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Hearty: Add 2 Embers to Spirited Pixie.",
     "flavortext": ""
   },
@@ -1241,6 +1323,7 @@
     "power": 1,
     "subtype": "Sprite",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Surge - Looking for Trouble: Search your deck for any one Mischief card, reveal it and put it into your hand. Shuffle your deck afterwards.",
     "flavortext": ""
   },
@@ -1256,6 +1339,7 @@
     "power": 2,
     "subtype": "Golem",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "BLITZ FIERCE.1\nEffect - Vanish: At the end of your turn, return [Card Name] to your hand.",
     "flavortext": ""
   },
@@ -1271,6 +1355,7 @@
     "power": 2,
     "subtype": "Golem",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "FIERCE.3\nIgnite - Short Circuit: Destroy Explode-o-tron.",
     "flavortext": ""
   },
@@ -1286,6 +1371,7 @@
     "power": 2,
     "subtype": "Wizard",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "BLITZ FIERCE.3\nEffect - Wild Magic : Your opponent's first spell next turn costs 3 less to a minimum of 1.",
     "flavortext": ""
   },
@@ -1301,6 +1387,7 @@
     "power": 2,
     "subtype": "Spirit",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Surge - Research: Add 2 counters to your Quest.",
     "flavortext": ""
   },
@@ -1316,6 +1403,7 @@
     "power": 3,
     "subtype": "Construct",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Coming: Trigger the Afterglow effects of another Ashen you control.\nAfterglow - Going:Trigger the Afterglow effects of another Ashen you control.",
     "flavortext": ""
   },
@@ -1331,6 +1419,7 @@
     "power": 3,
     "subtype": "Golem",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Disorient : Move target enemy Ashen home.",
     "flavortext": ""
   },
@@ -1346,6 +1435,7 @@
     "power": 5,
     "subtype": "Construct",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "BLITZ OVERWHELM\nSurge - Borrow:  Exile a card from your Forge.",
     "flavortext": ""
   },
@@ -1361,6 +1451,7 @@
     "power": 4,
     "subtype": "Sentinel",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "SPITE.3\nAbility - Sonic Boom - (2): Destroy target Relic",
     "flavortext": ""
   },
@@ -1376,6 +1467,7 @@
     "power": 7,
     "subtype": "Gorilla",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "Effect - Brawler: This Ashen must attack each turn if able.",
     "flavortext": ""
   },
@@ -1391,6 +1483,7 @@
     "power": 5,
     "subtype": "Wolf",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Howl at the Moon: If you have no other Ashen in play, Draw 2 cards.",
     "flavortext": "The sight of a Lone Wolf inevitably leads to a long chase."
   },
@@ -1406,6 +1499,7 @@
     "power": 5,
     "subtype": "Gorilla",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "Surge - Piercing Screech: Spells cost 5 more to play next turn.",
     "flavortext": ""
   },
@@ -1421,6 +1515,7 @@
     "power": 5,
     "subtype": "Knight",
     "damagetype": "Shadow",
+    "legendary": "Y",
     "cardtext": "Surge - Strike Down - Destroy an Enemy Ashen with cost 1 or less.",
     "flavortext": ""
   },
@@ -1436,6 +1531,7 @@
     "power": 5,
     "subtype": "Elemental",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - One with Everything: Whenever a player plays any card from their hand, add one Ember to [Card Name].\nEffect - Share the Love: At the beginning of your turn, you may put any amount of Embers from [Card Name] onto one other Ashen of your choosing.",
     "flavortext": ""
   },
@@ -1451,6 +1547,7 @@
     "power": 7,
     "subtype": "Golem",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "SPITE.4",
     "flavortext": ""
   },
@@ -1466,6 +1563,7 @@
     "power": 0,
     "subtype": "Puzzle",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Surge - Simple Joy: Add X Embers to target Ashen where X is the number of Puzzleboxes you control.\nAbility - Solved: Destroy 3 Puzzlebox Relics you control.  Create an Emberkin Ashen token with 7 Power.",
     "flavortext": ""
   },
@@ -1481,6 +1579,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Ability - Insatiable Thirst - (0): Target token Ashen has LIFESTEAL until your next turn.",
     "flavortext": ""
   },
@@ -1496,6 +1595,7 @@
     "power": 0,
     "subtype": "Puzzle",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Surge - Simple Joy: Draw X Cards where X is the number of Puzzleboxes you control.\nAbility - Solved: Destroy 3 Puzzlebox Relics you control.  Create an Emberkin Ashen token with 7 Power.",
     "flavortext": ""
   },
@@ -1511,6 +1611,7 @@
     "power": 0,
     "subtype": "History",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Bond: Choose a Unit type.\nEffect - Strengthen: Whenever you play a Ashen of the chosen type, add one additional Ember to it.\nEffect - Favor: The first Ashen of the chosen type you play each turn costs one less Ember to play, to a minimum of one.",
     "flavortext": ""
   },
@@ -1526,6 +1627,7 @@
     "power": 0,
     "subtype": "Puzzle",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Surge - Simple Joy: Deal X damage to target enemy Ashen where X is the number of Puzzleboxes you control.\nAbility - Solved: Destroy 3 Puzzlebox Relics you control.  Create an Emberkin Ashen token with 7 Power.",
     "flavortext": ""
   },
@@ -1541,6 +1643,7 @@
     "power": 0,
     "subtype": "Puzzle",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Surge - Simple Joy: Look at the top X Cards of your deck where X is the number of Puzzleboxes you control.  Place any number on top of your deck in any order and bury the rest.\nAbility - Solved: Destroy 3 Puzzlebox Relics you control.  Create an Emberkin Ashen token with 7 Power.",
     "flavortext": ""
   },
@@ -1556,6 +1659,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Ability - Tinker (0): If you played a Relic this turn (including this one),  add 2 Embers to target Ashen.",
     "flavortext": ""
   },
@@ -1571,6 +1675,7 @@
     "power": 0,
     "subtype": "Forgecraft",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Cursed: Players can't gain Life.\nEffect - Penance: At the end of each player's turn, if they didn't play an Ashen, deal 2 damage to them.",
     "flavortext": ""
   },
@@ -1586,6 +1691,7 @@
     "power": 0,
     "subtype": "Tradition",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Call to Charge - (0): Target Ashen token gains BLITZ until end of turn.",
     "flavortext": ""
   },
@@ -1601,6 +1707,7 @@
     "power": 0,
     "subtype": "Forgecraft",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Effect - Overheat: After any hero places a card into their Forge, deal 2 damage to that hero.",
     "flavortext": ""
   },
@@ -1616,6 +1723,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Effect - Foreboding: All players play with the top card of your deck revealed. Players may play the top card of your deck as if it were in your hand.\nAbility - Clear your mind - (2): Destroy [Card Name]. Any player may use this Ability .",
     "flavortext": ""
   },
@@ -1631,6 +1739,7 @@
     "power": 0,
     "subtype": "Vehicle",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Bond: Choose a Unit type.\nEffect - Sharp Sticks: Your Ashen of that type gain FIERCE.1",
     "flavortext": ""
   },
@@ -1646,6 +1755,7 @@
     "power": 0,
     "subtype": "Jewelry",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Surge - Spring Forward: Place the top two cards of your deck into your Forge.\nAfterglow - Fall Back: Place three random cards from your Forge into your Void.",
     "flavortext": ""
   },
@@ -1661,6 +1771,7 @@
     "power": 0,
     "subtype": "Nobility",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Sticky: At the start of each player's turn, they must choose and destroy an Ashen they control.  If they can't, destroy this relic.",
     "flavortext": ""
   },
@@ -1676,6 +1787,7 @@
     "power": 0,
     "subtype": "Landmark",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Sharp Sticks: Your Ashen tokens have FIERCE.1\nEffect - Wooden Shields: Your Ashen tokens have ARMOR.1\nSurge - Reinforcements: Create two Emberkin Ashen tokens, each with 1 Power.",
     "flavortext": ""
   },
@@ -1691,6 +1803,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "Y",
     "cardtext": "Effect - Follow Orders: At the start of each player's turn, they play the top card of their deck, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -1706,6 +1819,7 @@
     "power": 0,
     "subtype": "Chance",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Effect - Tempt Fate: At the end of your turn, draw a card and deal it's cost in damage to the enemy Hero.",
     "flavortext": ""
   },
@@ -1721,6 +1835,7 @@
     "power": 2,
     "subtype": "Dagger",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nSurge - Flame Spurt : Deal 1 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -1736,6 +1851,7 @@
     "power": 0,
     "subtype": "Flail",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nEffect - Strength in Numbers: Gain FIERCE.X where X is the number of friendly Ashen.",
     "flavortext": ""
   },
@@ -1751,6 +1867,7 @@
     "power": 4,
     "subtype": "Spear",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "STRIKE.0\nSurge - Offering : Destroy a friendly Ashen you control.  If you cannot, destroy Bloodroot Spear.",
     "flavortext": ""
   },
@@ -1766,6 +1883,7 @@
     "power": 2,
     "subtype": "Sword",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nEffect - Rallying Cry : After this defeats an enemy Ashen in an attack, all friendly Ashen gain FIERCE.1 until end of turn.",
     "flavortext": ""
   },
@@ -1781,6 +1899,7 @@
     "power": 4,
     "subtype": "Club",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "STRIKE.0\nSurge - Borrow:  Exile a card from your Forge. If you cannot, destroy [Card Name]",
     "flavortext": ""
   },
@@ -1796,6 +1915,7 @@
     "power": 2,
     "subtype": "Maul",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "STRIKE.0\nAbility - Feed Me! :  Exile a card from your Forge.  [Card Name] gains FIERCE.3 until end of turn.",
     "flavortext": ""
   },
@@ -1811,6 +1931,7 @@
     "power": 2,
     "subtype": "Maul",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nEffect - Reverberate : When you strike with [Card Name], Deal 1 damage to all opposing enemy Ashen.",
     "flavortext": ""
   },
@@ -1826,6 +1947,7 @@
     "power": 4,
     "subtype": "Axe",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nEffect - Bloodthirsty : [Card Name] can only attack Ashen.",
     "flavortext": ""
   },
@@ -1841,6 +1963,7 @@
     "power": 0,
     "subtype": "Hammer",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "STRIKE.0\nAbility - Gather Strength - (0): Reveal and bury the top card of your deck.  [Card Name] gains FIERCE.X until the end of your turn where X is the cost of the buried card.",
     "flavortext": ""
   },
@@ -1856,6 +1979,7 @@
     "power": 4,
     "subtype": "Claw",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nAfterglow - Legacy: Play up to four 1 Cost Ashen from your Void, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -1871,6 +1995,7 @@
     "power": 5,
     "subtype": "Primordial",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nEffect - Attunement : [Card Name] costs one less to play for each element you control of Fire, Earth, Water, Air.",
     "flavortext": ""
   },
@@ -1886,6 +2011,7 @@
     "power": 5,
     "subtype": "Axe",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "STRIKE.0",
     "flavortext": ""
   },
@@ -1901,6 +2027,7 @@
     "power": 0,
     "subtype": "Cantrip",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Deal 1 damage to target enemy Ashen.  If it dies, draw a card.",
     "flavortext": ""
   },
@@ -1916,6 +2043,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Deal Damage to any enemy target equal to your Relic Weapon's Power.",
     "flavortext": ""
   },
@@ -1931,6 +2059,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Play only if your Hero does not have a Relic Weapon.\nTarget Friendly Relic becomes a Relic Weapon with Power equal to its Cost and Strike.0 until end of turn.",
     "flavortext": ""
   },
@@ -1946,6 +2075,7 @@
     "power": 0,
     "subtype": "Chance",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "You may put up to three cards from your Forge into your hand",
     "flavortext": ""
   },
@@ -1961,6 +2091,7 @@
     "power": 0,
     "subtype": "Dream",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Reveal the top card of your deck. If that card is a friendly Ashen, you may play it reducing the cost by 5. Otherwise, draw a card.",
     "flavortext": ""
   },
@@ -1976,6 +2107,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Your relic weapon gains FIERCE.2 until the end of turn.  Your hero may attack an additional time this turn.  Destroy your Relic Weapon at the end of the turn.",
     "flavortext": ""
   },
@@ -1991,6 +2123,7 @@
     "power": 0,
     "subtype": "Mischief",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Destroy target Ashen. Its owner creates an Elephent Ashen token with 4 Power.",
     "flavortext": ""
   },
@@ -2006,6 +2139,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Exile a card from your Forge.  Deal 7 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -2021,6 +2155,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Choose One:\n- Deal 2 damage to target enemy Ashen\n- Destroy target relic.",
     "flavortext": ""
   },
@@ -2036,6 +2171,7 @@
     "power": 0,
     "subtype": "Mischief",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Reveal the top 7 cards of your deck.  Play up to three 1 cost Ashen revealed, ignoring their Ember costs.  Bury the rest.",
     "flavortext": ""
   },
@@ -2051,6 +2187,7 @@
     "power": 0,
     "subtype": "Chant",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Move all Embers above target enemy Ashen's printed power to your Forge.",
     "flavortext": ""
   },
@@ -2066,6 +2203,7 @@
     "power": 0,
     "subtype": "Utterance",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Destroy target enemy Ashen or Relic. That card's controller shuffles their deck then reveals the top card of their deck. If the revealed card is a relic that is legal to play, it is put into play. If the revealed card is a friendly Ashen, it is put into play with full Embers, ignoring all Ember costs. Otherwise, bury it.",
     "flavortext": ""
   },
@@ -2081,6 +2219,7 @@
     "power": 0,
     "subtype": "Inspiration",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Each player discards their hands and then draws 5 cards",
     "flavortext": ""
   },
@@ -2096,6 +2235,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Deal 4 damage to target enemy Ashen. If it dies, destroy a Relic..",
     "flavortext": ""
   },
@@ -2111,6 +2251,7 @@
     "power": 0,
     "subtype": "Mischief",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Create three Emberkin Ashen tokens, one with 3 Power, one with 2 Power, and one with 1 Power.",
     "flavortext": ""
   },
@@ -2126,6 +2267,7 @@
     "power": 0,
     "subtype": "Summon",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Deal 4 damage to target enemy Ashen.\nIf it dies, create an Emberkin Ashen token with 4 Power.",
     "flavortext": ""
   },
@@ -2141,6 +2283,7 @@
     "power": 0,
     "subtype": "Event",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Choose up to three Ashen cards in your Void with different costs of 3 or less.  Play those Ashen, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -2156,6 +2299,7 @@
     "power": 0,
     "subtype": "Mischief",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Create five Emberkin Ashen tokens, one of each power of 5, 4, 3, 2, 1.  Destroy all Ashen tokens at the end of your next turn.",
     "flavortext": ""
   },
@@ -2171,6 +2315,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Choose X cards. Trigger all of the Surge effects on those cards.",
     "flavortext": ""
   },
@@ -2186,6 +2331,7 @@
     "power": 3,
     "subtype": "Imp",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Surge - Backlash: Deal 3 damage to your hero.",
     "flavortext": ""
   },
@@ -2201,6 +2347,7 @@
     "power": 2,
     "subtype": "Bat",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "LIFESTEAL\nSTEALTH",
     "flavortext": ""
   },
@@ -2216,6 +2363,7 @@
     "power": 4,
     "subtype": "Knight",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Effect - Blackened Soul : Deal 1 damage to your Hero at the start of your turn.",
     "flavortext": ""
   },
@@ -2231,6 +2379,7 @@
     "power": 1,
     "subtype": "Werewolf",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect -Transform: [Card Name] gains FIERCE.4 and ARMOR.4 while you have 6 or more cards in your forge.",
     "flavortext": ""
   },
@@ -2246,6 +2395,7 @@
     "power": 2,
     "subtype": "Demon",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "SPITE.2\nEffect - Firestorm: When this attacks, deal 1 damage to all enemy Ashen before damage is dealt.",
     "flavortext": ""
   },
@@ -2261,6 +2411,7 @@
     "power": 1,
     "subtype": "Warlock",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Surge - Dark Bargain: Destroy another friendly Ashen you control. Lose 3 Life. Create an Emberkin Ashen token with 5 Power.",
     "flavortext": ""
   },
@@ -2276,6 +2427,7 @@
     "power": 2,
     "subtype": "Bat",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "STEALTH\nSurge - Bloodthirst: Deal 2 damage to target enemy Hero and gain 2 life.",
     "flavortext": ""
   },
@@ -2291,6 +2443,7 @@
     "power": 2,
     "subtype": "Sprite",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Afterglow - Eternal : Return [Card Name] to your hand.",
     "flavortext": ""
   },
@@ -2306,6 +2459,7 @@
     "power": 2,
     "subtype": "Sprite",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "SOULBOND\nAbility - Healing Touch - (1): Gain 3 life.",
     "flavortext": ""
   },
@@ -2321,6 +2475,7 @@
     "power": 2,
     "subtype": "Cultist",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "STEALTH\nSurge - Cloak of Shadows: Target Ashen gains STEALTH until end of turn.",
     "flavortext": ""
   },
@@ -2336,6 +2491,7 @@
     "power": 3,
     "subtype": "Sprite",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Convoke: Reduce the cost of Astral Sprite by the cost of the last spell you played this turn.",
     "flavortext": ""
   },
@@ -2351,6 +2507,7 @@
     "power": 3,
     "subtype": "Wolf",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Bloodlust: The first time your hero takes damage each turn, [Card Name] gains FIERCE.X where X is the amount of damage taken.",
     "flavortext": ""
   },
@@ -2366,6 +2523,7 @@
     "power": 3,
     "subtype": "Cultist",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Ability - Price to Pay: Destroy a friendly Ashen.  Gain 5 life.",
     "flavortext": ""
   },
@@ -2381,6 +2539,7 @@
     "power": 3,
     "subtype": "Warlock",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Ability - Summon Imp: Lose 1 life.  Create an Emberkin 1 Ashen token with 1 Power.",
     "flavortext": ""
   },
@@ -2396,6 +2555,7 @@
     "power": 3,
     "subtype": "Sprite",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Ignite - Renew: Gain 3 Life.",
     "flavortext": ""
   },
@@ -2411,6 +2571,7 @@
     "power": 3,
     "subtype": "Werewolf",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Surge - Consume: You may destroy a friendly Ashen you control to create an Emberkin Ashen token with 3 Power.",
     "flavortext": ""
   },
@@ -2426,6 +2587,7 @@
     "power": 2,
     "subtype": "Imp",
     "damagetype": "Blood",
+    "legendary": "Y",
     "cardtext": "Effect - At Your Service: If [Card Name] is in your hand or Void, after a friendly non-Imp card is destroyed on your turn, you may play [Card Name] without paying the cost.",
     "flavortext": ""
   },
@@ -2441,6 +2603,7 @@
     "power": 3,
     "subtype": "Witch",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Surge - Draw from the Ether: Add Embers to your Forge equal to the cost of the last spell you played this turn.",
     "flavortext": ""
   },
@@ -2456,6 +2619,7 @@
     "power": 3,
     "subtype": "Spirit",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "STEALTH",
     "flavortext": ""
   },
@@ -2471,6 +2635,7 @@
     "power": 3,
     "subtype": "Cultist",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "OVERWHELM\nEffect - Your Pain, My Rage: Whenever your hero takes damage, [Card Name] gains FIERCE.2 until end of turn.",
     "flavortext": ""
   },
@@ -2486,6 +2651,7 @@
     "power": 3,
     "subtype": "Werewolf",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Transform: [Card Name] gains FIERCE.3 and ARMOR.3 while you have 6 or more cards in your forge.",
     "flavortext": ""
   },
@@ -2501,6 +2667,7 @@
     "power": 3,
     "subtype": "Witch",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Surge - Shadowbomb: Deal 3 damage to each hero.",
     "flavortext": ""
   },
@@ -2516,6 +2683,7 @@
     "power": 2,
     "subtype": "Werewolf",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "BLITZ FIERCE.1\nEffect - Backlash: Whenever [Card Name] deals damage, deal 2 damage to your Hero.\nIgnite - Berserker: [Card Name] may attack an additional time this turn.",
     "flavortext": ""
   },
@@ -2531,6 +2699,7 @@
     "power": 4,
     "subtype": "Sprite",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Effect - Glow: After you play a spell, gain 3 life.",
     "flavortext": ""
   },
@@ -2546,6 +2715,7 @@
     "power": 4,
     "subtype": "Warlock",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ability - Dark Dealings (0): Destroy a friendly Ashen you control.  Create three Emberkin Ashen tokens, each with 1 Power.",
     "flavortext": ""
   },
@@ -2561,6 +2731,7 @@
     "power": 4,
     "subtype": "Troll",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Heave (0): Destroy a friendly Ashen you control.  Deal 4 damage to target enemy Hero.",
     "flavortext": ""
   },
@@ -2576,6 +2747,7 @@
     "power": 4,
     "subtype": "Demon",
     "damagetype": "Fire",
+    "legendary": "Y",
     "cardtext": "Afterglow - Rebirth: Lose 4 life. Play [Card Name] from your Void, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -2591,6 +2763,7 @@
     "power": 4,
     "subtype": "Sprite",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "LIFESTEAL",
     "flavortext": ""
   },
@@ -2606,6 +2779,7 @@
     "power": 4,
     "subtype": "Wolf",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Lashout: Whenever Vengeful Wolf is dealt damage outside of combat, Vengeful Wolf deals that much damage to each enemy Ashen.",
     "flavortext": ""
   },
@@ -2621,6 +2795,7 @@
     "power": 5,
     "subtype": "Cat",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Rebuke: Whenever an opponent plays an enemy Ashen from their hand, you may pay 2 Life. If you do, deal two damage to the enemy Ashen played.",
     "flavortext": ""
   },
@@ -2636,6 +2811,7 @@
     "power": 5,
     "subtype": "Werewolf",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "ARMOR.3 FIERCE.3 OVERWHELM\nSurge - Whiplash: Deal 5 damage to your hero.",
     "flavortext": ""
   },
@@ -2651,6 +2827,7 @@
     "power": 5,
     "subtype": "Beast",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Surge - Consume: You may destroy a friendly Ashen to draw 2 cards.",
     "flavortext": ""
   },
@@ -2666,6 +2843,7 @@
     "power": 5,
     "subtype": "Demon",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Effect - Darkflame: When a friendly Ashen you control is destroyed, deal 2 Shadow damage to target enemy Hero.",
     "flavortext": ""
   },
@@ -2681,6 +2859,7 @@
     "power": 5,
     "subtype": "Voidlord",
     "damagetype": "Shadow",
+    "legendary": "Y",
     "cardtext": "STEALTH\nAfterglow - Smoke Cloud: Return Smaugana to your hand.",
     "flavortext": "My teeth are swords, my claws spears, the shock of my tail a thunderbolt, and my wings a hurricane!"
   },
@@ -2696,6 +2875,7 @@
     "power": 5,
     "subtype": "Scion",
     "damagetype": "",
+    "legendary": "Y",
     "cardtext": "Surge - Healing Light: Gain 1 life for each card in the enemy Void.",
     "flavortext": ""
   },
@@ -2711,6 +2891,7 @@
     "power": 7,
     "subtype": "Cultist",
     "damagetype": "Light",
+    "legendary": "Y",
     "cardtext": "SPITE.7\nEffect - Divine Shield:  The first source of damage on on each opposing player's turn does no damage to Aloria Lightborn.\nEffect - Divine Smite: After Aloria Lightborn defeats an enemy Ashen in combat, gain 7 life.",
     "flavortext": ""
   },
@@ -2726,6 +2907,7 @@
     "power": 7,
     "subtype": "Voidlord",
     "damagetype": "Shadow",
+    "legendary": "Y",
     "cardtext": "Effect - Summoning Portal: At the start of each player's turn, create an Emberkin Ashen token with 1 Power.\nEffect - Sting: Your Emberkin Ashen gain \"Afterglow : Deal 1 Shadow damage to target enemy Hero.\"",
     "flavortext": ""
   },
@@ -2741,6 +2923,7 @@
     "power": 8,
     "subtype": "Voidlord",
     "damagetype": "Shadow",
+    "legendary": "Y",
     "cardtext": "OVERWHELM\nEffect - Miasma Field: Enemy spells cost 2 more.",
     "flavortext": ""
   },
@@ -2756,6 +2939,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ability - Sacrifice- (1): Destroy a friendly Ashen you control.  Look at the top 3 cards of your deck.  Choose one to put into your hand and bury the rest.",
     "flavortext": ""
   },
@@ -2771,6 +2955,7 @@
     "power": 0,
     "subtype": "Warlock",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Ability - Lifetap - (1): Lose 2 Life. Draw a card.",
     "flavortext": ""
   },
@@ -2786,6 +2971,7 @@
     "power": 0,
     "subtype": "Timepiece",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Ability - Tic Toc - (0): Deal 2 Damage to all Heroes",
     "flavortext": ""
   },
@@ -2801,6 +2987,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ability - Summon Demon - (1): If you destroyed an Enemy Ashen this turn, create an Emberkin Ashen token with 3 Power.",
     "flavortext": ""
   },
@@ -2816,6 +3003,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Ability - Forced Empathy - (2): If you lost life this turn, deal 3 damage to target Enemy Ashen.",
     "flavortext": ""
   },
@@ -2831,6 +3019,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Effect - Worthwhile Sacrifice: The first time you lose life on your turn, create an Emberkin Ashen token with 1 Power.",
     "flavortext": ""
   },
@@ -2846,6 +3035,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Inconceivable: When you destroy an enemy Ashen with a Relic Weapon, draw a card.",
     "flavortext": ""
   },
@@ -2861,6 +3051,7 @@
     "power": 0,
     "subtype": "Knowledge",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Ability - Forgiveness (0): Discard a card.  Gain 5 life.",
     "flavortext": ""
   },
@@ -2876,6 +3067,7 @@
     "power": 0,
     "subtype": "Knowledge",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ability - Forbidden Knowledge (0): Lose 2 life.  Draw a card.",
     "flavortext": ""
   },
@@ -2891,6 +3083,7 @@
     "power": 0,
     "subtype": "Landmark",
     "damagetype": "Light",
+    "legendary": "Y",
     "cardtext": "Effect - Rightousness: If you start the turn with 5 or more cards in your hand, gain 3 life.",
     "flavortext": ""
   },
@@ -2906,6 +3099,7 @@
     "power": 0,
     "subtype": "Gathering",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ability - Sacrifice (0): Destroy a friendly Ashen you control.  Deal 3 damage to an enemy Hero.  Gain 3 life.",
     "flavortext": ""
   },
@@ -2921,6 +3115,7 @@
     "power": 0,
     "subtype": "History",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ability -  Darkness - (0): Reduce the cost of your next Shadow spell you cast this turn by 3 to a minimum of 1.",
     "flavortext": ""
   },
@@ -2936,6 +3131,7 @@
     "power": 0,
     "subtype": "Legendary",
     "damagetype": "Light",
+    "legendary": "Y",
     "cardtext": "Ability - Bestow Vitality - (0) If you played two or more cards from hand this turn, gain 3 life.",
     "flavortext": ""
   },
@@ -2951,6 +3147,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Effect - Flickers of Death: Gain 2 life after one of your friendly Ashen is destroyed.",
     "flavortext": ""
   },
@@ -2966,6 +3163,7 @@
     "power": 0,
     "subtype": "Spirit",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Effect - Elemental Attunement: Once per turn, after you gain life, deal that much damage to an enemy Ashen.",
     "flavortext": ""
   },
@@ -2981,6 +3179,7 @@
     "power": 0,
     "subtype": "Symbol",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Effect - Last Rites- At the end of your turn, if an enemy Ashen went to the Void, create an Emberkin Ashen token with 2 Power.",
     "flavortext": ""
   },
@@ -2996,6 +3195,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Effect - Siphon Essence: Whenever a friendly Ashen you control attacks, deal 1 damage to target enemy Hero and gain 1 life.",
     "flavortext": ""
   },
@@ -3011,6 +3211,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Ability - Snuff Out: Destroy target enemy Ashen with two or fewer Embers.",
     "flavortext": ""
   },
@@ -3026,6 +3227,7 @@
     "power": 0,
     "subtype": "Curse",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Until your next turn, enemy Ashen have WEAK.2",
     "flavortext": ""
   },
@@ -3041,6 +3243,7 @@
     "power": 0,
     "subtype": "Ward",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Target Ashen gains SPITE.5 until your next turn. Draw a card.",
     "flavortext": ""
   },
@@ -3056,6 +3259,7 @@
     "power": 0,
     "subtype": "Pact",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Destroy target Shadow Ashen.\nDraw X cards where X is the cost of the destroyed Ashen.",
     "flavortext": ""
   },
@@ -3071,6 +3275,7 @@
     "power": 0,
     "subtype": "Curse",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Deal 3 damage to target enemy Ashen.  If it dies, draw a card.",
     "flavortext": ""
   },
@@ -3086,6 +3291,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Deal 1 Shadow damage to target enemy Ashen for each damage on your hero.",
     "flavortext": ""
   },
@@ -3101,6 +3307,7 @@
     "power": 0,
     "subtype": "Forgecraft",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Deal damage to target enemy Hero equal to the number of cards in your Forge.",
     "flavortext": ""
   },
@@ -3116,6 +3323,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Sacrifice an Ashen. Deal Damage equal to that Ashen's Cost to any target.",
     "flavortext": ""
   },
@@ -3131,6 +3339,7 @@
     "power": 0,
     "subtype": "Balance",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Deal 3 damage to target Ashen.  If it dies, gain 5 life.",
     "flavortext": ""
   },
@@ -3146,6 +3355,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Destroy a friendly Ashen.  Deal 5 damage to target enemy.",
     "flavortext": ""
   },
@@ -3161,6 +3371,7 @@
     "power": 0,
     "subtype": "Emotion",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "The next Spell you cast this turn costs 5 less",
     "flavortext": ""
   },
@@ -3176,6 +3387,7 @@
     "power": 0,
     "subtype": "Mischief",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Reduce all enemy Ashen to 1 Ember.",
     "flavortext": ""
   },
@@ -3191,6 +3403,7 @@
     "power": 0,
     "subtype": "Spear",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "LIFESTEAL\nDeal 3 damage to target enemy.",
     "flavortext": ""
   },
@@ -3206,6 +3419,7 @@
     "power": 0,
     "subtype": "Sword",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Destroy target enemy Ashen or enemy Relic.\nLose X life where X is the cost of the destroyed card.",
     "flavortext": ""
   },
@@ -3221,6 +3435,7 @@
     "power": 0,
     "subtype": "Emotion",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Destroy target enemy Ashen.\nLose 3 Life",
     "flavortext": ""
   },
@@ -3236,6 +3451,7 @@
     "power": 0,
     "subtype": "Curse",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Destroy a friendly Ashen.\nDeal X damage to all enemy Ashen where X is the cost of the destroyed Ashen.",
     "flavortext": ""
   },
@@ -3251,6 +3467,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Play a friendly Ashen in your Void, ignoring Ember costs.  Lose life equal to the cost of the Ashen.",
     "flavortext": ""
   },
@@ -3266,6 +3483,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "LIFESTEAL\nDeal 5 damage to target enemy.",
     "flavortext": ""
   },
@@ -3281,6 +3499,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Destroy all friendly Ashen. Deal damage to all enemy Ashen and all Heroes equal to the total cost of friendly Ashen destroyed.",
     "flavortext": ""
   },
@@ -3296,6 +3515,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Lose 3 Life.  Draw 3 Cards",
     "flavortext": ""
   },
@@ -3311,6 +3531,7 @@
     "power": 1,
     "subtype": "Dinosaur",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Better Together: [Card Name] gains FIERCE.2 and ARMOR.2 while you control another Ashen.",
     "flavortext": ""
   },
@@ -3326,6 +3547,7 @@
     "power": 2,
     "subtype": "Pygmy",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Surge - Bolster: Target friendly Ashen gains FIERCE.1 and STEALTH until end of turn.",
     "flavortext": ""
   },
@@ -3341,6 +3563,7 @@
     "power": 2,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Ability - Tell Stories - (0): Each player draws a card, then discards a card.",
     "flavortext": ""
   },
@@ -3356,6 +3579,7 @@
     "power": 3,
     "subtype": "Dinosaur",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "ARMOR.2",
     "flavortext": ""
   },
@@ -3371,6 +3595,7 @@
     "power": 3,
     "subtype": "Frog",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Vitalize - (2): Restore a friendly Ashen to full Embers.",
     "flavortext": ""
   },
@@ -3386,6 +3611,7 @@
     "power": 3,
     "subtype": "Dinosaur",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ignite - Pack Tactics: Your Dinosaurs gain FIERCE.2 until your next turn.",
     "flavortext": ""
   },
@@ -3401,6 +3627,7 @@
     "power": 3,
     "subtype": "Snake",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Beckon - (2): Reduce the cost of the next Dinosaur Ashen you play this turn by 5.",
     "flavortext": ""
   },
@@ -3416,6 +3643,7 @@
     "power": 3,
     "subtype": "Frog",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Dazzle: When you play a friendly Ashen with cost 6 or more from your hand, add 3 Embers to your Forge.",
     "flavortext": ""
   },
@@ -3431,6 +3659,7 @@
     "power": 3,
     "subtype": "Frog",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ignite- Big Smile: Target enemy Ashen gains WEAK.3 until your next turn.",
     "flavortext": ""
   },
@@ -3446,6 +3675,7 @@
     "power": 3,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "SOULBOND\nAbility - Stampede - (4) Friendly Ashen gain FIERCE.3 and OVERWHELM until end of turn.",
     "flavortext": ""
   },
@@ -3461,6 +3691,7 @@
     "power": 3,
     "subtype": "Frog",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Venom - (1): Deal 1 damage to target enemy Ashen.  That Ashen gains WEAK.3 until your next turn.",
     "flavortext": ""
   },
@@ -3476,6 +3707,7 @@
     "power": 4,
     "subtype": "Frog",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Surge - Jungle Beat: If you have another Ashen in play that costs 6 or more, reduce the cost of the next spell you cast this turn to 0.",
     "flavortext": ""
   },
@@ -3491,6 +3723,7 @@
     "power": 4,
     "subtype": "Snake",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Entangle - (0): Target enemy Ashen may not attack next turn.",
     "flavortext": ""
   },
@@ -3506,6 +3739,7 @@
     "power": 4,
     "subtype": "Gorilla",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "OVERWHELM\nSurge - Smash: Destroy target Relic.",
     "flavortext": ""
   },
@@ -3521,6 +3755,7 @@
     "power": 4,
     "subtype": "Frog",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Thump - (0): Deal 3 damage to target enemy Ashen or enemy Hero that used an Ability on it's player's last turn.",
     "flavortext": ""
   },
@@ -3536,6 +3771,7 @@
     "power": 10,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "OVERWHELM ARMOR.5\nSurge - Extra Hungry: Exile 3 cards from your Forge.  If you cannot, destroy Gigantasaur.",
     "flavortext": ""
   },
@@ -3551,6 +3787,7 @@
     "power": 5,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "ARMOR.3",
     "flavortext": ""
   },
@@ -3566,6 +3803,7 @@
     "power": 5,
     "subtype": "Elemental",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Surge - Coup de Grace: Destroy target damaged enemy Ashen.",
     "flavortext": ""
   },
@@ -3581,6 +3819,7 @@
     "power": 5,
     "subtype": "Snake",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Terrorize: enemy Ashen with cost 3 or less gain WEAK.3",
     "flavortext": ""
   },
@@ -3596,6 +3835,7 @@
     "power": 6,
     "subtype": "Gorilla",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "OVERWHELM\nEffect - Strong Together: Costs 3 less Embers if you control another Gorilla Ashen.",
     "flavortext": ""
   },
@@ -3611,6 +3851,7 @@
     "power": 6,
     "subtype": "Dinosaur",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Surge - Big Gains: Forge the top card of your deck.",
     "flavortext": ""
   },
@@ -3626,6 +3867,7 @@
     "power": 4,
     "subtype": "Dinosaur",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Surge - Pack Hunters:  Create two Dinosaur Ashen tokens, each with 2 Power.",
     "flavortext": ""
   },
@@ -3641,6 +3883,7 @@
     "power": 6,
     "subtype": "Mammoth",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Stomp - (5): Destroy target enemy Ashen.",
     "flavortext": ""
   },
@@ -3656,6 +3899,7 @@
     "power": 7,
     "subtype": "Elemental",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Transfer - (X) Add X Embers to another Ashen you control.",
     "flavortext": ""
   },
@@ -3671,6 +3915,7 @@
     "power": 5,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Dive Bomb: Destroy target enemy with 3 or less printed Power.",
     "flavortext": ""
   },
@@ -3686,6 +3931,7 @@
     "power": 7,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "ARMOR.4",
     "flavortext": ""
   },
@@ -3701,6 +3947,7 @@
     "power": 7,
     "subtype": "Dinosaur",
     "damagetype": "Lightning",
+    "legendary": "Y",
     "cardtext": "BLITZ\nEffect - Pulverize: When [Card Name] attacks, destroy an enemy Relic.",
     "flavortext": ""
   },
@@ -3716,6 +3963,7 @@
     "power": 8,
     "subtype": "Dinosaur",
     "damagetype": "",
+    "legendary": "Y",
     "cardtext": "OVERWHELM\nEffect - Thunderous Bellow: After an enemy spell is played, draw a card.",
     "flavortext": ""
   },
@@ -3731,6 +3979,7 @@
     "power": 7,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Hunt - (2): Deal 5 damage to target enemy Hero.",
     "flavortext": ""
   },
@@ -3746,6 +3995,7 @@
     "power": 7,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "Surge - Call Family:  Create two Dinosaur Ashen tokens, each with 2 Power.\nEffect - Unbridled Rage: Your Dinosaur Ashen tokens gain BLITZ.",
     "flavortext": ""
   },
@@ -3761,6 +4011,7 @@
     "power": 7,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "Surge - Call Family:  Create two Dinosaur Ashen tokens, each with 2 Power.\nEffect - Defend the Mother: Your Dinosaur Ashen tokens gain ARMOR.1",
     "flavortext": ""
   },
@@ -3776,6 +4027,7 @@
     "power": 8,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Fear - (0): Target enemy Ashen gains WEAK.5 until your next turn.",
     "flavortext": ""
   },
@@ -3791,6 +4043,7 @@
     "power": 9,
     "subtype": "Mammoth",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Rampant Growth: After another Ashen you control defeats an enemy in an attack, add three Embers to Razortusk Guardian.",
     "flavortext": ""
   },
@@ -3806,6 +4059,7 @@
     "power": 9,
     "subtype": "Mammoth",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Simplify: Destroy up to 3 Relics. For each Relic destroyed this way, its controller creates an Emberkin Ashen token with 3 Power.",
     "flavortext": ""
   },
@@ -3821,6 +4075,7 @@
     "power": 9,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "Effect - Relentless: After your opponent plays an enemy, attack it.",
     "flavortext": ""
   },
@@ -3836,6 +4091,7 @@
     "power": 10,
     "subtype": "Dinosaur",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "OVERWHELM BLITZ",
     "flavortext": ""
   },
@@ -3851,6 +4107,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Fury: Your cards that cost 7 or more cost one less Ember to play.",
     "flavortext": ""
   },
@@ -3866,6 +4123,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Barbaric Wrath : Friendly Ashen gain OVERWHELM.",
     "flavortext": ""
   },
@@ -3881,6 +4139,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Fancy Footwork: Gain ARMOR.3 while you have a Relic Weapon equipped.",
     "flavortext": ""
   },
@@ -3896,6 +4155,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Reinforce - (0): Add 2 Embers to a friendly Ashen with ARMOR.",
     "flavortext": ""
   },
@@ -3911,6 +4171,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Vitalize - (2): Restore target Ashen to full Embers.",
     "flavortext": ""
   },
@@ -3926,6 +4187,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ignite - Bright Eyed: Add 1 Ember to your forge.",
     "flavortext": ""
   },
@@ -3941,6 +4203,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Ability - Rebirth - (2): Draw a non-legendary dinosaur Ashen from your Void.",
     "flavortext": ""
   },
@@ -3956,6 +4219,7 @@
     "power": 0,
     "subtype": "Headgear",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - If you control the Ashen with the most Embers on a Unit in play, enemy Ashen have WEAK.2.",
     "flavortext": ""
   },
@@ -3971,6 +4235,7 @@
     "power": 0,
     "subtype": "Staff",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Only the Strong - (0): Target friendly Ashen with cost 6 or more gains FIERCE.2 until your next turn.",
     "flavortext": ""
   },
@@ -3986,6 +4251,7 @@
     "power": 0,
     "subtype": "Ring",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Ability - Reinforced - (0): Target friendly Ashen with cost 6 or more gains ARMOR.2 until your next turn.",
     "flavortext": ""
   },
@@ -4001,6 +4267,7 @@
     "power": 0,
     "subtype": "Book",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Late Nights: Reduce the cost of the Research Ability by 1 for each card in your Forge.\nAbility - Research: (10) Draw two cards.",
     "flavortext": ""
   },
@@ -4016,6 +4283,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Friend of the Mighty: The first time each turn you play a friendly Ashen that costs 7 or more, add two Embers to your Forge.",
     "flavortext": ""
   },
@@ -4031,6 +4299,7 @@
     "power": 0,
     "subtype": "Trap",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Pull Away: After an enemy Ashen attacks, but before damage is dealt, you may destroy Jungle Snare to return the attacking enemy Ashen to it's owner's hand, returning the Embers on the enemy Ashen to the owner's Forge.",
     "flavortext": ""
   },
@@ -4046,6 +4315,7 @@
     "power": 0,
     "subtype": "Bone",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Ferocious Roar - : Friendly Ashen with cost 6 or more gain OVERWHELM and cannot have their damage reduced.",
     "flavortext": ""
   },
@@ -4061,6 +4331,7 @@
     "power": 0,
     "subtype": "Trap",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Suprise: After an enemy Ashen attacks your hero, but before damage is dealt, destroy Spike Trap to deal 3 damage to the attacking enemy Ashen.",
     "flavortext": ""
   },
@@ -4076,6 +4347,7 @@
     "power": 0,
     "subtype": "Footwear",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - One with Nature: After you deal Nature damage, draw a card.",
     "flavortext": ""
   },
@@ -4091,6 +4363,7 @@
     "power": 0,
     "subtype": "Stone",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Effect - Backlash: After an opponent places a card into their Forge, deal 3 Nature damage to their hero.",
     "flavortext": ""
   },
@@ -4106,6 +4379,7 @@
     "power": 0,
     "subtype": "Forage",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Dinosize - (3): Target friendly Ashen gains FIERCE.5 and ARMOR.5 until your next turn.",
     "flavortext": "Anyone else want an omelette?"
   },
@@ -4121,6 +4395,7 @@
     "power": 0,
     "subtype": "Trap",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Suprise: The next time a non-token enemy Ashen enters play, destroy Spiked Log Trap to destroy that enemy Ashen",
     "flavortext": ""
   },
@@ -4136,6 +4411,7 @@
     "power": 0,
     "subtype": "Egg",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Surge - ???: Create a Dinosaur Ashen token with 2 Power.\nAbility - ??? - (1): Give a friendly Dinosaur FIERCE.2 until end of turn.",
     "flavortext": ""
   },
@@ -4151,6 +4427,7 @@
     "power": 0,
     "subtype": "Stone",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Effect - Increased Velocity: When you play a friendly Ashen that costs 6 or more, you may Forge the top card of your deck.",
     "flavortext": ""
   },
@@ -4166,6 +4443,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Destroy target damaged enemy Ashen",
     "flavortext": ""
   },
@@ -4181,6 +4459,7 @@
     "power": 0,
     "subtype": "Hunting",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "If you control 2 or more Ashen with cost 7 or more, destroy target enemy Ashen.",
     "flavortext": ""
   },
@@ -4196,6 +4475,7 @@
     "power": 0,
     "subtype": "Vine",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Destroy an enemy Ashen with 3 Power or less.",
     "flavortext": ""
   },
@@ -4211,6 +4491,7 @@
     "power": 0,
     "subtype": "History",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Choose a Ashen card in your Void. Return that Ashen to your hand.",
     "flavortext": ""
   },
@@ -4226,6 +4507,7 @@
     "power": 0,
     "subtype": "Bramble",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Target Ashen gains ARMOR.3 until your next turn. Draw a card.",
     "flavortext": ""
   },
@@ -4241,6 +4523,7 @@
     "power": 0,
     "subtype": "Utterance",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Target enemy Ashen gains WEAK.5 until your next turn. Draw a card.",
     "flavortext": ""
   },
@@ -4256,6 +4539,7 @@
     "power": 0,
     "subtype": "Chant",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Deal 3 damage to target enemy Ashen.  If it dies, add 2 Embers to target Ashen.",
     "flavortext": ""
   },
@@ -4271,6 +4555,7 @@
     "power": 0,
     "subtype": "Bone",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Add Embers to target Ashen equal to that Ashen's printed power.",
     "flavortext": ""
   },
@@ -4286,6 +4571,7 @@
     "power": 0,
     "subtype": "Emotion",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "Each Dinosaur you control deals damage equal to their printed power  to one target of your choice.",
     "flavortext": ""
   },
@@ -4301,6 +4587,7 @@
     "power": 0,
     "subtype": "Dinosaur",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Create two Dinosaur Ashen tokens, each with 2 Power.",
     "flavortext": ""
   },
@@ -4316,6 +4603,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Discard an Ashen card to draw three cards.",
     "flavortext": ""
   },
@@ -4331,6 +4619,7 @@
     "power": 0,
     "subtype": "Tradition",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Play a Jungoom Ashen from your Void with one Ember, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -4346,6 +4635,7 @@
     "power": 0,
     "subtype": "Emotion",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Deal X damage to target enemy Ashen where X is equal to the cost of a friendly Ashen you control.",
     "flavortext": ""
   },
@@ -4361,6 +4651,7 @@
     "power": 0,
     "subtype": "Bone",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Deal 4 damage to target enemy Ashen. If it dies, add 3 Embers to target Ashen.",
     "flavortext": ""
   },
@@ -4376,6 +4667,7 @@
     "power": 0,
     "subtype": "Weather",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Deal 6 damage divided any way you choose to up to six targets.",
     "flavortext": ""
   },
@@ -4391,6 +4683,7 @@
     "power": 0,
     "subtype": "Rage",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Target friendly Ashen can only attack enemy Ashen and gains FIERCE.5 and OVERWHELM until end of turn.",
     "flavortext": ""
   },
@@ -4406,6 +4699,7 @@
     "power": 0,
     "subtype": "Tradition",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Put up to two Ashen cards from your Void into your hand.  Draw a card.",
     "flavortext": ""
   },
@@ -4421,6 +4715,7 @@
     "power": 0,
     "subtype": "Weather",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Destroy target enemy Ashen.  Forge this card instead of placing it into your void.",
     "flavortext": "He saw the 5 pillars forming around him, but by then it was already too late."
   },
@@ -4436,6 +4731,7 @@
     "power": 0,
     "subtype": "Weather",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Deal 5 damage to each of up to two targets.",
     "flavortext": ""
   },
@@ -4451,6 +4747,7 @@
     "power": 0,
     "subtype": "Weather",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Choose 3 targets.  Deal 3 damage to the first, 4 damage to the second and 5 damage to the third.",
     "flavortext": ""
   },
@@ -4466,6 +4763,7 @@
     "power": 1,
     "subtype": "Akrak",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Ignite - Pumped Up: [Card Name] gains FIERCE.2 and ARMOR.2 until end of turn.",
     "flavortext": ""
   },
@@ -4481,6 +4779,7 @@
     "power": 1,
     "subtype": "Goldmane",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Hunting Partner: If [Card Name] is the second Ashen to attack the same enemy Ashen this turn, destroy that enemy Ashen before damage would be dealt. Deal 5 Damage to that enemy Ashen's controller.",
     "flavortext": ""
   },
@@ -4496,6 +4795,7 @@
     "power": 2,
     "subtype": "Bomani",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "SOULBOND\nAbility - Call for Aid - (3): Create an Elephant Ashen token with 4 Power.",
     "flavortext": ""
   },
@@ -4511,6 +4811,7 @@
     "power": 2,
     "subtype": "Mystic",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "SOULBOND\nAbility - Honor the Ancestors - (5): Create an Emberkin Ashen token with 7 Power.",
     "flavortext": ""
   },
@@ -4526,6 +4827,7 @@
     "power": 2,
     "subtype": "Snarlfang",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Clean the Bones: Add 1 Ember to [Card Name] after an enemy Ashen is destroyed.\nEffect - Full Belly: If [Card Name] has 5 or more Embers, gain FIERCE.3.",
     "flavortext": ""
   },
@@ -4541,6 +4843,7 @@
     "power": 2,
     "subtype": "Snarlfang",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "OVERWHELM\nIgnite - Vicious Charge: Gain FIERCE.2 until your next turn.",
     "flavortext": ""
   },
@@ -4556,6 +4859,7 @@
     "power": 2,
     "subtype": "Snarlfang",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Effect - Clean the Bones: Add 1 Ember to [Card Name] after an enemy Ashen is destroyed.\nAbility - Static Shock- (3): Deal 3 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -4571,6 +4875,7 @@
     "power": 2,
     "subtype": "Goldmane",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "STEALTH",
     "flavortext": ""
   },
@@ -4586,6 +4891,7 @@
     "power": 2,
     "subtype": "Toad",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Afterglow - Static Shock: Deal 2 damage to target enemy Ashen or enemy Hero.",
     "flavortext": ""
   },
@@ -4601,6 +4907,7 @@
     "power": 1,
     "subtype": "Elemental",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "BLITZ FIERCE.5 OVERWHELM\nEffect - Crackle: Destroy this Ashen at the end of your turn.",
     "flavortext": ""
   },
@@ -4616,6 +4923,7 @@
     "power": 3,
     "subtype": "Goldmane",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "FIERCE.1 STEALTH",
     "flavortext": ""
   },
@@ -4631,6 +4939,7 @@
     "power": 3,
     "subtype": "Tusker",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Effect - Overfed: After gaining Embers, Engorged Tusker gains FIERCE.X until end of turn where X is equal to the Embers gained.",
     "flavortext": ""
   },
@@ -4646,6 +4955,7 @@
     "power": 3,
     "subtype": "Snarlfang",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Clean the Bones: Add 1 Ember to [Card Name] after an enemy Ashen is destroyed.\nAbility - Piercing Scream - (6): Destroy target enemy Ashen.",
     "flavortext": ""
   },
@@ -4661,6 +4971,7 @@
     "power": 3,
     "subtype": "Sprite",
     "damagetype": "Lightning",
+    "legendary": "Y",
     "cardtext": "Ability - Overcharged - (2): Spells you play this turn deal 3 additional damage.",
     "flavortext": ""
   },
@@ -4676,6 +4987,7 @@
     "power": 3,
     "subtype": "Spirit",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect  - Rejuvenate: At the end of the turn, add 3 Embers to each friendly Ashen that attacked this turn",
     "flavortext": ""
   },
@@ -4691,6 +5003,7 @@
     "power": 6,
     "subtype": "Beast",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Surge - Hunting Party: Create three Emberkin Ashen tokens, each with 1 Power under target Enemy Hero's control.",
     "flavortext": ""
   },
@@ -4706,6 +5019,7 @@
     "power": 3,
     "subtype": "Troll",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Rolling Thunder: After this Ashen attacks, but before damage is dealt, Deal X damage to target enemy Hero where X is the number of Nature cards you control.",
     "flavortext": ""
   },
@@ -4721,6 +5035,7 @@
     "power": 3,
     "subtype": "Troll",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Root for Mushrooms: Draw a Spell from your Void.",
     "flavortext": ""
   },
@@ -4736,6 +5051,7 @@
     "power": 1,
     "subtype": "Owl",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "STEALTH\nIgnite - Ferocious Wingbeat: [Card Name] gains FIERCE.3 and ARMOR.3 until your next turn.",
     "flavortext": ""
   },
@@ -4751,6 +5067,7 @@
     "power": 1,
     "subtype": "Mystic",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Surge - Companion: Create an Elephant Ashen token with 4 Power.",
     "flavortext": ""
   },
@@ -4766,6 +5083,7 @@
     "power": 4,
     "subtype": "Troll",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Effect - Grudge: Whenever [Card Name] is damaged, create a Skeleton Ashen Token with 2 Power.",
     "flavortext": ""
   },
@@ -4781,6 +5099,7 @@
     "power": 4,
     "subtype": "Snapper",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Superior Form: After Direfang Snapper defeats an enemy in combat, draw 2 cards.",
     "flavortext": ""
   },
@@ -4796,6 +5115,7 @@
     "power": 4,
     "subtype": "Snarlfang",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Brutal Charge: After Hateful Snarlfang defeats an enemy in combat, deal 3 damage to target enemy Hero.",
     "flavortext": ""
   },
@@ -4811,6 +5131,7 @@
     "power": 4,
     "subtype": "Porcupine",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Ability - Herb Laced Quills - (0): Deal 1 Damage to target friendly Ashen. That Ashen gains FIERCE.2 until end of turn.",
     "flavortext": ""
   },
@@ -4826,6 +5147,7 @@
     "power": 4,
     "subtype": "Akrak",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Effect - Overconfidence: While Rampaging Akrak is undamaged, gain FIERCE.4 and OVERWHELM.",
     "flavortext": ""
   },
@@ -4841,6 +5163,7 @@
     "power": 4,
     "subtype": "Akrak",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Rampant Growth: After another Ashen you control defeats an anemy in an attack, add three Embers to Razortusk Guardian.",
     "flavortext": ""
   },
@@ -4856,6 +5179,7 @@
     "power": 4,
     "subtype": "Goldmane",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Enraged: Friendly Ashen gain STEALTH.",
     "flavortext": ""
   },
@@ -4871,6 +5195,7 @@
     "power": 4,
     "subtype": "Goldmane",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ignite - Prowl: Gain FIERCE.2 and STEALTH until your next turn.",
     "flavortext": ""
   },
@@ -4886,6 +5211,7 @@
     "power": 5,
     "subtype": "Sprite",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Effect - Warming Up: If you played a spell this turn, gain LIFESTEAL until your next turn.\nEffect - Blazing Hot: If you played two spells this turn, gain OVERWHELM until your next turn.",
     "flavortext": ""
   },
@@ -4901,6 +5227,7 @@
     "power": 5,
     "subtype": "Tusker",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Effect - Enrage: Whenever [Card Name] is dealt damage, [Card Name] gains FIERCE 3 until your next turn.",
     "flavortext": ""
   },
@@ -4916,6 +5243,7 @@
     "power": 5,
     "subtype": "Goldmane",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Ambush: Deal 3 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -4931,6 +5259,7 @@
     "power": 5,
     "subtype": "Tusker",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "Effect - Spell Drain: Once per turn, when you play a Spell, add three Embers to your Forge.",
     "flavortext": ""
   },
@@ -4946,6 +5275,7 @@
     "power": 5,
     "subtype": "Akrak",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Lend a Hand: Add 3 Embers to another target Ashen.",
     "flavortext": ""
   },
@@ -4961,6 +5291,7 @@
     "power": 5,
     "subtype": "Snapper",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Victorious Warcry: After Howling Snapper defeats an enemy in combat, add 4 Embers to Howling Snapper.",
     "flavortext": ""
   },
@@ -4976,6 +5307,7 @@
     "power": 6,
     "subtype": "Goldmane",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Afterglow - Legacy: Create two Emberkin Ashen tokens, each with 2 Power.",
     "flavortext": ""
   },
@@ -4991,6 +5323,7 @@
     "power": 6,
     "subtype": "Snapper",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Effect - Mystical Companion: After Ghost-Eyed Snapper defeats an enemy in combat, create an Owl Ashen token with 3 Power.",
     "flavortext": ""
   },
@@ -5006,6 +5339,7 @@
     "power": 6,
     "subtype": "Tusker",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "OVERWHELM\nEffect - Berserk: [Card Name] gains FIERCE.6 while this is damaged.",
     "flavortext": ""
   },
@@ -5021,6 +5355,7 @@
     "power": 8,
     "subtype": "Snapper",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Effect - Overcharged: After Eldritch Snapper defeats an enemy in combat, add 2 Embers to your Forge.",
     "flavortext": ""
   },
@@ -5036,6 +5371,7 @@
     "power": 9,
     "subtype": "Snapper",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Effect - Spoils of War: After Umbral Snapper defeats an enemy in combat, add 5 Embers to another Ashen you control.",
     "flavortext": ""
   },
@@ -5051,6 +5387,7 @@
     "power": 10,
     "subtype": "Elemental",
     "damagetype": "Nature",
+    "legendary": "Y",
     "cardtext": "ARMOR.3\nEffect - Undying: Verdant Protector may not be destroyed while it still has Embers.",
     "flavortext": ""
   },
@@ -5066,6 +5403,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Biggest and Strongest: Your equipped Relic Weapons gain FIERCE.2.",
     "flavortext": ""
   },
@@ -5081,6 +5419,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Effect - Celerity: Your attacking Ashen gain FIERCE.1 until end of turn.",
     "flavortext": ""
   },
@@ -5096,6 +5435,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Arcane Buildup: When you play a spell, deal 1 damage to target Ashen. If you can't, deal 1 damage to [Card Name].",
     "flavortext": ""
   },
@@ -5111,6 +5451,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Refresh - (1): Add 3 Embers to a damaged friendly Ashen.",
     "flavortext": ""
   },
@@ -5126,6 +5467,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Effect - Flow: The second time you play a card on your turn, add 2 Embers to a friendly Ashen.",
     "flavortext": ""
   },
@@ -5141,6 +5483,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Ability - Frenzy - (0): Deal 1 damage to a friendly Ashen.  That Ashen gains FIERCE.2 until end of turn.",
     "flavortext": ""
   },
@@ -5156,6 +5499,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Effect - Static: Your Lightning Spells deal 1 additional damage.",
     "flavortext": ""
   },
@@ -5171,6 +5515,7 @@
     "power": 0,
     "subtype": "Headgear",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Ability - Delve the Rift - (0): Reveal the top card of your deck.  Draw it if it's a Spell, you may Bury it if it's not.",
     "flavortext": ""
   },
@@ -5186,6 +5531,7 @@
     "power": 0,
     "subtype": "Protection",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Delicious: After an enemy Ashen attacks a friendly Ashen you control, but before damage is dealt, destroy Lifeberries.  Add 4 Embers to the friendly Ashen.",
     "flavortext": ""
   },
@@ -5201,6 +5547,7 @@
     "power": 0,
     "subtype": "Protection",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Effect - Divine Intervention: After a friendly Ashen is destroyed on an opposing player's turn, destroy Rune of Life. Return that Ashen to play with 1 Ember, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -5216,6 +5563,7 @@
     "power": 0,
     "subtype": "Plant",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Bless - (0): Add 2 Embers to a friendly Ashen you control.  Destroy that Ashen at the end of the turn if they did not attack.",
     "flavortext": ""
   },
@@ -5231,6 +5579,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Spin a Tale - (0): Reveal the top card of your deck.  Draw it if it's a Ashen. Bury it if it's not.",
     "flavortext": ""
   },
@@ -5246,6 +5595,7 @@
     "power": 0,
     "subtype": "Protection",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Mage Armor: After an enemy Ashen attacks a friendly Ashen you control, but before damage is dealt, destroy Ward of Proection.  Your Ashen gains FIERCE.3 and ARMOR.3 until your next turn.",
     "flavortext": ""
   },
@@ -5261,6 +5611,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Effect - Refresh: When you play a spell, gain life equal to its cost.",
     "flavortext": ""
   },
@@ -5276,6 +5627,7 @@
     "power": 0,
     "subtype": "Prison",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Grasp: Move an enemy Ashen home.  That Ashen may not move to the battlefield as long as [Card Name] is in play.",
     "flavortext": ""
   },
@@ -5291,6 +5643,7 @@
     "power": 0,
     "subtype": "Legendary",
     "damagetype": "Light",
+    "legendary": "Y",
     "cardtext": "Effect - Emerald Wish : After you play a spell, create an Emberkin Ashen token with X Power where X is equal to the cost of the spell.  X cannot equal zero or be greater than 7.",
     "flavortext": ""
   },
@@ -5306,6 +5659,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Ability - Conjure: (1) Create an Emberkin Ashen token with 1 Power.  If you've played a spell this turn, Create an Emberkin Ashen token with 3 Power instead.",
     "flavortext": ""
   },
@@ -5321,6 +5675,7 @@
     "power": 0,
     "subtype": "Legendary",
     "damagetype": "Water",
+    "legendary": "Y",
     "cardtext": "Effect - Deluge: After one of your spells deals damage, draw a card.",
     "flavortext": ""
   },
@@ -5336,6 +5691,7 @@
     "power": 0,
     "subtype": "Legendary",
     "damagetype": "Earth",
+    "legendary": "Y",
     "cardtext": "Surge - Incantation : Create an Emberkin Ashen token with 5 Power.\nAbility - Manifest Destiny: (0) If you have played a spell this turn, create an Emberkin Ashen token with 5 Power.",
     "flavortext": ""
   },
@@ -5351,6 +5707,7 @@
     "power": 0,
     "subtype": "Legendary",
     "damagetype": "Earth",
+    "legendary": "Y",
     "cardtext": "Ignite - Summon Wurm : Create two Wurm Ashen tokens, each with 5 Power.",
     "flavortext": "What's worse than one giant wurm?"
   },
@@ -5366,6 +5723,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Your Hero deals damage to an enemy Ashen equal to the Embers on a friendly Ashen. Destroy the friendly Ashen.",
     "flavortext": ""
   },
@@ -5381,6 +5739,7 @@
     "power": 0,
     "subtype": "Cantrip",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "Deal 1 damage to a Unit. That unit gains FIERCE.2 until your next turn.",
     "flavortext": ""
   },
@@ -5396,6 +5755,7 @@
     "power": 0,
     "subtype": "Combat",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Destroy a friendly Ashen to destroy an enemy Ashen.",
     "flavortext": ""
   },
@@ -5411,6 +5771,7 @@
     "power": 0,
     "subtype": "Incantation",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Look at the top 4 cards of your deck.   Choose one to add to your hand.  Bury the rest.",
     "flavortext": ""
   },
@@ -5426,6 +5787,7 @@
     "power": 0,
     "subtype": "Event",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Add 2 Embers to each Ashen that attacked this turn",
     "flavortext": ""
   },
@@ -5441,6 +5803,7 @@
     "power": 0,
     "subtype": "Renew",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Add 5 Embers to a friendly Ashen. Draw a card.",
     "flavortext": ""
   },
@@ -5456,6 +5819,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Target up to two different enemy Ashen.  Deal 1 damage to each of them.",
     "flavortext": ""
   },
@@ -5471,6 +5835,7 @@
     "power": 0,
     "subtype": "Emotion",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Add 5 Embers to target Ashen.  That Ashen gains OVERWHELM this turn.",
     "flavortext": ""
   },
@@ -5486,6 +5851,7 @@
     "power": 0,
     "subtype": "Event",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Whenever a friendly Ashen attacks this turn, draw a card.",
     "flavortext": ""
   },
@@ -5501,6 +5867,7 @@
     "power": 0,
     "subtype": "Recurring",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Deal 2 damage to an enemy Ashen. You may play Persistent Flicker from your Void, if you do, exile it.",
     "flavortext": ""
   },
@@ -5516,6 +5883,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Deal 4 damage to target enemy Ashen. If it dies, deal 3 damage to the enemy Hero.",
     "flavortext": ""
   },
@@ -5531,6 +5899,7 @@
     "power": 0,
     "subtype": "Divine",
     "damagetype": "Lightning",
+    "legendary": "Y",
     "cardtext": "Deal 4 damage to all Ashen and Heroes.",
     "flavortext": ""
   },
@@ -5546,6 +5915,7 @@
     "power": 0,
     "subtype": "Combat",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Deal 2 damage to an enemy Ashen. Add 2 Embers to a friendly Ashen.",
     "flavortext": ""
   },
@@ -5561,6 +5931,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Destroy an enemy Ashen.  Gain life equal to its cost.",
     "flavortext": ""
   },
@@ -5576,6 +5947,7 @@
     "power": 0,
     "subtype": "Ritual",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "This spell costs 1 less for each Ashen you control.\nSearch your deck for a friendly Ashen card and add it to your hand.",
     "flavortext": ""
   },
@@ -5591,6 +5963,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Choose any one Faction. Deal 2 damage to each enemy Ashen of the chosen Faction.",
     "flavortext": ""
   },
@@ -5606,6 +5979,7 @@
     "power": 0,
     "subtype": "Storm",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Choose any number of Units in play. Deal a total of X Damage in any combination from the chosen Units. X cannot be more than 10.",
     "flavortext": ""
   },
@@ -5621,6 +5995,7 @@
     "power": 2,
     "subtype": "Ranger",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "FIERCE.3\nAfterglow - Marked Path: All players Forge the top card of their deck.",
     "flavortext": ""
   },
@@ -5636,6 +6011,7 @@
     "power": 3,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Effect - Tick: [Card Name] gains FIERCE.3 while you have an even number of cards in your forge.\nEffect - Tock: [Card Name] gains ARMOR.3 while you have an odd number of cards in your forge.",
     "flavortext": ""
   },
@@ -5651,6 +6027,7 @@
     "power": 3,
     "subtype": "Dog",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Following the Charge: After your hero attacks, friendly Ashen gain FIERCE.1 until end of turn.",
     "flavortext": ""
   },
@@ -5666,6 +6043,7 @@
     "power": 3,
     "subtype": "Golem",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "ARMOR.1",
     "flavortext": ""
   },
@@ -5681,6 +6059,7 @@
     "power": 4,
     "subtype": "Harbinger",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "OVERWHELM SPITE.4\nEffect - Aura of War: All Units cost 1 more.",
     "flavortext": ""
   },
@@ -5696,6 +6075,7 @@
     "power": 4,
     "subtype": "Harbinger",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "SPITE.4\nEffect - Aura of Famine: All Relics cost 1 more.",
     "flavortext": ""
   },
@@ -5711,6 +6091,7 @@
     "power": 3,
     "subtype": "Politician",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Afterglow - Inheritence: Forge the top card of your deck.",
     "flavortext": ""
   },
@@ -5726,6 +6107,7 @@
     "power": 4,
     "subtype": "Sentinel",
     "damagetype": "Unknown",
+    "legendary": "N",
     "cardtext": "Surge - Attune: Choose a damage type.\nEffect - Adapt: [Card Name]'s damage type is the chosen damage type.\nEffect - Immunity: Prevent all damage to [Card Name] from the chosen damage type.",
     "flavortext": ""
   },
@@ -5741,6 +6123,7 @@
     "power": 4,
     "subtype": "Mystic",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Oracle: Look at the top two cards of your deck.  Draw one of them, bury the other one.",
     "flavortext": ""
   },
@@ -5756,6 +6139,7 @@
     "power": 4,
     "subtype": "Harbinger",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "STEALTH SPITE.4\nEffect - Aura of Conquest: All Spells cost 1 more.",
     "flavortext": ""
   },
@@ -5771,6 +6155,7 @@
     "power": 2,
     "subtype": "Golem",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Surge - Ring of Fire: Deal 2 damage to all other Ashen in play.",
     "flavortext": ""
   },
@@ -5786,6 +6171,7 @@
     "power": 4,
     "subtype": "Harbinger",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "LIFESTEAL SPITE.4\nEffect - Aura of Death: All Abilities cost 1 more.",
     "flavortext": ""
   },
@@ -5801,6 +6187,7 @@
     "power": 4,
     "subtype": "Golem",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Harvest: After [Card Name] attacks, Forge the top card of your void.",
     "flavortext": ""
   },
@@ -5816,6 +6203,7 @@
     "power": 5,
     "subtype": "Golem",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "ARMOR.2",
     "flavortext": ""
   },
@@ -5831,6 +6219,7 @@
     "power": 5,
     "subtype": "Titan",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Effect - Higher Purpose: If there are two or more other friendly Ashen in play, gain ARMOR.5.",
     "flavortext": ""
   },
@@ -5846,6 +6235,7 @@
     "power": 5,
     "subtype": "Mystic",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Ignite - Tap into the Leyline: Create an Emberkin Ashen token with 5 Power.",
     "flavortext": ""
   },
@@ -5861,6 +6251,7 @@
     "power": 5,
     "subtype": "Titan",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Ignite - Suit Up: Gain ARMOR.5 until your next turn.",
     "flavortext": ""
   },
@@ -5876,6 +6267,7 @@
     "power": 0,
     "subtype": "Dragon",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Hydromancy: Whenever a spell or Ability adds Embers to a friendly Ashen you control, add one additional Ember to that Ashen.",
     "flavortext": ""
   },
@@ -5891,6 +6283,7 @@
     "power": 15,
     "subtype": "Ancient Golem",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "ARMOR.5 OVERWHELM\nEffect - Some Assembly Required: Gearcruncher may not be played from any zone except your hand.\nEffect - Anti-Magic Shell: Targeting Gearcruncher costs 5 additional Embers.\nEffect - Single-Use: Gearcruncher may not gain Embers.",
     "flavortext": "Don't let your memes be dreams."
   },
@@ -5906,6 +6299,7 @@
     "power": 0,
     "subtype": "Headgear",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Ability - Astral Projection- (4): Draw a card.  If you have 8 or more cards in your Forge, draw 2 additional cards.",
     "flavortext": ""
   },
@@ -5921,6 +6315,7 @@
     "power": 0,
     "subtype": "Knowledge",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Ability - Lore - (1): Draw one card.",
     "flavortext": ""
   },
@@ -5936,6 +6331,7 @@
     "power": 0,
     "subtype": "Elemental",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Attunement: Choose an element.\nAbility - Resonance - (2): If a friendly Ashen you controlled dealt that element's damage to enemy Hero in combat this turn, Draw 2 cards.",
     "flavortext": ""
   },
@@ -5951,6 +6347,7 @@
     "power": 0,
     "subtype": "Sword",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Effect - Pierce: Your damage may not be reduced.",
     "flavortext": ""
   },
@@ -5966,6 +6363,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Futuresight: At the start of your turn, reveal the top card of your deck to all players.  You may play the top card of your deck as though it were in your hand.",
     "flavortext": ""
   },
@@ -5981,6 +6379,7 @@
     "power": 0,
     "subtype": "Gloves",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - True to its Purpose: If you have a Relic Weapon in play, [Card Name] costs 2 less.\nEffect - Practiced Swings: Strike costs on your Relic Weapon cost 1 less.\nEffect - Purpose Fulfilled: If your Relic Weapon were to be destroyed by an enemy effect, you may destroy [Card Name] instead.",
     "flavortext": ""
   },
@@ -5996,6 +6395,7 @@
     "power": 0,
     "subtype": "Headgear",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Bolster Defense: Friendly Ashen gain ARMOR.1",
     "flavortext": ""
   },
@@ -6011,6 +6411,7 @@
     "power": 0,
     "subtype": "Tradition",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Surge - Summon Champion: Create an Emberkin Ashen token with 5 Power.\nAfterglow - Return to the Void: Destroy all Ashen tokens you control.",
     "flavortext": ""
   },
@@ -6026,6 +6427,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Effect - ???: After an enemy Ashen enters play, add 1 Ember to your Forge.",
     "flavortext": ""
   },
@@ -6041,6 +6443,7 @@
     "power": 0,
     "subtype": "Armor",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Really Thick Steel : Your hero gains ARMOR.2.",
     "flavortext": ""
   },
@@ -6056,6 +6459,7 @@
     "power": 0,
     "subtype": "Music",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Rat-a-tat: Friendly Ashen gain FIERCE.1\nEffect - Crescendo: If you have at least 7 cards in your Forge, friendly Ashen gain FIERCE.1",
     "flavortext": ""
   },
@@ -6071,6 +6475,7 @@
     "power": 0,
     "subtype": "War",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Swords: Friendly Ashen tokens have FIERCE.1\nEffect - Shields: Friendly Ashen tokens have ARMOR.1\nSurge - Recruit: Create two Emberkin Ashen tokens, each with 1 Power.",
     "flavortext": ""
   },
@@ -6086,6 +6491,7 @@
     "power": 0,
     "subtype": "Landmark",
     "damagetype": "Blood",
+    "legendary": "Y",
     "cardtext": "Effect - Unyielding Rage: At the start of your turn, Create an Emberkin Ashen token with 5 Power.  That token gains BLITZ until end of turn and must attack this turn, if able.",
     "flavortext": ""
   },
@@ -6101,6 +6507,7 @@
     "power": 0,
     "subtype": "Orb",
     "damagetype": "Blood",
+    "legendary": "Y",
     "cardtext": "Effect - Soul Pierce: After you play a friendly Ashen, deal it's cost in damage to an enemy Ashen.",
     "flavortext": ""
   },
@@ -6116,6 +6523,7 @@
     "power": 0,
     "subtype": "Royal",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "Ignite - Heavy is the Crown: Destroy an enemy Ashen.",
     "flavortext": ""
   },
@@ -6131,6 +6539,7 @@
     "power": 1,
     "subtype": "Axe",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nIgnite - Flame on! :  Gain FIERCE.2 until end of turn.",
     "flavortext": ""
   },
@@ -6146,6 +6555,7 @@
     "power": 2,
     "subtype": "Dagger",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nLIFESTEAL",
     "flavortext": ""
   },
@@ -6161,6 +6571,7 @@
     "power": 4,
     "subtype": "Axe",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "STRIKE.0\nEffect - There should be only one : [Card Name] gains WEAK.X where X is the number of friendly Ashen.",
     "flavortext": ""
   },
@@ -6176,6 +6587,7 @@
     "power": 3,
     "subtype": "Dagger",
     "damagetype": "Blood",
+    "legendary": "N",
     "cardtext": "STRIKE.0\nSurge - Pay the Price: Deal 3 damage to your hero.",
     "flavortext": ""
   },
@@ -6191,6 +6603,7 @@
     "power": 3,
     "subtype": "Greatsword",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "STRIKE.1",
     "flavortext": "It's dangerous to go alone.  Take this!"
   },
@@ -6206,6 +6619,7 @@
     "power": 2,
     "subtype": "Sceptre",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "STRIKE.2\nSurge - Spring Forth :  Create two Emberkin Ashen tokens, each with 1 Power.\nEffect - Conquer : Your Ashen tokens gain BLITZ.",
     "flavortext": ""
   },
@@ -6221,6 +6635,7 @@
     "power": 1,
     "subtype": "Staff",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "STRIKE.0\nEffect - Healing Aura : At the start of each turn, add two Embers to all damaged friendly Ashen.",
     "flavortext": ""
   },
@@ -6236,6 +6651,7 @@
     "power": 1,
     "subtype": "Wand",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nEffect - Shattering Force : When you strike with [Card Name], you may Destroy an enemy Relic.",
     "flavortext": ""
   },
@@ -6251,6 +6667,7 @@
     "power": 4,
     "subtype": "Hammer",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "STRIKE.2\nEffect - Life from Death : After [Card Name] defeats an enemy Ashen in combat, create an Emberkin Ashen token with 2 Power.",
     "flavortext": ""
   },
@@ -6266,6 +6683,7 @@
     "power": 3,
     "subtype": "Hammer",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nEffect - Recruit: When you strike with [Card Name], create an Emberkin Ashen token with 2 Power.",
     "flavortext": ""
   },
@@ -6281,6 +6699,7 @@
     "power": 7,
     "subtype": "Sword",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "STRIKE.1\nEffect - Really Freaking Huge :  Your hero gains ARMOR.3.",
     "flavortext": ""
   },
@@ -6296,6 +6715,7 @@
     "power": 0,
     "subtype": "Incantation",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Add 4 Embers to a damaged friendly Ashen.",
     "flavortext": ""
   },
@@ -6311,6 +6731,7 @@
     "power": 0,
     "subtype": "Selfless",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Target Ashen gains ARMOR.1 until your next turn. Draw a card.",
     "flavortext": ""
   },
@@ -6326,6 +6747,7 @@
     "power": 0,
     "subtype": "Emotion",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "On your next turn, Gather Embers 3 times instead of once. You may not play any cards on your next turn.",
     "flavortext": ""
   },
@@ -6341,6 +6763,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Destroy target relic.",
     "flavortext": ""
   },
@@ -6356,6 +6779,7 @@
     "power": 0,
     "subtype": "Healing",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Restore target Ashen to full Embers.",
     "flavortext": ""
   },
@@ -6371,6 +6795,7 @@
     "power": 0,
     "subtype": "Music",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Target a Unit.  Reveal the top 6 cards of your deck.  Choose up to two Ashen cards that share a subtype with the chosen unit and draw them.  Bury the remaining cards.",
     "flavortext": ""
   },
@@ -6386,6 +6811,7 @@
     "power": 0,
     "subtype": "Parliament",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Create an Owl Ashen token with 3 Power for every 3 cards in your Forge, rounded down.",
     "flavortext": ""
   },
@@ -6401,6 +6827,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Put a Relic Weapon from your Void into play.  Your Hero may attack an additional time this turn.",
     "flavortext": ""
   },
@@ -6416,6 +6843,7 @@
     "power": 0,
     "subtype": "Harbinger",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "You can only play this spell if you control 4 Harbingers of different names.  Destroy all enemy Ashen.  Destroy all opposing Relics. Deal 10 damage to the enemy Hero.",
     "flavortext": ""
   },
@@ -6431,6 +6859,7 @@
     "power": 0,
     "subtype": "Forgecraft",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Forge this card.",
     "flavortext": ""
   },
@@ -6446,6 +6875,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Deal 4 Damage to Enemy Ashen. If it dies, your hero may attack an additional time this turn.",
     "flavortext": ""
   },
@@ -6461,6 +6891,7 @@
     "power": 0,
     "subtype": "Gathering",
     "damagetype": "Earth",
+    "legendary": "N",
     "cardtext": "Reveal a friendly Ashen from your hand.  Search your deck for a friendly Ashen that matches the subtype of that Ashen and play it, ignoring all Ember costs.  Shuffle your deck afterwards.",
     "flavortext": ""
   },
@@ -6476,6 +6907,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Destroy an enemy Ashen.",
     "flavortext": ""
   },
@@ -6491,6 +6923,7 @@
     "power": 0,
     "subtype": "Conjuration",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Choose One.\n - Create four Emberkin Ashen tokens, each with 1 Power.\n - Create an Emberkin Ashen token with 4 Power.",
     "flavortext": ""
   },
@@ -6506,6 +6939,7 @@
     "power": 0,
     "subtype": "Forgecraft",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Draw 3 cards. You may Forge an additional card this turn.",
     "flavortext": ""
   },
@@ -6521,6 +6955,7 @@
     "power": 1,
     "subtype": "Keshu",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Afterglow - Surveil: Draw a card.",
     "flavortext": ""
   },
@@ -6536,6 +6971,7 @@
     "power": 1,
     "subtype": "Fluf",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Sticky: After you play a Graglix, you can play one copy of Fluf from your Void, paying all costs.\nSurge - Friendship: Add 1 Ember to a Graglix you control.",
     "flavortext": ""
   },
@@ -6551,6 +6987,7 @@
     "power": 1,
     "subtype": "Graglix",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "FIERCE.2",
     "flavortext": ""
   },
@@ -6566,6 +7003,7 @@
     "power": 1,
     "subtype": "Graglix",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "ARMOR.2",
     "flavortext": ""
   },
@@ -6581,6 +7019,7 @@
     "power": 1,
     "subtype": "Fluf",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Ignite - I'm Back: Play Magic Fluf from the Void, ignoring all Ember costs.",
     "flavortext": "Do you believe in magic?"
   },
@@ -6596,6 +7035,7 @@
     "power": 1,
     "subtype": "Fluf",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Effect - Feed: After a Graglix enters the Void from play, you may play one copy of Shadow Fluf from your Void, ignoring all costs.",
     "flavortext": ""
   },
@@ -6611,6 +7051,7 @@
     "power": 1,
     "subtype": "Fluf",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Effect - Permafrost: At the beginning of your turn, if Snow Fluf is in your Void, you may play it. You may only play one Snow Fluf per turn this way.",
     "flavortext": ""
   },
@@ -6626,6 +7067,7 @@
     "power": 1,
     "subtype": "Graglix",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Mean: Spiky Graglix has FIERCE.1 for each other Graglix you control.",
     "flavortext": ""
   },
@@ -6641,6 +7083,7 @@
     "power": 2,
     "subtype": "Keshu",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Afterglow - Legacy: Search your deck for 1 cost Ashen and add it to your hand.",
     "flavortext": ""
   },
@@ -6656,6 +7099,7 @@
     "power": 2,
     "subtype": "Graglix",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Effect - Cuddly-Wuddly:  The first source of damage on on each opposing player's turn deas no damage to Baby Graglix.",
     "flavortext": ""
   },
@@ -6671,6 +7115,7 @@
     "power": 2,
     "subtype": "Keshu",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Pointy: Deal 1 damage to target enemy.",
     "flavortext": ""
   },
@@ -6686,6 +7131,7 @@
     "power": 2,
     "subtype": "Keshu",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Flock: Reveal the top 3 cards of your deck.  Choose and draw a Keshu from the revealed cards.  Bury the remaining cards.",
     "flavortext": ""
   },
@@ -6701,6 +7147,7 @@
     "power": 2,
     "subtype": "Graglix",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Afterglow - Selfless: Add 3 Embers to your Forge.",
     "flavortext": ""
   },
@@ -6716,6 +7163,7 @@
     "power": 2,
     "subtype": "Fluf",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Best Friend: Create a Fluf Ashen token with 1 Power.",
     "flavortext": ""
   },
@@ -6731,6 +7179,7 @@
     "power": 2,
     "subtype": "Graglix",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - Sabotage - (1): Destroy target Relic.\nAfterglow - Escape: If Sly Graglix was defeated in an attack, return it to it's owner's hand.",
     "flavortext": ""
   },
@@ -6746,6 +7195,7 @@
     "power": 3,
     "subtype": "Bigpaw",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect- Something to Prove:  If you have 4 or fewer cards in your Forge, [Card Name] gains OVERWHELM, ARMOR.3, LIFESTEAL",
     "flavortext": ""
   },
@@ -6761,6 +7211,7 @@
     "power": 2,
     "subtype": "Keshu",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Surge - Restock: Shuffle all Ashen from your Void into your deck. Draw a card.",
     "flavortext": "Scavenger Keshu hates to party."
   },
@@ -6776,6 +7227,7 @@
     "power": 3,
     "subtype": "Keshu",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Effect - Stampede: Friendly Keshu Ashen gain OVERWHELM",
     "flavortext": ""
   },
@@ -6791,6 +7243,7 @@
     "power": 3,
     "subtype": "Keshu",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Effect - Healing Touch: Friendly Keshu Ashen gain LIFESTEAL",
     "flavortext": ""
   },
@@ -6806,6 +7259,7 @@
     "power": 3,
     "subtype": "Bigpaw",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Alpha Strike: If you have 4 or fewer cards in your Forge, deal 3 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -6821,6 +7275,7 @@
     "power": 3,
     "subtype": "Keshu",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Effect - Thick Skin: Friendly Keshu Ashen gain ARMOR.1",
     "flavortext": ""
   },
@@ -6836,6 +7291,7 @@
     "power": 3,
     "subtype": "Keshu",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Effect - Frost Aura: Friendly Keshu Ashen gain \"Surge: Deal 1 damage to target enemy Ashen.\"",
     "flavortext": ""
   },
@@ -6851,6 +7307,7 @@
     "power": 3,
     "subtype": "Keshu",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Stand Tall: Friendly Keshu Ashen gain FIERCE.1",
     "flavortext": ""
   },
@@ -6866,6 +7323,7 @@
     "power": 4,
     "subtype": "Bigpaw",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "SPITE.3\nEffect - Moonsurge : After this Ashen attacks, but before damage is dealt, Deal X damage to target enemy Ashen where X is the number of Arcane cards you control.",
     "flavortext": ""
   },
@@ -6881,6 +7339,7 @@
     "power": 1,
     "subtype": "Keshu",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Effect - Booming Presence: This Ashen has FIERCE.X where X is the number of cards in your Forge.",
     "flavortext": ""
   },
@@ -6896,6 +7355,7 @@
     "power": 5,
     "subtype": "Keshu",
     "damagetype": "Frost",
+    "legendary": "Y",
     "cardtext": "Surge - Ancestral Recall: Draw three cards.",
     "flavortext": ""
   },
@@ -6911,6 +7371,7 @@
     "power": 6,
     "subtype": "Keshu",
     "damagetype": "Frost",
+    "legendary": "Y",
     "cardtext": "Effect - Frostbite: Friendly Keshu Ashen gain the following text: \"Ability - Snowball (0):  Deal 1 damage to target enemy.\"",
     "flavortext": ""
   },
@@ -6926,6 +7387,7 @@
     "power": 6,
     "subtype": "Bigpaw",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Effect - Kinship: This card costs one less to play for each Ashen you control",
     "flavortext": ""
   },
@@ -6941,6 +7403,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - One True Love: While you have a Relic Weapon equipped, your Ashen gain FIERCE.1.",
     "flavortext": ""
   },
@@ -6956,6 +7419,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Ability - Glacial Slide: (1) Play any one Ally from your hand with cost 1 or less with one Ember, ignoring all Ember costs.  That ally gains BLITZ and may not attack heroes this turn.  Discard that Ally from play at the end of this turn.",
     "flavortext": ""
   },
@@ -6971,6 +7435,7 @@
     "power": 7,
     "subtype": "Bigpaw",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Effect - Thunderous Bellow: After a friendly Ashen attacks, draw a card.",
     "flavortext": ""
   },
@@ -6986,6 +7451,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Effect - Blistering Cold: After a friendly Ashen dies in combat on your turn, deal 1 damage to the enemy Hero.",
     "flavortext": ""
   },
@@ -7001,6 +7467,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Power - Burst of Light - (0) Give a friendly Ashen with 1 cost FIERCE.2 until end of turn.",
     "flavortext": ""
   },
@@ -7016,6 +7483,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Effect - Familiarity: Once per turn, after Mizumi plays a friendly Ashen, if another Ashen with the same name is already in play draw a card.",
     "flavortext": ""
   },
@@ -7031,6 +7499,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Effect - Favorites:  When revealed, choose an Ashen subtype.\nEffect - Strengthen: Add 1 Ember to friendly Ashen of the chosen subtype when they enter play.",
     "flavortext": ""
   },
@@ -7046,6 +7515,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Ability - Dream Hatch: (2) Reveal the top 3 cards of your deck.  Choose an Ashen with cost 3 or less and play it with 1 Ember, ignoring all Ember costs.  Bury the remaining cards.",
     "flavortext": ""
   },
@@ -7061,6 +7531,7 @@
     "power": 0,
     "subtype": "Bone",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Ability - Envelop: Target friendly Ashen gains STEALTH until end of turn.",
     "flavortext": ""
   },
@@ -7076,6 +7547,7 @@
     "power": 0,
     "subtype": "Pathway",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Effect - Escape: Once per turn, as a friendly Ashen you control is being attacked, before damage is dealt, you may return that Ashen to your hand, discarding all Embers on it.",
     "flavortext": ""
   },
@@ -7091,6 +7563,7 @@
     "power": 0,
     "subtype": "Delicacy",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Ability - More Caramel - (1): Target friendly Ashen gains FIERCE.2 until your next turn.",
     "flavortext": ""
   },
@@ -7106,6 +7579,7 @@
     "power": 0,
     "subtype": "Plant",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Ability - Bolster - (1): Add X Embers to a friendly Ashen where X is the number of friendly Ashen you have in play.",
     "flavortext": ""
   },
@@ -7121,6 +7595,7 @@
     "power": 0,
     "subtype": "Dream",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Ability - Undream: (2) Return target enemy Ashen to it's owner's hand.  Place the Embers from that enemy Ashen on it's owner's Forge.",
     "flavortext": ""
   },
@@ -7136,6 +7611,7 @@
     "power": 0,
     "subtype": "Gathering",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Effect - Huddle: Reduce the cost of the Stories Ability by 1 for each Ashen you have in play.\nAbility - Stories: (6) Draw a card.",
     "flavortext": ""
   },
@@ -7151,6 +7627,7 @@
     "power": 0,
     "subtype": "Delicacy",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Ability - More Cookies - (0): Target enemy Ashen gains WEAK.3 until your next turn.",
     "flavortext": ""
   },
@@ -7166,6 +7643,7 @@
     "power": 0,
     "subtype": "Globes",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Warm Hands, Warm Heart: After an opponent forges a card, draw a card.",
     "flavortext": ""
   },
@@ -7181,6 +7659,7 @@
     "power": 0,
     "subtype": "Legendary",
     "damagetype": "Frost",
+    "legendary": "Y",
     "cardtext": "Ability - Harsh Reminder - (0) If you played two or more cards from hand this turn, deal 2 damage to any target.",
     "flavortext": ""
   },
@@ -7196,6 +7675,7 @@
     "power": 0,
     "subtype": "Gathering",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Surge - Bond: Choose an Ashen subtype.\nAbility - Play Time - (0): Add 2 Embers to a friendly Ashen of the chosen subtype.",
     "flavortext": ""
   },
@@ -7211,6 +7691,7 @@
     "power": 0,
     "subtype": "Oath",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - One of Many: When a friendly Ashen attacks, Deal 1 damage to an enemy Hero",
     "flavortext": ""
   },
@@ -7226,6 +7707,7 @@
     "power": 0,
     "subtype": "Sword",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Effect - There Can be Only One: While you have exactly one Ashen, it gains FIERCE.3, OVERWHELM and LIFESTEAL.",
     "flavortext": ""
   },
@@ -7241,6 +7723,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Destroy an enemy Ashen with fewer Embers than the number of friendly Ashen.",
     "flavortext": ""
   },
@@ -7256,6 +7739,7 @@
     "power": 0,
     "subtype": "Curse",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Destroy an enemy Ashen with 5  Power or more.",
     "flavortext": ""
   },
@@ -7271,6 +7755,7 @@
     "power": 0,
     "subtype": "Evocation",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Deal X damage to target enemy where X is the number of cards in your hand.",
     "flavortext": ""
   },
@@ -7286,6 +7771,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Target friendly Ashen gains FIERCE.2 and OVERWHELM until your next turn. Draw a card.",
     "flavortext": ""
   },
@@ -7301,6 +7787,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Name a friendly Ashen subtype.  Deal X damage to target enemy Ashen where X is equal to the number of friendly Ashen with that Subtype.",
     "flavortext": ""
   },
@@ -7316,6 +7803,7 @@
     "power": 0,
     "subtype": "Evocation",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Destroy target Relic.\nDeal 3 Arcane damage to the enemy Hero.",
     "flavortext": ""
   },
@@ -7331,6 +7819,7 @@
     "power": 0,
     "subtype": "Utterance",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Enemy Ashen can't attack next turn.",
     "flavortext": ""
   },
@@ -7346,6 +7835,7 @@
     "power": 0,
     "subtype": "Invocation",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Deal 3 damage to target enemy Ashen.  If it dies, deal 2 damage to a different enemy Ashen.",
     "flavortext": ""
   },
@@ -7361,6 +7851,7 @@
     "power": 0,
     "subtype": "Selfless",
     "damagetype": "Light",
+    "legendary": "N",
     "cardtext": "Exile a card in your Forge.  Gain 12 life.",
     "flavortext": ""
   },
@@ -7376,6 +7867,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Target friendly Ashen gains FIERCE.3 until your next turn. Draw a card.",
     "flavortext": ""
   },
@@ -7391,6 +7883,7 @@
     "power": 0,
     "subtype": "Mischief",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Destroy a relic of your choice. If you control 4 or more friendly Ashen , you may destroy an additional relic of your choice.",
     "flavortext": ""
   },
@@ -7406,6 +7899,7 @@
     "power": 0,
     "subtype": "Weather",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Choose up to three enemy Ashen. Deal 3 damage to the first, 2 damage to the second, and 1 damage to the third.",
     "flavortext": ""
   },
@@ -7421,6 +7915,7 @@
     "power": 0,
     "subtype": "Evocation",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Destroy target enemy Ashen.\nThat enemy Ashen's controller gains life equal to it's Cost.",
     "flavortext": ""
   },
@@ -7436,6 +7931,7 @@
     "power": 0,
     "subtype": "Weather",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Deal 2 damage to all non-Orilune Ashen in play.",
     "flavortext": ""
   },
@@ -7451,6 +7947,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Deal 4 damage to target enemy Ashen. If it dies, play a Ashen from your hand that costs two or less, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -7466,6 +7963,7 @@
     "power": 0,
     "subtype": "Astral",
     "damagetype": "Frost",
+    "legendary": "Y",
     "cardtext": "Discard your hand.  Draw cards equal to the number of friendly Ashen in play.",
     "flavortext": ""
   },
@@ -7481,6 +7979,7 @@
     "power": 0,
     "subtype": "History",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Exile a card in your Forge.  Draw 4 cards.",
     "flavortext": ""
   },
@@ -7496,6 +7995,7 @@
     "power": 0,
     "subtype": "Astral",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "You may exile a random a card in your Forge instead of paying [Card Name]'s cost.  Deal 5 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -7511,6 +8011,7 @@
     "power": 0,
     "subtype": "Fluf",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Create three Fluf Ashen tokens, each with 1 Power.",
     "flavortext": ""
   },
@@ -7526,6 +8027,7 @@
     "power": 0,
     "subtype": "Gambit",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Exile all cards in your Forge.  Deal 10 damage to any target.",
     "flavortext": ""
   },
@@ -7541,6 +8043,7 @@
     "power": 1,
     "subtype": "Ornithopter",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Effect - Spare Parts: [Card Name] Gains FIERCE.1 for each Relic you control.",
     "flavortext": ""
   },
@@ -7556,6 +8059,7 @@
     "power": 0,
     "subtype": "Environmental",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "OVERWHELM\nDeal 7 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -7571,6 +8075,7 @@
     "power": 2,
     "subtype": "Dragon",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Ignite - Flame Spurt: Deal 2 damage to an enemy Hero.",
     "flavortext": ""
   },
@@ -7586,6 +8091,7 @@
     "power": 2,
     "subtype": "Pincer",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Covet Shiny Things: Whenever you play a relic and Crystal Pincer is in your discard, you may play Crystal Pincer reducing it's cost by the cost of the relic.  You may not play another Crystal Pincer this turn.",
     "flavortext": ""
   },
@@ -7601,6 +8107,7 @@
     "power": 2,
     "subtype": "Pincer",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Covet: Add 1 Ember to [Card Name] after you play a relic.",
     "flavortext": ""
   },
@@ -7616,6 +8123,7 @@
     "power": 2,
     "subtype": "Pincer",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Ability - Collector - (0): If you played a relic this turn, Gilded Pincer gains FIERCE.3 and ARMOR.3 until your next turn.",
     "flavortext": "I've never seen someone more excited over a dusty old book."
   },
@@ -7631,6 +8139,7 @@
     "power": 3,
     "subtype": "Turtle",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Effect - Follow: Reduce the cost of this card by 3 if you played a relic this turn.  You may not play another Ancient Turtle this turn.",
     "flavortext": ""
   },
@@ -7646,6 +8155,7 @@
     "power": 3,
     "subtype": "Turtle",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Effect - Affinity: Reduce the cost of your relics by 1 to a minimum of 1",
     "flavortext": ""
   },
@@ -7661,6 +8171,7 @@
     "power": 3,
     "subtype": "Dragon",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "SOULBOND\nAbility - At all Costs - (5): Add 7 Embers to another Ashen you control.",
     "flavortext": ""
   },
@@ -7676,6 +8187,7 @@
     "power": 2,
     "subtype": "Eel",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "STEALTH\nEffect - Mind Thief: The first time [Card Name] deals combat damage to a player on your turn, Draw a card.",
     "flavortext": "Be careful not to get too close or they steal your dreams."
   },
@@ -7691,6 +8203,7 @@
     "power": 3,
     "subtype": "Pincer",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Unearth: Put a relic from your Void into your hand.",
     "flavortext": ""
   },
@@ -7706,6 +8219,7 @@
     "power": 3,
     "subtype": "Rider",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - Call for Help: Reveal cards from the top of your deck until you find a Dragon.  Add that card to your hand.  Bury the remaining cards.",
     "flavortext": ""
   },
@@ -7721,6 +8235,7 @@
     "power": 3,
     "subtype": "Dragon",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Ignite - Give Strength: Add 2 Embers to another friendly Ashen.",
     "flavortext": ""
   },
@@ -7736,6 +8251,7 @@
     "power": 3,
     "subtype": "Pincer",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Effect - Suit Up: If you control a relic, [Card Name] gains ARMOR.3.",
     "flavortext": ""
   },
@@ -7751,6 +8267,7 @@
     "power": 3,
     "subtype": "Spirit",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - Storm - (1): Add 2 Embers to another friendly Ashen, or 3 Embers to another friendly Dragon Ashen.",
     "flavortext": ""
   },
@@ -7766,6 +8283,7 @@
     "power": 3,
     "subtype": "Pincer",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Nobility: Friendly Ashen that cost 4 or more gain ARMOR.2.",
     "flavortext": ""
   },
@@ -7781,6 +8299,7 @@
     "power": 3,
     "subtype": "Dragon",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "SOULBOND\nAbility - Deafening Roar - (6): Destroy target enemy Ashen.",
     "flavortext": ""
   },
@@ -7796,6 +8315,7 @@
     "power": 4,
     "subtype": "Pincer",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Ability - Frostpact - (0): Destroy a Relic you control. Deal 3 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -7811,6 +8331,7 @@
     "power": 3,
     "subtype": "Dragon",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "LIFESTEAL\nIgnite - Rolling Thunder: Gain FIERCE.2 until end of turn.",
     "flavortext": ""
   },
@@ -7826,6 +8347,7 @@
     "power": 2,
     "subtype": "Dragon",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Surge - Updraft : Return target enemy Ashen to it's owner's hand.  Discard all Embers that were on that enemy Ashen.",
     "flavortext": ""
   },
@@ -7841,6 +8363,7 @@
     "power": 4,
     "subtype": "Dragon",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ignite - Furious Warcry: [Card Name] gains 2 Embers.",
     "flavortext": ""
   },
@@ -7856,6 +8379,7 @@
     "power": 4,
     "subtype": "Spirit",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Effect - Dreamdrain: When a relic is destroyed, add two Embers to Nocetus.",
     "flavortext": ""
   },
@@ -7871,6 +8395,7 @@
     "power": 4,
     "subtype": "Dragon",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "SOULBOND\nOVERWHELM\nAbility - Firebreath - (X): Gain FIERCE.X until your next turn.",
     "flavortext": ""
   },
@@ -7886,6 +8411,7 @@
     "power": 3,
     "subtype": "Dragon",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Surge - Lend a Hand: Add 5 Embers to another target Dragon Ashen.",
     "flavortext": ""
   },
@@ -7901,6 +8427,7 @@
     "power": 4,
     "subtype": "Pincer",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Ability - Lore - (3): Draw 2 cards.",
     "flavortext": ""
   },
@@ -7916,6 +8443,7 @@
     "power": 5,
     "subtype": "Dragon",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Ignite - Infinite Wisdom: Draw a card.",
     "flavortext": ""
   },
@@ -7931,6 +8459,7 @@
     "power": 5,
     "subtype": "Dragon",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Surge - Flame Wave: Deal 1 Fire damage to all enemy Ashen and enemy Heros.\nAfterglow - Flame Wave: Deal 1 Fire damage to all enemy Ashen and enemy Heros.",
     "flavortext": ""
   },
@@ -7946,6 +8475,7 @@
     "power": 5,
     "subtype": "Elemental",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Effect - Furious: If you have at least three cost of relics in play, [Card Name] gains OVERWHELM.\nEffect - Fast: If you have at least six cost of relics in play, [Card Name] gains BLITZ.",
     "flavortext": ""
   },
@@ -7961,6 +8491,7 @@
     "power": 5,
     "subtype": "Dragon",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "OVERWHELM FIERCE.2",
     "flavortext": ""
   },
@@ -7976,6 +8507,7 @@
     "power": 5,
     "subtype": "Dragon",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Ability - Deluge - (4): Deal 2 damage to all enemy Ashen.",
     "flavortext": ""
   },
@@ -7991,6 +8523,7 @@
     "power": 6,
     "subtype": "Dragon",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "SOULBOND\nAbility - Storm - (3): Deal 4 damage divided any way you choose to up to four targets.",
     "flavortext": ""
   },
@@ -8006,6 +8539,7 @@
     "power": 3,
     "subtype": "Pincer",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Surge - One person's Trash: Play a relic from your Void with cost 3 of less, ignoring all Ember costs.",
     "flavortext": ""
   },
@@ -8021,6 +8555,7 @@
     "power": 6,
     "subtype": "Dragon",
     "damagetype": "Fire",
+    "legendary": "Y",
     "cardtext": "Effect - Extra Heat: You may fuel the Forge an additional time each turn.",
     "flavortext": ""
   },
@@ -8036,6 +8571,7 @@
     "power": 6,
     "subtype": "Dragon",
     "damagetype": "Fire",
+    "legendary": "Y",
     "cardtext": "Surge - Hineri Komi: If you control another Dragon, deal 6 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -8051,6 +8587,7 @@
     "power": 7,
     "subtype": "Dragon",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Ability - Consume - (0): Destroy a relic you control. Restore target Dragon to full Embers.",
     "flavortext": ""
   },
@@ -8066,6 +8603,7 @@
     "power": 7,
     "subtype": "Djinn",
     "damagetype": "Light",
+    "legendary": "Y",
     "cardtext": "Surge - Offerings: Destroy any number of relics you control to deal X damage to all enemy Ashen and enemy Heroes where X is the combined cost of the relics destroyed.",
     "flavortext": ""
   },
@@ -8081,6 +8619,7 @@
     "power": 6,
     "subtype": "Dragon",
     "damagetype": "Nature",
+    "legendary": "Y",
     "cardtext": "LIFESTEAL\nAfterglow  - Ashes to Ashes: Add 6 Embers to target Ashen.",
     "flavortext": ""
   },
@@ -8096,6 +8635,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Ability - Echo - (1): Choose an Ability on another friendly card with a Power cost greater than zero.  That Ability may be used an additional time this turn, paying all costs.",
     "flavortext": ""
   },
@@ -8111,6 +8651,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Effect - Ferocious Wingbeat: Once per turn, after you play a Dragon, target enemy Ashen gains WEAK.2 until your next turn.",
     "flavortext": ""
   },
@@ -8126,6 +8667,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Ability - It's a Miracle - (2): Reveal the top 6 cards of your deck.  Choose a revealed Relic Weapon and add it to your hand.  Bury the remaining cards.",
     "flavortext": ""
   },
@@ -8141,6 +8683,7 @@
     "power": 7,
     "subtype": "Dragon",
     "damagetype": "Frost",
+    "legendary": "Y",
     "cardtext": "Afterglow - Frost Breath: Deal 3 damage to all enemy Ashen.",
     "flavortext": ""
   },
@@ -8156,6 +8699,7 @@
     "power": 0,
     "subtype": "Dragon",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Ignite - Firebolt: Deal 1 Damage to an enemy Hero.",
     "flavortext": ""
   },
@@ -8171,6 +8715,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Ignite - Embertouched : Look at the top card of your deck.  Put it back on top or bury it.",
     "flavortext": ""
   },
@@ -8186,6 +8731,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Effect - Rally: Reduce the cost of the first Thaloryn Ashen played on your turn by two, to a minimum of one.",
     "flavortext": ""
   },
@@ -8201,6 +8747,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Ability - Reconstruct- (2): Draw a non-legendary Gadget Relic from your Void.",
     "flavortext": ""
   },
@@ -8216,6 +8763,7 @@
     "power": 0,
     "subtype": "Gadget",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Ability - BZZZZRTY - (0): Reveal and then bury the top card of your deck.  Target enemy Ashen gains WEAK X where X is the cost of the card revealed.",
     "flavortext": ""
   },
@@ -8231,6 +8779,7 @@
     "power": 0,
     "subtype": "Equipment",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Natural Strength: Ability costs on your cards cost one less, to a minimum of one.",
     "flavortext": ""
   },
@@ -8246,6 +8795,7 @@
     "power": 0,
     "subtype": "Gadget",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Ability - Ice Out - (1): Target enemy Ashen can't attack next turn.",
     "flavortext": ""
   },
@@ -8261,6 +8811,7 @@
     "power": 0,
     "subtype": "Gadget",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Surge - Barrage: Deal 2 damage to target enemy Ashen\nAbility - Apocalyptic Turbo Deathblast - (5): Destroy this relic. Deal 25 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -8276,6 +8827,7 @@
     "power": 0,
     "subtype": "Gadget",
     "damagetype": "Lightning",
+    "legendary": "N",
     "cardtext": "Ability - Zap - (0): If you played a relic this turn (including this one), deal 1 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -8291,6 +8843,7 @@
     "power": 0,
     "subtype": "Legendary",
     "damagetype": "Fire",
+    "legendary": "Y",
     "cardtext": "Ability - Respect the Moon - (0) If you played two or more cards from hand this turn, add 2 Embers to your Forge.",
     "flavortext": ""
   },
@@ -8306,6 +8859,7 @@
     "power": 0,
     "subtype": "Equipment",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Effect - Heavy Plate: Your hero gains ARMOR.1.",
     "flavortext": ""
   },
@@ -8321,6 +8875,7 @@
     "power": 0,
     "subtype": "Elemental",
     "damagetype": "Frost",
+    "legendary": "N",
     "cardtext": "Ability - Thrust - (0): Deal 1 damage to target enemy Ashen.\nAbility - Throw - (0): Destroy Stormshatter Spear. Deal 4 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -8336,6 +8891,7 @@
     "power": 0,
     "subtype": "Book",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Ability - Innervate - (0): Choose one:\n- Draw two cards.\n- Add 3 Embers to your Forge.",
     "flavortext": ""
   },
@@ -8351,6 +8907,7 @@
     "power": 0,
     "subtype": "Place",
     "damagetype": "Physical",
+    "legendary": "Y",
     "cardtext": "Effect - Long Spears: Friendly Ashen have FIERCE.2\nEffect - Dragoncale Armor: Friendly Ashen have ARMOR.2\nEffect - Protective Wards: Friendly Ashen have SPITE.2",
     "flavortext": ""
   },
@@ -8366,6 +8923,7 @@
     "power": 0,
     "subtype": "Gadget",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Ability - Peer into the Future - (1): If you played a relic this turn (Including this one), draw two cards.",
     "flavortext": ""
   },
@@ -8381,6 +8939,7 @@
     "power": 0,
     "subtype": "Curio",
     "damagetype": "Arcane",
+    "legendary": "Y",
     "cardtext": "Effect - Ephemeral Trance: At the end of your turn, draw cards until you have 9 in hand.",
     "flavortext": "It's time to D-D-D-D-D-D-D-D-D-D-DRAW!"
   },
@@ -8396,6 +8955,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Deal X damage to target enemy Ashen where X is equal to the cost of a Relic you control.",
     "flavortext": ""
   },
@@ -8411,6 +8971,7 @@
     "power": 0,
     "subtype": "Dispell",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Destroy a relic you control. Reveal the top 5 cards of your deck, you may play one relic for free, bury the other cards.",
     "flavortext": ""
   },
@@ -8426,6 +8987,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Deal 2 damage to target enemy Ashen. If you reveal a dragon from your hand, draw 2 cards.",
     "flavortext": ""
   },
@@ -8441,6 +9003,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Nature",
+    "legendary": "N",
     "cardtext": "Deal 3 damage to target enemy Ashen. If you reveal a dragon from your hand, deal 3 damage to the enemy Hero.",
     "flavortext": ""
   },
@@ -8456,6 +9019,7 @@
     "power": 0,
     "subtype": "Transformation",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Destroy target enemy Ashen.\nThat enemy Ashen's controller creates an Owl Ashen token with 3 Power.",
     "flavortext": ""
   },
@@ -8471,6 +9035,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Shadow",
+    "legendary": "N",
     "cardtext": "Destroy target relic.  If you controlled the relic, draw 3 cards.",
     "flavortext": ""
   },
@@ -8486,6 +9051,7 @@
     "power": 0,
     "subtype": "Transformation",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Destroy target Relic.  If you controlled the relic, make an Emberkin Ashen token with 4 Power who gains BLITZ until end of turn.",
     "flavortext": ""
   },
@@ -8501,6 +9067,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Friendly Ashen gain FIERCE.2 until your next turn. If you reveal a Dragon from your hand, add two Embers to each of them as well.",
     "flavortext": ""
   },
@@ -8516,6 +9083,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Deal 4 damage to target enemy Ashen.  Whenever you play a Dragon Ashen, you may return this to your hand from your Void.",
     "flavortext": ""
   },
@@ -8531,6 +9099,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Target an enemy Hero or enemy Ashen and up to an additional enemy Hero or enemy Ashen for each Dragon you control.  Deal 5 Fire Damage to each target.",
     "flavortext": ""
   },
@@ -8546,6 +9115,7 @@
     "power": 0,
     "subtype": "Environmental",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Choose one.  If you control a dragon, choose two.\n - Draw two cards.\n - Destroy target relic.\n - Deal 4 damage to target enemy Ashen.",
     "flavortext": ""
   },
@@ -8561,6 +9131,7 @@
     "power": 0,
     "subtype": "Event",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Destroy all Ashen.",
     "flavortext": ""
   },
@@ -8576,6 +9147,7 @@
     "power": 0,
     "subtype": "History",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "This spell costs 2 less if you control a Dragon.\nDraw 3 cards.",
     "flavortext": ""
   },
@@ -8591,6 +9163,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter each time one of your cards damages you.",
     "flavortext": ""
   },
@@ -8606,6 +9179,7 @@
     "power": 0,
     "subtype": "Environmental",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Deal X damage to up to two enemy Ashen where X is equal to the number of cards in your Forge.",
     "flavortext": ""
   },
@@ -8621,6 +9195,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Ignite - Add a counter to this card.",
     "flavortext": ""
   },
@@ -8636,6 +9211,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter to this each time your hero defeats an enemy in combat.",
     "flavortext": ""
   },
@@ -8651,6 +9227,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter everytime your hero attacks",
     "flavortext": ""
   },
@@ -8666,6 +9243,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever a friendly Ashen dies in combat.",
     "flavortext": ""
   },
@@ -8681,6 +9259,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever you deal damage to an enemy Hero.",
     "flavortext": ""
   },
@@ -8696,6 +9275,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever you play a Dragon.",
     "flavortext": ""
   },
@@ -8711,6 +9291,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever you use an Ability.",
     "flavortext": ""
   },
@@ -8726,6 +9307,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter to this each time you play a friendly Ashen that costs 6 or more.",
     "flavortext": ""
   },
@@ -8741,6 +9323,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever a friendly Ashen attacks.",
     "flavortext": ""
   },
@@ -8756,6 +9339,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever an enemy Ashen is destroyed.",
     "flavortext": ""
   },
@@ -8771,6 +9355,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter each time you play a relic",
     "flavortext": ""
   },
@@ -8786,6 +9371,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter to this whenever you play a Relic",
     "flavortext": ""
   },
@@ -8801,6 +9387,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter to this whenever you play a card of the Chaos or Order alignment.",
     "flavortext": ""
   },
@@ -8816,6 +9403,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever you play a Dinosaur Ashen.",
     "flavortext": ""
   },
@@ -8831,6 +9419,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever you play a spell.",
     "flavortext": ""
   },
@@ -8846,6 +9435,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter to this card whenever you play a card with a cost ending in 0,2,4,6 or 8",
     "flavortext": ""
   },
@@ -8861,6 +9451,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter to this card whenever you play a non-token card with a cost ending in 1,3,5,7 or 9",
     "flavortext": ""
   },
@@ -8876,6 +9467,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter to this each time you exile an Ashen card.",
     "flavortext": ""
   },
@@ -8891,6 +9483,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever you create a friendly Ashen token.",
     "flavortext": ""
   },
@@ -8906,6 +9499,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter each time you exile a card.",
     "flavortext": ""
   },
@@ -8921,6 +9515,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter for each point of damage you suffer.",
     "flavortext": ""
   },
@@ -8936,6 +9531,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter to this whenever you play a spell.",
     "flavortext": ""
   },
@@ -8951,6 +9547,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever you draw a card.\n\nAbility - Lore - (2): Draw a card.",
     "flavortext": ""
   },
@@ -8966,6 +9563,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter whenever a friendly Ashen is destroyed.",
     "flavortext": ""
   },
@@ -8981,6 +9579,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter for each point of damage you suffer.",
     "flavortext": ""
   },
@@ -8996,6 +9595,7 @@
     "power": 2,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Afterglow - ???: If [Card Name] was destroyed by an opposing card, you may put [Card Name] into your Forge.",
     "flavortext": ""
   },
@@ -9011,6 +9611,7 @@
     "power": 3,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Surge - Healing Wave: Gain 3 Life or add 3 Embers to target damaged friendly Ashen.",
     "flavortext": ""
   },
@@ -9026,6 +9627,7 @@
     "power": 6,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Surge - ???: Target enemy Ashen gains 3 Embers. If no enemy Ashen gained Embers this way, Destroy [Card Name]\nEffect - ???: All Ashen with more Embers than their Power cannot attack.",
     "flavortext": ""
   },
@@ -9041,6 +9643,7 @@
     "power": 10,
     "subtype": "",
     "damagetype": "",
+    "legendary": "Y",
     "cardtext": "Effect - ??? This card costs X less where X is the total embers on friendly Ashen.",
     "flavortext": ""
   },
@@ -9056,6 +9659,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "Y",
     "cardtext": "Effect - ???: After you play your first spell for the turn, create an Emberkin Ashen token with 2 Power.",
     "flavortext": ""
   },
@@ -9071,6 +9675,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Effect - Sharp Sticks: Friendly Ashen have FIERCE.1\nEffect - Wooden Shields: Friendly Ashen have ARMOR.1",
     "flavortext": ""
   },
@@ -9086,6 +9691,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "Y",
     "cardtext": "Effect - ???: The first time you play a Spell you may exile it. At the end of your turn, place that exiled Spell into your Hand",
     "flavortext": ""
   },
@@ -9101,6 +9707,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Ability - ??? - (0): Reveal the top card of your deck.  If it's a friendly Ashen, you may play it for 2 less, to a minimum of 1.",
     "flavortext": ""
   },
@@ -9116,6 +9723,7 @@
     "power": 0,
     "subtype": "Destruction",
     "damagetype": "Fire",
+    "legendary": "N",
     "cardtext": "Deal X damage to target enemy Ashen where X is the number of Embers in your Forge",
     "flavortext": ""
   },
@@ -9131,6 +9739,7 @@
     "power": 0,
     "subtype": "Forgecraft",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Choose an Ashen card in your Void. You may put it in your hand or face down into your Forge.",
     "flavortext": ""
   },
@@ -9146,6 +9755,7 @@
     "power": 0,
     "subtype": "Technique",
     "damagetype": "Physical",
+    "legendary": "N",
     "cardtext": "Target Ashen gains FIERCE.3 until your next turn.\nTarget enemy Ashen gains WEAK.3 until your next turn.",
     "flavortext": ""
   },
@@ -9161,6 +9771,7 @@
     "power": 0,
     "subtype": "Environmental",
     "damagetype": "Water",
+    "legendary": "N",
     "cardtext": "Deal 4 damage to target enemy Ashen. If it dies, draw two cards.",
     "flavortext": ""
   },
@@ -9176,6 +9787,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Each Hero takes Damage equal to the number of Ashen they have in play. Destroy all Ashen.",
     "flavortext": ""
   },
@@ -9191,6 +9803,7 @@
     "power": 0,
     "subtype": "Renew",
     "damagetype": "Arcane",
+    "legendary": "N",
     "cardtext": "Deal X damage divided as you choose among any number of target enemy Ashen and/or enemy Heroes, where X is the number of cards in your Forge.",
     "flavortext": ""
   },
@@ -9206,6 +9819,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Effect - Eternal Flame: After you play a relic, including this one, create an Emberkin Ashen Token with 1 Power.\nEffect - Ghostly: Friendly Emberkin Ashen can't block.",
     "flavortext": ""
   },
@@ -9221,6 +9835,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Ability - ??? - (0): Gain 1 life.",
     "flavortext": ""
   },
@@ -9236,6 +9851,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Surge - ??: Create an Emberkin Ashen token with 1 power.\nActivate - Move 4 of your units from the battlefield home and destroy Rally Point to Create an Emberkin Ashen token with 5 power.",
     "flavortext": ""
   },
@@ -9251,6 +9867,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Add a counter to this whenever you play a friendly Ashen.",
     "flavortext": ""
   },
@@ -9266,6 +9883,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Ignite - ???: Gain 2 life.",
     "flavortext": ""
   },
@@ -9281,6 +9899,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Surge - ???: Deat 3 damage to an enemy Ashen.\nEffect - ???: Gather Embers + 1.",
     "flavortext": ""
   },
@@ -9296,6 +9915,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Surge - ???: Create an Elephant Ashen Token with 4 power.\nAbility - Ready for War - (4): Give a friendly Ashen FIERCE.4 and ARMOR.4 until end of turn.",
     "flavortext": ""
   },
@@ -9311,6 +9931,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Destroy an enemy Relic.\nIf you control a Relic weapon, deal 3 damage to the enemy Hero.",
     "flavortext": ""
   },
@@ -9326,6 +9947,7 @@
     "power": 0,
     "subtype": "",
     "damagetype": "",
+    "legendary": "N",
     "cardtext": "Destroy an enemy Ashen with 5 power or more.",
     "flavortext": ""
   }
