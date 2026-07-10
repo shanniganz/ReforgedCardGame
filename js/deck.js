@@ -1,5 +1,9 @@
 const ALIGNMENT_FACTIONS = ["order", "chaos"];
 const REALM_FACTIONS = ["ashkara", "orilune", "jungoom", "naleri", "thaloryn", "eldrik"];
+const ANVIL_PDF_CARDS = {
+  order: { name: "Anvil of Order", image: "img/AnvilofOrder.webp", type: "anvil" },
+  chaos: { name: "Anvil of Chaos", image: "img/AnvilofChaos.webp", type: "anvil" }
+};
 const DECK_TYPE_SECTIONS = [
   { label: "Hero", heading: "---HERO---", type: "hero" },
   { label: "Quest", heading: "---QUEST---", type: "quest" },
@@ -296,6 +300,11 @@ function addCardToDeck(card) {
 
   function openCardPdfExport() {
     const cardCopies = getDeckCardCopies();
+    const anvilCard = getSelectedAnvilCard();
+
+    if (anvilCard) {
+      cardCopies.push(anvilCard);
+    }
 
     if (cardCopies.length === 0) {
       showDeckMessage("Add cards to the deck before exporting card images.");
@@ -317,6 +326,11 @@ function addCardToDeck(card) {
     return Object.values(deck)
       .sort((a, b) => a.card.name.localeCompare(b.card.name))
       .flatMap(entry => Array.from({ length: entry.count }, () => entry.card));
+  }
+
+  function getSelectedAnvilCard() {
+    const selectedOption = Array.from(anvilOptions).find(option => option.checked);
+    return ANVIL_PDF_CARDS[selectedOption?.value] || null;
   }
 
   function createCardPdfExportHtml(cards) {
@@ -574,10 +588,14 @@ function addCardToDeck(card) {
         return;
       }
 
-      deckList.appendChild(createDeckListHeader(section.label));
+      const sectionCount = sectionEntries.reduce((sum, entry) => sum + entry.count, 0);
+      if (section.type !== "hero" && section.type !== "quest") {
+        totalCards += sectionCount;
+      }
+
+      deckList.appendChild(createDeckListHeader(section.label, sectionCount));
 
       sectionEntries.forEach(entry => {
-        totalCards += entry.count;
         deckList.appendChild(createDeckRow(entry));
       });
     });
@@ -623,10 +641,10 @@ function addCardToDeck(card) {
     return badge;
   }
 
-  function createDeckListHeader(label) {
+  function createDeckListHeader(label, count) {
     const header = document.createElement("div");
     header.className = "deck-list-header";
-    header.textContent = label;
+    header.textContent = `${label} - (${count})`;
 
     return header;
   }
