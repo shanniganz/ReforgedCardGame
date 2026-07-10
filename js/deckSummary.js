@@ -1,6 +1,5 @@
 const DECK_SUMMARY_TYPES = [
   { label: "Ashen", type: "ashen" },
-  { label: "Quests", type: "quest" },
   { label: "Spells", type: "spell" },
   { label: "Relics", type: "relic" },
   { label: "Relic Weapons", type: "relic weapon" }
@@ -21,9 +20,9 @@ function showDeckTab(tabName) {
 function renderDeckSummary(deckEntries) {
   if (!deckSummary) return;
 
-  const totalCards = deckEntries.reduce((total, entry) => total + entry.count, 0);
+  const totalCards = getDeckSummaryTotalCount(deckEntries);
 
-  if (totalCards === 0) {
+  if (deckEntries.length === 0) {
     deckSummary.innerHTML = '<p class="deck-empty">No cards in deck yet.</p>';
     return;
   }
@@ -36,8 +35,15 @@ function renderDeckSummary(deckEntries) {
   deckSummary.appendChild(createCostCurve(costCounts));
 }
 
+function getDeckSummaryTotalCount(deckEntries) {
+  return deckEntries.reduce((total, entry) => {
+    const cardType = getCardType(entry.card);
+    return cardType === "hero" || cardType === "quest" ? total : total + entry.count;
+  }, 0);
+}
+
 function getDeckSummaryTypeCounts(deckEntries) {
-  return DECK_SUMMARY_TYPES.map(summaryType => {
+  const typeCounts = DECK_SUMMARY_TYPES.map(summaryType => {
     const count = deckEntries.reduce((total, entry) => {
       return getCardType(entry.card) === summaryType.type ? total + entry.count : total;
     }, 0);
@@ -47,6 +53,11 @@ function getDeckSummaryTypeCounts(deckEntries) {
       count
     };
   });
+
+  return [
+    ...typeCounts,
+    { label: "Total Cards", count: getDeckSummaryTotalCount(deckEntries) }
+  ];
 }
 
 function getDeckCostCounts(deckEntries) {
