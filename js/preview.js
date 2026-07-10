@@ -10,6 +10,6 @@ function showCardPreview(card) {
 
   previewName.textContent = card.name;
   previewDetails.textContent =
-    `${card.faction || ""} • ${card.type || ""} • Cost ${card.cost ?? ""} • Power ${card.power ?? ""}`;
+    `${card.faction || ""} • Cost ${card.cost ?? ""}`;
   previewText.textContent = card.cardtext || "";
 }

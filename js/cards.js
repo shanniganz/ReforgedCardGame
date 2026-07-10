@@ -71,7 +71,7 @@ function renderCards() {
   
       const details = document.createElement("div");
       details.className = "card-details";
-      details.textContent = `${card.faction || ""} • Cost ${card.cost ?? ""} • Power ${card.power ?? ""}`;
+      details.textContent = `${card.faction || ""} • Cost ${card.cost ?? ""}`;
   
       cardDiv.appendChild(img);
       cardDiv.appendChild(name);
