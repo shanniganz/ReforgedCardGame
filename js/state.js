@@ -1,6 +1,7 @@
 let allCards = [];
 let deck = {};
 let selectedTypeTab = "All";
+let visibleCards = [];
 
 const FALLBACK_IMAGE = "img/Reforged_CardBack.jpg";
 
@@ -43,6 +44,7 @@ const costFilter = document.getElementById("costFilter");
 const costFilterButton = document.getElementById("costFilterButton");
 const costFilterOptions = document.getElementById("costFilterOptions");
 const clearFiltersButton = document.getElementById("clearFiltersButton");
+const addVisibleCardsButton = document.getElementById("addVisibleCardsButton");
 
 const cardPreview = document.getElementById("cardPreview");
 const previewName = document.getElementById("previewName");

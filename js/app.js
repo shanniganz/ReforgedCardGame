@@ -20,6 +20,7 @@ async function loadCards() {
   
   searchBox.addEventListener("input", renderCards);
   clearFiltersButton.addEventListener("click", clearFilters);
+  addVisibleCardsButton.addEventListener("click", addVisibleCardsToDeck);
 
   deckListTab.addEventListener("click", () => showDeckTab("list"));
   deckSummaryTab.addEventListener("click", () => showDeckTab("summary"));

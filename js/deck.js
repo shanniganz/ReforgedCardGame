@@ -32,6 +32,30 @@ function addCardToDeck(card) {
     renderDeck();
   }
 
+  function addVisibleCardsToDeck() {
+    if (visibleCards.length === 0) {
+      showDeckMessage("No visible cards to add.");
+      return;
+    }
+
+    let addedCount = 0;
+
+    visibleCards.forEach(card => {
+      if (deck[card.id]) {
+        return;
+      }
+
+      deck[card.id] = {
+        card,
+        count: 1
+      };
+      addedCount++;
+    });
+
+    renderDeck();
+    showDeckMessage(`Added ${addedCount} visible card${addedCount === 1 ? "" : "s"} as single copies.`);
+  }
+
   function getDeckLimitMessage(card) {
     const cardType = getCardType(card);
     const currentCount = deck[card.id]?.count || 0;
@@ -473,6 +497,14 @@ function addCardToDeck(card) {
       left: var(--gutter-two-x);
     }
 
+    .registration-mark.v-left {
+      left: var(--grid-left);
+    }
+
+    .registration-mark.v-right {
+      left: calc(var(--grid-left) + var(--grid-width) - 2px);
+    }
+
     .registration-mark.left {
       left: calc(var(--grid-left) - 10px);
     }
@@ -487,6 +519,14 @@ function addCardToDeck(card) {
 
     .registration-mark.h-two {
       top: var(--gutter-two-y);
+    }
+
+    .registration-mark.h-top {
+      top: var(--grid-top);
+    }
+
+    .registration-mark.h-bottom {
+      top: calc(var(--grid-top) + var(--grid-height) - 2px);
     }
 
     @page {
@@ -539,12 +579,20 @@ function addCardToDeck(card) {
     return `
     <span class="registration-mark vertical top v-one"></span>
     <span class="registration-mark vertical top v-two"></span>
+    <span class="registration-mark vertical top v-left"></span>
+    <span class="registration-mark vertical top v-right"></span>
     <span class="registration-mark vertical bottom v-one"></span>
     <span class="registration-mark vertical bottom v-two"></span>
+    <span class="registration-mark vertical bottom v-left"></span>
+    <span class="registration-mark vertical bottom v-right"></span>
     <span class="registration-mark horizontal left h-one"></span>
     <span class="registration-mark horizontal left h-two"></span>
+    <span class="registration-mark horizontal left h-top"></span>
+    <span class="registration-mark horizontal left h-bottom"></span>
     <span class="registration-mark horizontal right h-one"></span>
-    <span class="registration-mark horizontal right h-two"></span>`;
+    <span class="registration-mark horizontal right h-two"></span>
+    <span class="registration-mark horizontal right h-top"></span>
+    <span class="registration-mark horizontal right h-bottom"></span>`;
   }
 
   function getBaseUrl() {

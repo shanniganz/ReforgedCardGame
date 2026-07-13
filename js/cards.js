@@ -48,6 +48,8 @@ function renderCards() {
   
       return (a.name || "").localeCompare(b.name || "");
     });
+
+    visibleCards = filteredCards;
   
     cardGrid.innerHTML = "";
   
