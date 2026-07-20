@@ -5,17 +5,25 @@ let visibleCards = [];
 
 const FALLBACK_IMAGE = "img/Reforged_CardBack.jpg";
 
+const appViews = document.querySelectorAll(".app-view");
+const appNavButtons = document.querySelectorAll(".app-nav-button");
+const builderNavButton = document.getElementById("builderNavButton");
+const exportNavButton = document.getElementById("exportNavButton");
+const myDecksNavButton = document.getElementById("myDecksNavButton");
 const cardGrid = document.getElementById("cardGrid");
 const deckList = document.getElementById("deckList");
 const deckCount = document.getElementById("deckCount");
 const deckExport = document.getElementById("deckExport");
 const deckIdentity = document.getElementById("deckIdentity");
 const deckMessage = document.getElementById("deckMessage");
-const deckListTab = document.getElementById("deckListTab");
-const deckSummaryTab = document.getElementById("deckSummaryTab");
 const deckListPanel = document.getElementById("deckListPanel");
 const deckSummaryPanel = document.getElementById("deckSummaryPanel");
 const deckSummary = document.getElementById("deckSummary");
+const deckNameInput = document.getElementById("deckNameInput");
+const saveDeckButton = document.getElementById("saveDeckButton");
+const savedDeckSelect = document.getElementById("savedDeckSelect");
+const loadDeckButton = document.getElementById("loadDeckButton");
+const deleteDeckButton = document.getElementById("deleteDeckButton");
 const clearDeckButton = document.getElementById("clearDeckButton");
 const copyDeckButton = document.getElementById("copyDeckButton");
 const cardPdfButton = document.getElementById("cardPdfButton");
@@ -45,6 +53,17 @@ const costFilterButton = document.getElementById("costFilterButton");
 const costFilterOptions = document.getElementById("costFilterOptions");
 const clearFiltersButton = document.getElementById("clearFiltersButton");
 const addVisibleCardsButton = document.getElementById("addVisibleCardsButton");
+
+const authEmail = document.getElementById("authEmail");
+const authPassword = document.getElementById("authPassword");
+const signInButton = document.getElementById("signInButton");
+const signUpButton = document.getElementById("signUpButton");
+const forgotPasswordButton = document.getElementById("forgotPasswordButton");
+const signOutButton = document.getElementById("signOutButton");
+const authStatus = document.getElementById("authStatus");
+const passwordResetPanel = document.getElementById("passwordResetPanel");
+const newPassword = document.getElementById("newPassword");
+const resetPasswordButton = document.getElementById("resetPasswordButton");
 
 const cardPreview = document.getElementById("cardPreview");
 const previewName = document.getElementById("previewName");

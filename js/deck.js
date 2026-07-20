@@ -205,18 +205,29 @@ function addCardToDeck(card) {
   }
 
   function createDeckCode() {
+    const payload = createDeckPayload();
+
+    if (!payload) {
+      return "";
+    }
+
+    return encodeDeckCode(payload);
+  }
+
+  function createDeckPayload() {
     const deckEntries = Object.values(deck).sort((a, b) =>
       a.card.name.localeCompare(b.card.name)
     );
 
     if (deckEntries.length === 0) {
-      return "";
+      return null;
     }
 
-    return encodeDeckCode({
+    return {
       v: 1,
-      cards: deckEntries.map(entry => [entry.card.name, entry.count])
-    });
+      cards: deckEntries.map(entry => [entry.card.name, entry.count]),
+      anvil: getSelectedAnvilValue()
+    };
   }
 
   function importDeckCode() {
@@ -241,6 +252,11 @@ function addCardToDeck(card) {
       return;
     }
 
+    const result = loadDeckPayload(payload);
+    showDeckMessage(formatDeckLoadMessage("Deck code imported.", result));
+  }
+
+  function loadDeckPayload(payload) {
     const cardsByName = getCardsByName();
     const importedDeck = {};
     const missingNames = [];
@@ -271,17 +287,22 @@ function addCardToDeck(card) {
     });
 
     deck = importedDeck;
+    setSelectedAnvilValue(payload.anvil || "none");
     renderDeck();
 
-    const messages = ["Deck code imported."];
-    if (missingNames.length > 0) {
-      messages.push(`Missing: ${missingNames.join(", ")}`);
+    return { missingNames, duplicateNames };
+  }
+
+  function formatDeckLoadMessage(baseMessage, result) {
+    const messages = [baseMessage];
+    if (result.missingNames.length > 0) {
+      messages.push(`Missing: ${result.missingNames.join(", ")}`);
     }
-    if (duplicateNames.length > 0) {
-      messages.push(`Duplicate names used first match: ${duplicateNames.join(", ")}`);
+    if (result.duplicateNames.length > 0) {
+      messages.push(`Duplicate names used first match: ${result.duplicateNames.join(", ")}`);
     }
 
-    showDeckMessage(messages.join(" "));
+    return messages.join(" ");
   }
 
   function getCardsByName() {
@@ -353,8 +374,19 @@ function addCardToDeck(card) {
   }
 
   function getSelectedAnvilCard() {
+    return ANVIL_PDF_CARDS[getSelectedAnvilValue()] || null;
+  }
+
+  function getSelectedAnvilValue() {
     const selectedOption = Array.from(anvilOptions).find(option => option.checked);
-    return ANVIL_PDF_CARDS[selectedOption?.value] || null;
+    return selectedOption?.value || "none";
+  }
+
+  function setSelectedAnvilValue(value) {
+    const normalizedValue = ANVIL_PDF_CARDS[value] ? value : "none";
+    anvilOptions.forEach(option => {
+      option.checked = option.value === normalizedValue;
+    });
   }
 
   function createCardPdfExportHtml(cards) {

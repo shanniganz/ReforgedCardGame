@@ -21,15 +21,26 @@ async function loadCards() {
   searchBox.addEventListener("input", renderCards);
   clearFiltersButton.addEventListener("click", clearFilters);
   addVisibleCardsButton.addEventListener("click", addVisibleCardsToDeck);
+  appNavButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      window.location.hash = button.dataset.view;
+      showAppView(button.dataset.view);
+    });
+  });
+  window.addEventListener("hashchange", () => showAppView(getCurrentAppView()));
 
-  deckListTab.addEventListener("click", () => showDeckTab("list"));
-  deckSummaryTab.addEventListener("click", () => showDeckTab("summary"));
   clearDeckButton.addEventListener("click", clearDeck);
   copyDeckButton.addEventListener("click", copyDeckExport);
   cardPdfButton.addEventListener("click", openCardPdfExport);
   copyDeckCodeButton.addEventListener("click", copyDeckCode);
   importDeckCodeButton.addEventListener("click", importDeckCode);
+  initializeSupabaseDecks();
 
   renderDeck();
+  showAppView(getCurrentAppView());
   
   loadCards();
+
+  function getCurrentAppView() {
+    return window.location.hash.replace("#", "") || "builder";
+  }

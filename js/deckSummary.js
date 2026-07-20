@@ -5,16 +5,18 @@ const DECK_SUMMARY_TYPES = [
   { label: "Relic Weapons", type: "relic weapon" }
 ];
 
-function showDeckTab(tabName) {
-  const showSummary = tabName === "summary";
+function showAppView(viewName) {
+  const normalizedViewName = ["builder", "export", "my-decks"].includes(viewName)
+    ? viewName
+    : "builder";
 
-  deckListTab.classList.toggle("active", !showSummary);
-  deckSummaryTab.classList.toggle("active", showSummary);
-  deckListTab.setAttribute("aria-selected", String(!showSummary));
-  deckSummaryTab.setAttribute("aria-selected", String(showSummary));
+  appViews.forEach(view => {
+    view.classList.toggle("active", view.id === `${normalizedViewName.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase())}View`);
+  });
 
-  deckListPanel.classList.toggle("active", !showSummary);
-  deckSummaryPanel.classList.toggle("active", showSummary);
+  appNavButtons.forEach(button => {
+    button.classList.toggle("active", button.dataset.view === normalizedViewName);
+  });
 }
 
 function renderDeckSummary(deckEntries) {

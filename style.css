@@ -24,6 +24,7 @@ header {
     z-index: 2000;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 24px;
     padding: 12px 20px;
     background: #222;
@@ -35,6 +36,27 @@ header h1 {
     margin: 0;
     font-size: 24px;
     white-space: nowrap;
+}
+
+.app-nav {
+    display: flex;
+    gap: 6px;
+}
+
+.app-nav-button {
+    padding: 7px 12px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    background: #333;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.app-nav-button:hover,
+.app-nav-button.active {
+    background: white;
+    color: #222;
 }
 
 .rules-link {
@@ -52,16 +74,98 @@ header h1 {
     background: #333;
 }
 
+.auth-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.auth-controls input,
+.auth-controls button {
+    padding: 7px 10px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.auth-controls input {
+    width: 150px;
+    min-width: 0;
+}
+
+.password-reset-panel {
+    display: grid;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.password-reset-panel input,
+.password-reset-panel button {
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+#authStatus {
+    max-width: 180px;
+    overflow: hidden;
+    color: #e7e7e7;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 
 /* ==========================================
    Main Layout
 ========================================== */
 
 main {
+    padding: 20px;
+}
+
+.app-view {
+    display: none;
+}
+
+.app-view.active {
+    display: block;
+}
+
+.builder-layout {
     display: grid;
     grid-template-columns: 1fr 340px 340px;
     gap: 20px;
-    padding: 20px;
+}
+
+.export-layout,
+.my-decks-layout {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.my-decks-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.export-panel,
+.account-panel {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+.global-message {
+    position: sticky;
+    top: 70px;
+    z-index: 1500;
+    max-width: 980px;
+    margin: 12px auto -4px;
 }
 
 
@@ -74,7 +178,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
-    flex: 1;
+    margin-bottom: 16px;
 }
 
 .controls input,
@@ -317,6 +421,31 @@ main {
 
 .deck-message.show {
     display: block;
+}
+
+.saved-decks {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.account-panel.saved-decks {
+    border-bottom: 0;
+}
+
+.saved-decks input,
+.saved-decks select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.saved-decks .deck-action-button {
+    margin-top: 0;
 }
 
 .deck-tabs {
@@ -583,7 +712,8 @@ textarea {
 
 @media (max-width: 1100px) {
 
-    main {
+    .builder-layout,
+    .my-decks-layout {
         grid-template-columns: 1fr;
     }
 

@@ -4,145 +4,191 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reforged Deck Builder</title>
-  <link rel="stylesheet" href="style.css?v=17">
+  <link rel="stylesheet" href="style.css?v=20">
 </head>
 <body>
 
   <header>
     <h1>Reforged Deck Builder</h1>
-    <a class="rules-link" href="Reforged%20Rules%20Doc.pdf" target="_blank" rel="noopener">Rules PDF</a>
-  
-    <div class="controls">
-      <input type="text" id="searchBox" placeholder="Search name or card text...">
-  
-      <div id="setFilter" class="multi-select-filter">
-        <button id="setFilterButton" class="multi-select-button" type="button" aria-expanded="false">
-          All Sets
-        </button>
-        <div id="setFilterOptions" class="multi-select-options"></div>
-      </div>
-  
-      <div id="factionFilter" class="multi-select-filter">
-        <button id="factionFilterButton" class="multi-select-button" type="button" aria-expanded="false">
-          All Factions
-        </button>
-        <div id="factionFilterOptions" class="multi-select-options"></div>
-      </div>
-  
-      <div id="subtypeFilter" class="multi-select-filter">
-        <button id="subtypeFilterButton" class="multi-select-button" type="button" aria-expanded="false">
-          All Subtypes
-        </button>
-        <div id="subtypeFilterOptions" class="multi-select-options"></div>
-      </div>
-  
-      <div id="damageTypeFilter" class="multi-select-filter">
-        <button id="damageTypeFilterButton" class="multi-select-button" type="button" aria-expanded="false">
-          All Damage Types
-        </button>
-        <div id="damageTypeFilterOptions" class="multi-select-options"></div>
-      </div>
 
-      <div id="legendaryFilter" class="multi-select-filter">
-        <button id="legendaryFilterButton" class="multi-select-button" type="button" aria-expanded="false">
-          All Legendary
-        </button>
-        <div id="legendaryFilterOptions" class="multi-select-options"></div>
-      </div>
-  
-      <div id="costFilter" class="multi-select-filter">
-        <button id="costFilterButton" class="multi-select-button" type="button" aria-expanded="false">
-          All Costs
-        </button>
-        <div id="costFilterOptions" class="multi-select-options"></div>
-      </div>
-  
-      <button id="clearFiltersButton" type="button">Clear Filters</button>
-      <button id="addVisibleCardsButton" type="button">Add Visible Cards</button>
-    </div>
+    <nav class="app-nav" aria-label="Application views">
+      <button id="builderNavButton" class="app-nav-button active" type="button" data-view="builder">Builder</button>
+      <button id="exportNavButton" class="app-nav-button" type="button" data-view="export">Export</button>
+      <button id="myDecksNavButton" class="app-nav-button" type="button" data-view="my-decks">My Decks</button>
+    </nav>
+
+    <a class="rules-link" href="Reforged%20Rules%20Doc.pdf" target="_blank" rel="noopener">Rules PDF</a>
+    <span id="authStatus">Signed out</span>
   </header>
 
-<main>
-  <section>
-    <div id="cardGrid" class="card-grid"></div>
-  </section>
+  <div id="deckMessage" class="deck-message global-message" aria-live="polite"></div>
 
-  <aside class="preview-panel">
-    <h2>Preview</h2>
-  
-    <img id="cardPreview" src="" alt="Card Preview">
-  
-    <div id="previewName">Hover over a card</div>
-    <div id="previewDetails"></div>
-    <div id="previewText"></div>
-  </aside>
-  
-  <aside class="deck-panel">
-    <h2>Deck</h2>
+  <main>
+    <section id="builderView" class="app-view active">
+      <div class="controls">
+        <input type="text" id="searchBox" placeholder="Search name or card text...">
 
-    <div id="deckIdentity" class="deck-identity" aria-live="polite"></div>
+        <div id="setFilter" class="multi-select-filter">
+          <button id="setFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+            All Sets
+          </button>
+          <div id="setFilterOptions" class="multi-select-options"></div>
+        </div>
 
-    <div id="deckMessage" class="deck-message" aria-live="polite"></div>
+        <div id="factionFilter" class="multi-select-filter">
+          <button id="factionFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+            All Factions
+          </button>
+          <div id="factionFilterOptions" class="multi-select-options"></div>
+        </div>
 
-    <div class="deck-tabs" role="tablist" aria-label="Deck views">
-      <button id="deckListTab" class="deck-tab active" type="button" role="tab" aria-selected="true" aria-controls="deckListPanel">List</button>
-      <button id="deckSummaryTab" class="deck-tab" type="button" role="tab" aria-selected="false" aria-controls="deckSummaryPanel">Export</button>
-    </div>
-  
-    <div id="deckListPanel" class="deck-tab-panel active" role="tabpanel" aria-labelledby="deckListTab">
-      <div id="deckList"></div>
-    
-      <p>
-        <strong>Total Cards:</strong>
-        <span id="deckCount">0</span>
-      </p>
+        <div id="subtypeFilter" class="multi-select-filter">
+          <button id="subtypeFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+            All Subtypes
+          </button>
+          <div id="subtypeFilterOptions" class="multi-select-options"></div>
+        </div>
 
-      <button id="clearDeckButton" class="deck-action-button" type="button">Clear Deck</button>
-    </div>
+        <div id="damageTypeFilter" class="multi-select-filter">
+          <button id="damageTypeFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+            All Damage Types
+          </button>
+          <div id="damageTypeFilterOptions" class="multi-select-options"></div>
+        </div>
 
-    <div id="deckSummaryPanel" class="deck-tab-panel" role="tabpanel" aria-labelledby="deckSummaryTab">
-      <div id="deckSummary" class="deck-summary"></div>
+        <div id="legendaryFilter" class="multi-select-filter">
+          <button id="legendaryFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+            All Legendary
+          </button>
+          <div id="legendaryFilterOptions" class="multi-select-options"></div>
+        </div>
 
+        <div id="costFilter" class="multi-select-filter">
+          <button id="costFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+            All Costs
+          </button>
+          <div id="costFilterOptions" class="multi-select-options"></div>
+        </div>
 
-
-      <button id="copyDeckButton" class="deck-action-button" type="button">Copy Deck Text</button>
-      
-
-      <textarea id="deckExport" readonly></textarea>
-      <fieldset class="anvil-options">
-        <legend>Anvil</legend>
-        <label>
-          <input type="radio" name="anvilOption" value="order">
-          Order
-        </label>
-        <label>
-          <input type="radio" name="anvilOption" value="chaos">
-          Chaos
-        </label>
-        <label>
-          <input type="radio" name="anvilOption" value="none" checked>
-          None
-        </label>
-      </fieldset>
-
-      <button id="cardPdfButton" class="deck-action-button" type="button">Card PDF</button>
-      
-      <div class="deck-code-tools">
-        <textarea id="deckCode" placeholder="Paste deck code here"></textarea>
-        <button id="copyDeckCodeButton" class="deck-action-button" type="button">Copy Deck Code</button>
-        <button id="importDeckCodeButton" class="deck-action-button" type="button">Import Deck Code</button>
+        <button id="clearFiltersButton" type="button">Clear Filters</button>
+        <button id="addVisibleCardsButton" type="button">Add Visible Cards</button>
       </div>
-    </div>
-  </aside>
-</main>
 
-<script src="js/state.js?v=11"></script>
+      <div class="builder-layout">
+        <section>
+          <div id="cardGrid" class="card-grid"></div>
+        </section>
+
+        <aside class="preview-panel">
+          <h2>Preview</h2>
+
+          <img id="cardPreview" src="" alt="Card Preview">
+
+          <div id="previewName">Hover over a card</div>
+          <div id="previewDetails"></div>
+          <div id="previewText"></div>
+        </aside>
+
+        <aside class="deck-panel">
+          <h2>Deck</h2>
+
+          <div id="deckIdentity" class="deck-identity" aria-live="polite"></div>
+
+          <div id="deckListPanel" class="deck-tab-panel active" role="tabpanel">
+            <div id="deckList"></div>
+
+            <p>
+              <strong>Total Cards:</strong>
+              <span id="deckCount">0</span>
+            </p>
+
+            <button id="clearDeckButton" class="deck-action-button" type="button">Clear Deck</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="exportView" class="app-view">
+      <div class="export-layout">
+        <section id="deckSummaryPanel" class="export-panel" role="tabpanel">
+          <h2>Deck Export</h2>
+
+          <div id="deckSummary" class="deck-summary"></div>
+
+          <button id="copyDeckButton" class="deck-action-button" type="button">Copy Deck Text</button>
+          <textarea id="deckExport" readonly></textarea>
+
+          <fieldset class="anvil-options">
+            <legend>Anvil</legend>
+            <label>
+              <input type="radio" name="anvilOption" value="order">
+              Order
+            </label>
+            <label>
+              <input type="radio" name="anvilOption" value="chaos">
+              Chaos
+            </label>
+            <label>
+              <input type="radio" name="anvilOption" value="none" checked>
+              None
+            </label>
+          </fieldset>
+
+          <button id="cardPdfButton" class="deck-action-button" type="button">Card PDF</button>
+
+          <div class="deck-code-tools">
+            <textarea id="deckCode" placeholder="Paste deck code here"></textarea>
+            <button id="copyDeckCodeButton" class="deck-action-button" type="button">Copy Deck Code</button>
+            <button id="importDeckCodeButton" class="deck-action-button" type="button">Import Deck Code</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="myDecksView" class="app-view">
+      <div class="my-decks-layout">
+        <section class="account-panel">
+          <h2>Account</h2>
+
+          <div class="auth-controls">
+            <input type="email" id="authEmail" placeholder="Email">
+            <input type="password" id="authPassword" placeholder="Password">
+            <button id="signInButton" type="button">Sign In</button>
+            <button id="signUpButton" type="button">Sign Up</button>
+            <button id="forgotPasswordButton" type="button">Forgot Password</button>
+            <button id="signOutButton" type="button" hidden>Sign Out</button>
+          </div>
+
+          <div id="passwordResetPanel" class="password-reset-panel" hidden>
+            <input type="password" id="newPassword" placeholder="New password">
+            <button id="resetPasswordButton" type="button">Reset Password</button>
+          </div>
+        </section>
+
+        <section class="account-panel saved-decks">
+          <h2>Saved Decks</h2>
+
+          <input type="text" id="deckNameInput" placeholder="Deck name">
+          <button id="saveDeckButton" class="deck-action-button" type="button">Save Deck</button>
+          <select id="savedDeckSelect" aria-label="Saved decks">
+            <option value="">Saved decks</option>
+          </select>
+          <button id="loadDeckButton" class="deck-action-button" type="button">Load Deck</button>
+          <button id="deleteDeckButton" class="deck-action-button" type="button">Delete Saved Deck</button>
+        </section>
+      </div>
+    </section>
+  </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/state.js?v=14"></script>
 <script src="js/preview.js?v=3"></script>
-<script src="js/deckSummary.js?v=5"></script>
-<script src="js/deck.js?v=19"></script>
+<script src="js/deckSummary.js?v=6"></script>
+<script src="js/deck.js?v=20"></script>
 <script src="js/filters.js?v=6"></script>
 <script src="js/cards.js?v=7"></script>
-<script src="js/app.js?v=9"></script>
+<script src="js/supabaseDecks.js?v=2"></script>
+<script src="js/app.js?v=11"></script>
 
 </body>
 </html>
