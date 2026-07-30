@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reforged Deck Builder</title>
-  <link rel="stylesheet" href="style.css?v=20">
+  <link rel="stylesheet" href="style.css?v=25">
 </head>
 <body>
 
@@ -70,6 +70,11 @@
           <div id="costFilterOptions" class="multi-select-options"></div>
         </div>
 
+        <label class="deck-restrictions-toggle">
+          <input id="enforceDeckRestrictionsCheckbox" type="checkbox" checked>
+          Enforce Deckbuilding
+        </label>
+
         <button id="clearFiltersButton" type="button">Clear Filters</button>
         <button id="addVisibleCardsButton" type="button">Add Visible Cards</button>
       </div>
@@ -110,11 +115,19 @@
 
     <section id="exportView" class="app-view">
       <div class="export-layout">
+        <section class="export-panel export-deck-list-section">
+          <h2>Deck List</h2>
+          <div id="exportDeckList" class="export-deck-list"></div>
+        </section>
+
+        <section class="export-panel export-card-visual-section">
+          <h2>Deck Images</h2>
+          <div id="exportCardVisuals" class="export-card-visuals"></div>
+        </section>
+
         <section id="deckSummaryPanel" class="export-panel" role="tabpanel">
           <h2>Deck Export</h2>
-
           <div id="deckSummary" class="deck-summary"></div>
-
           <button id="copyDeckButton" class="deck-action-button" type="button">Copy Deck Text</button>
           <textarea id="deckExport" readonly></textarea>
 
@@ -181,10 +194,10 @@
   </main>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="js/state.js?v=14"></script>
+<script src="js/state.js?v=17"></script>
 <script src="js/preview.js?v=3"></script>
 <script src="js/deckSummary.js?v=6"></script>
-<script src="js/deck.js?v=20"></script>
+<script src="js/deck.js?v=23"></script>
 <script src="js/filters.js?v=6"></script>
 <script src="js/cards.js?v=7"></script>
 <script src="js/supabaseDecks.js?v=2"></script>

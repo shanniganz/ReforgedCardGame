@@ -12,6 +12,8 @@ const exportNavButton = document.getElementById("exportNavButton");
 const myDecksNavButton = document.getElementById("myDecksNavButton");
 const cardGrid = document.getElementById("cardGrid");
 const deckList = document.getElementById("deckList");
+const exportDeckList = document.getElementById("exportDeckList");
+const exportCardVisuals = document.getElementById("exportCardVisuals");
 const deckCount = document.getElementById("deckCount");
 const deckExport = document.getElementById("deckExport");
 const deckIdentity = document.getElementById("deckIdentity");
@@ -51,6 +53,7 @@ const legendaryFilterOptions = document.getElementById("legendaryFilterOptions")
 const costFilter = document.getElementById("costFilter");
 const costFilterButton = document.getElementById("costFilterButton");
 const costFilterOptions = document.getElementById("costFilterOptions");
+const enforceDeckRestrictionsCheckbox = document.getElementById("enforceDeckRestrictionsCheckbox");
 const clearFiltersButton = document.getElementById("clearFiltersButton");
 const addVisibleCardsButton = document.getElementById("addVisibleCardsButton");
 

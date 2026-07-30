@@ -14,10 +14,12 @@ const DECK_TYPE_SECTIONS = [
 ];
 
 function addCardToDeck(card) {
-    const limitMessage = getDeckLimitMessage(card);
-    if (limitMessage) {
-      showDeckMessage(limitMessage);
-      return;
+    if (shouldEnforceDeckRestrictions()) {
+      const limitMessage = getDeckLimitMessage(card);
+      if (limitMessage) {
+        showDeckMessage(limitMessage);
+        return;
+      }
     }
 
     if (!deck[card.id]) {
@@ -30,6 +32,10 @@ function addCardToDeck(card) {
     deck[card.id].count++;
     clearDeckMessage();
     renderDeck();
+  }
+
+  function shouldEnforceDeckRestrictions() {
+    return !enforceDeckRestrictionsCheckbox || enforceDeckRestrictionsCheckbox.checked;
   }
 
   function addVisibleCardsToDeck() {
@@ -653,14 +659,28 @@ function addCardToDeck(card) {
   }
   
   function renderDeck() {
-    deckList.innerHTML = "";
-  
     const deckEntries = Object.values(deck).sort((a, b) =>
       a.card.name.localeCompare(b.card.name)
     );
-  
+
+    const totalCards = renderDeckList(deckList, deckEntries, true);
+    renderDeckList(exportDeckList, deckEntries, false);
+    renderExportCardVisuals(deckEntries);
+
+    deckCount.textContent = totalCards;
+    deckExport.value = formatDeckExport(deckEntries);
+
+    renderDeckIdentity();
+    renderDeckSummary(deckEntries);
+  }
+
+  function renderDeckList(container, deckEntries, includeControls) {
+    if (!container) return 0;
+
+    container.innerHTML = "";
+
     let totalCards = 0;
-  
+
     DECK_TYPE_SECTIONS.forEach(section => {
       const sectionEntries = deckEntries.filter(entry => getCardType(entry.card) === section.type);
 
@@ -673,19 +693,56 @@ function addCardToDeck(card) {
         totalCards += sectionCount;
       }
 
-      deckList.appendChild(createDeckListHeader(section.label, sectionCount));
+      container.appendChild(createDeckListHeader(section.label, sectionCount));
 
       sectionEntries.forEach(entry => {
-        deckList.appendChild(createDeckRow(entry));
+        container.appendChild(createDeckRow(entry, includeControls));
       });
     });
-  
-    deckCount.textContent = totalCards;
-  
-    deckExport.value = formatDeckExport(deckEntries);
 
-    renderDeckIdentity();
-    renderDeckSummary(deckEntries);
+    return totalCards;
+  }
+
+  function renderExportCardVisuals(deckEntries) {
+    if (!exportCardVisuals) return;
+
+    exportCardVisuals.innerHTML = "";
+
+    if (deckEntries.length === 0) {
+      const emptyMessage = document.createElement("p");
+      emptyMessage.className = "deck-empty";
+      emptyMessage.textContent = "No cards in deck yet.";
+      exportCardVisuals.appendChild(emptyMessage);
+      return;
+    }
+
+    deckEntries.forEach(entry => {
+      exportCardVisuals.appendChild(createExportCardVisual(entry));
+    });
+  }
+
+  function createExportCardVisual(entry) {
+    const cardFrame = document.createElement("div");
+    cardFrame.className = "export-card-visual";
+    cardFrame.addEventListener("mouseenter", () => showCardPreview(entry.card));
+
+    const image = document.createElement("img");
+    image.src = entry.card.image || FALLBACK_IMAGE;
+    image.alt = entry.card.name || "Card";
+    image.loading = "lazy";
+    image.onerror = function () {
+      this.onerror = null;
+      this.src = FALLBACK_IMAGE;
+    };
+
+    const count = document.createElement("span");
+    count.className = "export-card-count";
+    count.textContent = entry.count;
+
+    cardFrame.appendChild(image);
+    cardFrame.appendChild(count);
+
+    return cardFrame;
   }
 
   function renderDeckIdentity() {
@@ -729,7 +786,7 @@ function addCardToDeck(card) {
     return header;
   }
 
-  function createDeckRow(entry) {
+  function createDeckRow(entry, includeControls = true) {
     const row = document.createElement("div");
     row.className = "deck-row";
 
@@ -738,9 +795,14 @@ function addCardToDeck(card) {
     cardText.textContent = `${entry.count}x ${entry.card.name}`;
     cardText.addEventListener("mouseenter", () => showCardPreview(entry.card));
 
+    if (!includeControls) {
+      row.classList.add("readonly");
+      row.appendChild(cardText);
+      return row;
+    }
+
     const buttons = document.createElement("span");
     buttons.className = "deck-buttons";
-
     const plusButton = document.createElement("button");
     plusButton.textContent = "+";
     plusButton.addEventListener("click", () => addCardToDeck(entry.card));
