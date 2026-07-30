@@ -28,6 +28,7 @@ const loadDeckButton = document.getElementById("loadDeckButton");
 const deleteDeckButton = document.getElementById("deleteDeckButton");
 const clearDeckButton = document.getElementById("clearDeckButton");
 const copyDeckButton = document.getElementById("copyDeckButton");
+const exportPlaytestDeckButton = document.getElementById("exportPlaytestDeckButton");
 const cardPdfButton = document.getElementById("cardPdfButton");
 const anvilOptions = document.querySelectorAll("input[name='anvilOption']");
 const copyDeckCodeButton = document.getElementById("copyDeckCodeButton");

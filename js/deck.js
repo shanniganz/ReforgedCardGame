@@ -4,6 +4,7 @@ const ANVIL_PDF_CARDS = {
   order: { name: "Anvil of Order", image: "img/AnvilofOrder.webp", type: "anvil" },
   chaos: { name: "Anvil of Chaos", image: "img/AnvilofChaos.webp", type: "anvil" }
 };
+const PLAYTEST_CARD_BACK_IMAGE = "img/Reforged_CardBack.jpg";
 const DECK_TYPE_SECTIONS = [
   { label: "Hero", heading: "---HERO---", type: "hero" },
   { label: "Quest", heading: "---QUEST---", type: "quest" },
@@ -169,7 +170,7 @@ function addCardToDeck(card) {
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(exportText);
       } else {
-        copyTextWithFallback(exportText);
+        copyTextWithFallback(exportText, deckExport);
       }
 
       showDeckMessage("Deck export copied to clipboard.");
@@ -179,9 +180,36 @@ function addCardToDeck(card) {
     }
   }
 
-  function copyTextWithFallback(text) {
-    deckExport.focus();
-    deckExport.select();
+  function exportPlaytestDeckFile() {
+    const deckEntries = Object.values(deck).sort((a, b) =>
+      a.card.name.localeCompare(b.card.name)
+    );
+    const exportText = formatPlaytestDeckExport(deckEntries);
+
+    if (!exportText) {
+      showDeckMessage("There is no playtest JSON to export.");
+      return;
+    }
+
+    const fileName = `${getPlaytestDeckFileBaseName()}_Playtest_JSON.txt`;
+    const blob = new Blob([exportText], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+
+    showDeckMessage(`Playtest JSON exported as ${fileName}.`);
+  }
+
+  function copyTextWithFallback(text, textArea = deckExport) {
+    textArea.value = text;
+    textArea.focus();
+    textArea.select();
 
     const copied = document.execCommand("copy");
     window.getSelection().removeAllRanges();
@@ -836,5 +864,62 @@ function addCardToDeck(card) {
       })
       .filter(Boolean)
       .join("\n\n");
+  }
+
+  function formatPlaytestDeckExport(deckEntries) {
+    if (deckEntries.length === 0) {
+      return "";
+    }
+
+    const deckName = getPlaytestDeckName();
+    const playtestCards = deckEntries.map((entry, index) => {
+      const card = entry.card;
+
+      return {
+        unique_id: card.id || "",
+        name: card.name || "",
+        quantity: entry.count,
+        deck_names: deckName,
+        sort_order: index + 1,
+        size: "",
+        phys_width_in: 2.5,
+        phys_height_in: 3.5,
+        color: "",
+        color_back: "",
+        image_url: getAbsoluteAssetUrl(card.image || ""),
+        back_image_url: getAbsoluteAssetUrl(PLAYTEST_CARD_BACK_IMAGE),
+        image_rotation: 0,
+        facing: "",
+        card_mask_type: "",
+        playtest_scale_x: 1,
+        playtest_scale_y: 1,
+        description: card.cardtext || "",
+        notes: card.flavortext || "",
+        material: "",
+        weight_lbs: "",
+        cost_per_unit: ""
+      };
+    });
+
+    return JSON.stringify(playtestCards, null, 2);
+  }
+
+  function getPlaytestDeckName() {
+    const savedDeckName = deckNameInput ? deckNameInput.value.trim() : "";
+    return savedDeckName || "Deck 1";
+  }
+
+  function getPlaytestDeckFileBaseName() {
+    return getPlaytestDeckName()
+      .replace(/[^a-z0-9]+/gi, "_")
+      .replace(/^_+|_+$/g, "") || "Deck_1";
+  }
+
+  function getAbsoluteAssetUrl(path) {
+    if (!path) {
+      return "";
+    }
+
+    return new URL(path, getBaseUrl()).href;
   }
   

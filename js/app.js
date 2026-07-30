@@ -31,6 +31,7 @@ async function loadCards() {
 
   clearDeckButton.addEventListener("click", clearDeck);
   copyDeckButton.addEventListener("click", copyDeckExport);
+  exportPlaytestDeckButton.addEventListener("click", exportPlaytestDeckFile);
   cardPdfButton.addEventListener("click", openCardPdfExport);
   copyDeckCodeButton.addEventListener("click", copyDeckCode);
   importDeckCodeButton.addEventListener("click", importDeckCode);
