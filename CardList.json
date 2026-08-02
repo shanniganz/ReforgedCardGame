@@ -3797,7 +3797,7 @@
   "CARD-166": {
     "id": "CARD-166",
     "setname": "Set 9",
-    "precon": "Eldrik",
+    "precon": "None",
     "name": "Blood Cultist",
     "type": "Ashen",
     "subtype": "Cultist",
@@ -9616,7 +9616,7 @@
   "CARD-419": {
     "id": "CARD-419",
     "setname": "Set 1",
-    "precon": "None",
+    "precon": "Jungoom",
     "name": "Blood-Soaked Banner",
     "type": "Relic",
     "subtype": "Banner",
@@ -9639,7 +9639,7 @@
   "CARD-420": {
     "id": "CARD-420",
     "setname": "Set 1",
-    "precon": "None",
+    "precon": "Eldrik",
     "name": "Symbol of Peace",
     "type": "Relic",
     "subtype": "Symbol",
@@ -9708,7 +9708,7 @@
   "CARD-423": {
     "id": "CARD-423",
     "setname": "Set 2",
-    "precon": "Jungoom",
+    "precon": "None",
     "name": "Drums of War",
     "type": "Relic",
     "subtype": "Music",
@@ -9754,7 +9754,7 @@
   "CARD-425": {
     "id": "CARD-425",
     "setname": "Set 2",
-    "precon": "Eldrik",
+    "precon": "None",
     "name": "Armory of Light",
     "type": "Relic",
     "subtype": "War",

@@ -554,6 +554,31 @@ main {
     text-align: center;
 }
 
+.export-card-controls {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-flex;
+    gap: 3px;
+}
+
+.export-card-controls button {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 1px solid rgba(255,255,255,.85);
+    border-radius: 999px;
+    background: rgba(0,0,0,.78);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.export-card-controls button:hover {
+    background: rgba(31,95,159,.9);
+}
+
 .deck-type-summary {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reforged Deck Builder</title>
-  <link rel="stylesheet" href="style.css?v=25">
+  <link rel="stylesheet" href="style.css?v=26">
 </head>
 <body>
 
@@ -68,6 +68,20 @@
             All Costs
           </button>
           <div id="costFilterOptions" class="multi-select-options"></div>
+        </div>
+
+        <div id="preconFilter" class="multi-select-filter">
+          <button id="preconFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+            All Precons
+          </button>
+          <div id="preconFilterOptions" class="multi-select-options"></div>
+        </div>
+
+        <div id="sparksFilter" class="multi-select-filter">
+          <button id="sparksFilterButton" class="multi-select-button" type="button" aria-expanded="false">
+            All Sparks
+          </button>
+          <div id="sparksFilterOptions" class="multi-select-options"></div>
         </div>
 
         <label class="deck-restrictions-toggle">
@@ -195,12 +209,12 @@
   </main>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="js/state.js?v=19"></script>
+<script src="js/state.js?v=20"></script>
 <script src="js/preview.js?v=3"></script>
 <script src="js/deckSummary.js?v=7"></script>
-<script src="js/deck.js?v=26"></script>
-<script src="js/filters.js?v=6"></script>
-<script src="js/cards.js?v=7"></script>
+<script src="js/deck.js?v=27"></script>
+<script src="js/filters.js?v=7"></script>
+<script src="js/cards.js?v=8"></script>
 <script src="js/supabaseDecks.js?v=2"></script>
 <script src="js/app.js?v=13"></script>
 

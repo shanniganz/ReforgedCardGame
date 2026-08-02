@@ -6,6 +6,8 @@ function renderCards() {
     const selectedDamageTypes = getSelectedFilterValues("damageType");
     const selectedLegendaryValues = getSelectedFilterValues("legendary");
     const selectedCosts = getSelectedFilterValues("cost");
+    const selectedPrecons = getSelectedFilterValues("precon");
+    const selectedSparks = getSelectedFilterValues("sparks");
   
     const filteredCards = allCards.filter(card => {
       const searchableText = [
@@ -30,6 +32,8 @@ function renderCards() {
       const damageTypeMatch = selectedDamageTypes.length === 0 || selectedDamageTypes.includes(card.damagetype);
       const legendaryMatch = selectedLegendaryValues.length === 0 || selectedLegendaryValues.includes(card.legendary);
       const costMatch = selectedCosts.length === 0 || selectedCosts.includes(String(card.cost));
+      const preconMatch = selectedPrecons.length === 0 || selectedPrecons.includes(card.precon);
+      const sparksMatch = selectedSparks.length === 0 || selectedSparks.includes(String(card.sparks));
   
       return searchMatch &&
         typeMatch &&
@@ -38,7 +42,9 @@ function renderCards() {
         subtypeMatch &&
         damageTypeMatch &&
         legendaryMatch &&
-        costMatch;
+        costMatch &&
+        preconMatch &&
+        sparksMatch;
     });
   
     filteredCards.sort((a, b) => {

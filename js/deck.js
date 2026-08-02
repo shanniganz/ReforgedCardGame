@@ -772,8 +772,31 @@ function addCardToDeck(card) {
     count.className = "export-card-count";
     count.textContent = entry.count;
 
+    const controls = document.createElement("span");
+    controls.className = "export-card-controls";
+
+    const plusButton = document.createElement("button");
+    plusButton.type = "button";
+    plusButton.textContent = "+";
+    plusButton.addEventListener("click", event => {
+      event.stopPropagation();
+      addCardToDeck(entry.card);
+    });
+
+    const minusButton = document.createElement("button");
+    minusButton.type = "button";
+    minusButton.textContent = "-";
+    minusButton.addEventListener("click", event => {
+      event.stopPropagation();
+      removeCardFromDeck(entry.card.id);
+    });
+
+    controls.appendChild(plusButton);
+    controls.appendChild(minusButton);
+
     cardFrame.appendChild(image);
     cardFrame.appendChild(count);
+    cardFrame.appendChild(controls);
 
     return cardFrame;
   }

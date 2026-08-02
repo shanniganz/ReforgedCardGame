@@ -40,6 +40,20 @@
       options: costFilterOptions,
       defaultLabel: "All Costs",
       pluralLabel: "Costs"
+    },
+    precon: {
+      root: preconFilter,
+      button: preconFilterButton,
+      options: preconFilterOptions,
+      defaultLabel: "All Precons",
+      pluralLabel: "Precons"
+    },
+    sparks: {
+      root: sparksFilter,
+      button: sparksFilterButton,
+      options: sparksFilterOptions,
+      defaultLabel: "All Sparks",
+      pluralLabel: "Sparks"
     }
   };
 
@@ -90,6 +104,17 @@
       .sort((a, b) => Number(a) - Number(b));
   
     populateCheckboxFilter("cost", costs);
+
+    populateCheckboxFilter("precon", [...new Set(allCards
+      .map(card => card.precon)
+      .filter(Boolean))].sort());
+
+    const sparks = [...new Set(allCards
+      .map(card => card.sparks)
+      .filter(sparksValue => sparksValue !== "" && sparksValue !== null && sparksValue !== undefined))]
+      .sort((a, b) => Number(a) - Number(b));
+
+    populateCheckboxFilter("sparks", sparks);
     initializeCheckboxFilters();
   }
 
@@ -193,6 +218,8 @@
     const selectedDamageTypes = getSelectedFilterValues("damageType");
     const selectedLegendaryValues = getSelectedFilterValues("legendary");
     const selectedCosts = getSelectedFilterValues("cost");
+    const selectedPrecons = getSelectedFilterValues("precon");
+    const selectedSparks = getSelectedFilterValues("sparks");
   
     document.querySelectorAll(".type-tab").forEach(button => {
       const type = button.dataset.type;
@@ -220,6 +247,8 @@
         const damageTypeMatch = selectedDamageTypes.length === 0 || selectedDamageTypes.includes(card.damagetype);
         const legendaryMatch = selectedLegendaryValues.length === 0 || selectedLegendaryValues.includes(card.legendary);
         const costMatch = selectedCosts.length === 0 || selectedCosts.includes(String(card.cost));
+        const preconMatch = selectedPrecons.length === 0 || selectedPrecons.includes(card.precon);
+        const sparksMatch = selectedSparks.length === 0 || selectedSparks.includes(String(card.sparks));
   
         return searchMatch &&
           typeMatch &&
@@ -228,7 +257,9 @@
           subtypeMatch &&
           damageTypeMatch &&
           legendaryMatch &&
-          costMatch;
+          costMatch &&
+          preconMatch &&
+          sparksMatch;
       }).length;
   
       button.textContent = `${type} (${count})`;
