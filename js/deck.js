@@ -8,6 +8,7 @@ const PLAYTEST_CARD_BACK_IMAGE = "img/Reforged_CardBack.jpg";
 const DECK_TYPE_SECTIONS = [
   { label: "Hero", heading: "---HERO---", type: "hero" },
   { label: "Quest", heading: "---QUEST---", type: "quest" },
+  { label: "Shard", heading: "---SHARD---", type: "shard" },
   { label: "Ashen", heading: "---ASHEN---", type: "ashen" },
   { label: "Spells", heading: "---SPELLS---", type: "spell" },
   { label: "Relics", heading: "---RELICS---", type: "relic" },
@@ -73,6 +74,10 @@ function addCardToDeck(card) {
 
     if (cardType === "quest" && getDeckTypeCount("quest") >= 1) {
       return "A deck can only include 1 Quest.";
+    }
+
+    if (cardType === "shard" && getDeckTypeCount("shard") >= 1) {
+      return "A deck can only include 1 Shard.";
     }
 
     const factionMessage = getDeckFactionLimitMessage(card);
@@ -717,7 +722,7 @@ function addCardToDeck(card) {
       }
 
       const sectionCount = sectionEntries.reduce((sum, entry) => sum + entry.count, 0);
-      if (section.type !== "hero" && section.type !== "quest") {
+      if (section.type !== "hero" && section.type !== "quest" && section.type !== "shard") {
         totalCards += sectionCount;
       }
 

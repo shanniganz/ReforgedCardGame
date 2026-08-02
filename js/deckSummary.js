@@ -40,8 +40,12 @@ function renderDeckSummary(deckEntries) {
 function getDeckSummaryTotalCount(deckEntries) {
   return deckEntries.reduce((total, entry) => {
     const cardType = getCardType(entry.card);
-    return cardType === "hero" || cardType === "quest" ? total : total + entry.count;
+    return isExcludedFromDeckSummaryCount(cardType) ? total : total + entry.count;
   }, 0);
+}
+
+function isExcludedFromDeckSummaryCount(cardType) {
+  return cardType === "hero" || cardType === "quest" || cardType === "shard";
 }
 
 function getDeckSummaryTypeCounts(deckEntries) {
@@ -67,7 +71,7 @@ function getDeckCostCounts(deckEntries) {
 
   deckEntries.forEach(entry => {
     const cardType = getCardType(entry.card);
-    if (cardType === "hero" || cardType === "quest") {
+    if (isExcludedFromDeckSummaryCount(cardType)) {
       return;
     }
 
