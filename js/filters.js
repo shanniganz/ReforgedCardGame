@@ -241,6 +241,7 @@
         const typeMatch = type === "All" || card.type === type;
         const setMatch = selectedSets.length === 0 || selectedSets.includes(card.setname);
         const factionMatch = type === "Quest" ||
+          type === "Shard" ||
           selectedFactions.length === 0 ||
           selectedFactions.includes(card.faction);
         const subtypeMatch = selectedSubtypes.length === 0 || selectedSubtypes.includes(card.subtype);

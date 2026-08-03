@@ -26,6 +26,7 @@ function renderCards() {
       const typeMatch = selectedTypeTab === "All" || card.type === selectedTypeTab;
       const setMatch = selectedSets.length === 0 || selectedSets.includes(card.setname);
       const factionMatch = selectedTypeTab === "Quest" ||
+        selectedTypeTab === "Shard" ||
         selectedFactions.length === 0 ||
         selectedFactions.includes(card.faction);
       const subtypeMatch = selectedSubtypes.length === 0 || selectedSubtypes.includes(card.subtype);

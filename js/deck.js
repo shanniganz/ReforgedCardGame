@@ -4,6 +4,8 @@ const ANVIL_PDF_CARDS = {
   order: { name: "Anvil of Order", image: "img/AnvilofOrder.webp", type: "anvil" },
   chaos: { name: "Anvil of Chaos", image: "img/AnvilofChaos.webp", type: "anvil" }
 };
+const PDF_REGULAR_TYPE_ORDER = ["ashen", "spell", "relic", "relic weapon"];
+const PDF_FINAL_TYPE_ORDER = ["hero", "quest", "shard", "anvil"];
 const PLAYTEST_CARD_BACK_IMAGE = "img/Reforged_CardBack.jpg";
 const DECK_TYPE_SECTIONS = [
   { label: "Hero", heading: "---HERO---", type: "hero" },
@@ -383,12 +385,7 @@ function addCardToDeck(card) {
   }
 
   function openCardPdfExport() {
-    const cardCopies = getDeckCardCopies();
-    const anvilCard = getSelectedAnvilCard();
-
-    if (anvilCard) {
-      cardCopies.push(anvilCard);
-    }
+    const cardCopies = getOrderedCardPdfCopies();
 
     if (cardCopies.length === 0) {
       showDeckMessage("Add cards to the deck before exporting card images.");
@@ -406,10 +403,47 @@ function addCardToDeck(card) {
     exportWindow.document.close();
   }
 
+  function getOrderedCardPdfCopies() {
+    const cardCopies = getDeckCardCopies();
+    const anvilCard = getSelectedAnvilCard();
+
+    if (anvilCard) {
+      cardCopies.push(anvilCard);
+    }
+
+    return cardCopies.sort(compareCardsForPdf);
+  }
+
   function getDeckCardCopies() {
     return Object.values(deck)
       .sort((a, b) => a.card.name.localeCompare(b.card.name))
       .flatMap(entry => Array.from({ length: entry.count }, () => entry.card));
+  }
+
+  function compareCardsForPdf(cardA, cardB) {
+    const typeRankDifference = getCardPdfTypeRank(cardA) - getCardPdfTypeRank(cardB);
+
+    if (typeRankDifference !== 0) {
+      return typeRankDifference;
+    }
+
+    return (cardA.name || "").localeCompare(cardB.name || "");
+  }
+
+  function getCardPdfTypeRank(card) {
+    const cardType = getCardType(card);
+    const regularTypeIndex = PDF_REGULAR_TYPE_ORDER.indexOf(cardType);
+
+    if (regularTypeIndex >= 0) {
+      return regularTypeIndex;
+    }
+
+    const finalTypeIndex = PDF_FINAL_TYPE_ORDER.indexOf(cardType);
+    if (finalTypeIndex >= 0) {
+      return 100 + finalTypeIndex;
+    }
+
+    return 50;
   }
 
   function getSelectedAnvilCard() {
